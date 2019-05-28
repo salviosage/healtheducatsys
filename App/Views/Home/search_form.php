@@ -10,7 +10,7 @@
         </h1>
         <p class="lead wow slideInUp">
           <span class="text-primary font-weight-semiBold">
-            <?php echo count($admin->publicAllCourses()); ?>
+            <?php echo count($admin->loadCourses('ACTIVE')); ?>
           </span>  face to face training and online based CPD Courses taught by industry experts.
         </p>
         <a href="signup.html" class="btn btn-primary mt-3 wow slideInUp">join for free </a>

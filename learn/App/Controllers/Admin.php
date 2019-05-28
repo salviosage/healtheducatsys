@@ -29,6 +29,19 @@ class Admin extends Execute{
 		$array=array("names"=>$names,"email"=>$email,"password"=>'123456',"phone"=>$phone,"user_type"=>2,"verified"=>1,"verification_code"=>mt_rand(10,10000),"status"=>$status);
 		return $this->multi_insert(Tables::users(),$array);
 	}
+	public function getTeacherField($teacher_id,$field_name){
+		$array="SELECT * FROM ".Tables::users()." WHERE user_type=2 AND id=\"$teacher_id\"";
+		$result=$this->querying($array);
+		$field_value='';
+		foreach ($result as $key => $value) {
+			$field_value=$value[$field_name];
+		}
+		return $field_value;
+	}
+	public function loadCourseInfo($course_id){
+		$sql="SELECT * FROM ".Tables::courses()." WHERE id=\"$course_id\" LIMIT 1";
+		return $this->querying($sql);
+	}
 	public function getSystemTeachers($status){
 		$sql='';
 		if($status=='*'){
