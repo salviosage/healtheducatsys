@@ -11,7 +11,7 @@ class Database{
 	protected function connect(){
 		$this->server="localhost";
 		$this->user="root";
-		$this->password="";
+		$this->password="Admin@ubugeni.com123";
 		$this->database="learning_db";
 
 		$conn=new mysqli($this->server,$this->user,$this->password,$this->database);

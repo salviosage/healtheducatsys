@@ -1,7 +1,7 @@
 RewriteEngine on
 # Rewrite for index.php
 RewriteRule ^404$ page_404.php [NC,L]
-ErrorDocument 404 http://localhost/lean/404
+ErrorDocument 404 https://ubugeni.com/lean/404
 RewriteRule ^index$ index.php [NC,L]
 RewriteRule ^courses$ courses_all.php [NC,L]
 RewriteRule ^course$ view_course.php [NC,L]

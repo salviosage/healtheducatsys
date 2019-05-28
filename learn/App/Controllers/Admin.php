@@ -2,6 +2,11 @@
 class Admin extends Execute{
 	private $allowed_status=array("ACTIVE","SUBMITTED","ENDED","PENDING");
 	private $users_types=array(1,2,3,4,5);
+	//register student
+	public function registerStudent($names,$email,$password,$phone,$address,$degree,$profession){
+		$array=array("names"=>$names,"email"=>$email,"password"=>$password,"phone"=>$phone,"user_type"=>3,"verified"=>1,"verification_code"=>mt_rand(10,10000),"address"=>$address,"status"=>1,"degree"=>$degree,"profession"=>$profession);
+		return $this->multi_insert(Tables::users(),$array);
+	}
 	//save course
 	public function saveCourse($title,$price,$teacher,$summary,$current_date,$course_token){
 		$array=array("title"=>$title,"course_price"=>$price,"assigned_teacher"=>$teacher,"summary"=>$summary,"status"=>'ACTIVE',"regDate"=>$current_date,"course_token"=>$course_token);
@@ -86,6 +91,17 @@ class Admin extends Execute{
 		$array=array("correct"=>$field_name);
 		$where=array("id"=>$question_id);
 		return $this->query_update(Tables::questions(),$where,$array);
+	}
+	//get users profession categories
+	public function getProfessionDegree($type){
+		$sql="";
+		if($type==1){
+			$sql="SELECT * FROM users_profession ORDER BY name ASC ";
+		}elseif($type==2){
+			$sql="SELECT * FROM users_degree ORDER BY name ASC ";
+		}
+		
+		return $this->querying($sql);
 	}
 }
 $admin=new Admin();

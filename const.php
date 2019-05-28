@@ -2,6 +2,7 @@
 define("SERVER_URL", $_SERVER['DOCUMENT_ROOT'].'/lean/');
 define("DASHBOARD", SERVER_URL.'learn/');
 define("AUTH_URL", DASHBOARD.'App/Views/Utils/auth.php');
+define("LOADER", DASHBOARD.'App/Views/Utils/classes_loader.php');
 define("APP_URL", $_SERVER['DOCUMENT_ROOT'].'/lean/learn/App/Views/Utils/classes_loader.php');
 define("ROOT_URL", $_SERVER['DOCUMENT_ROOT'].'/lean/');
 define("VIEWS", ROOT_URL."App/Views/");

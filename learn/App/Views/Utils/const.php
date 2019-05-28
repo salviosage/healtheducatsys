@@ -1,5 +1,5 @@
 <?php 
-define("ROOT_URL", $_SERVER['DOCUMENT_ROOT'].'/learn/');
+define("ROOT_URL", $_SERVER['DOCUMENT_ROOT'].'/lean/learn/');
 define("LOADER", ROOT_URL.'App/Views/Utils/classes_loader.php');
 define("AUTH", ROOT_URL.'App/Views/Utils/auth.php');
 define("VIEWS", ROOT_URL.'App/Views/');
@@ -12,4 +12,6 @@ require AUTH;
 define("USER_NAME", $_SESSION['user_names']);
 define("USER_ID", $_SESSION['user_id']);
 define("USER_TYPE", $_SESSION['user_type']);
+define('PROFILES_PATH', ROOT_URL.'Uploads/Profiles/');
+
 ?>

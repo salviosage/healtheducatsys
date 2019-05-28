@@ -1,5 +1,5 @@
 <?php 
-require $_SERVER['DOCUMENT_ROOT']."/learn/App/Views/Utils/classes_loader.php";
+require $_SERVER['DOCUMENT_ROOT']."/lean/learn/App/Views/Utils/classes_loader.php";
 if((isset($_POST['email']) && $_POST['email']!='') && (isset($_POST['password']) && $_POST['password']!='')){
 	$email=$function->sanitize($_POST['email']);
 	$password=$function->sanitize($_POST['password']);

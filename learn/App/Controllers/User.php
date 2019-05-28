@@ -19,6 +19,19 @@ class User extends Execute{
 		}
 		return $field_value;
 	}
+	public function getUserPersonalInfo($user_id){
+		$sql="SELECT * FROM ".Tables::users()." WHERE id=\"$user_id\" LIMIT 1";
+		return $this->querying($sql);
+	}
+	public function getUserProffession($pro_id){
+		$sql="SELECT * FROM users_profession WHERE id=\"$pro_id\"";
+		return $this->querying($sql);
+	}
+	public function updateProfileImage($user_id,$image_path){
+		$array=array("profile_image"=>$image_path);
+		$where=array("id"=>$user_id);
+		return $this->query_update(Tables::users(),$where,$array);
+	}
 }
 $user=new User();
 ?>

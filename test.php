@@ -1,6 +1,5 @@
-<?php 
-// define("APP_URL", $_SERVER['DOCUMENT_ROOT'].'/learn/App/Views/Utils/classes_loader.php');
-// require APP_URL;
-// var_dump($admin->loadCourseInfo(5));
+<?php
+define("APP_URL", __DIR__.'/learn/App/Views/Utils/classes_loader.php');
+require APP_URL;
 echo __DIR__;
 ?>

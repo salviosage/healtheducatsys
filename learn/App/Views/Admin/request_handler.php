@@ -68,9 +68,9 @@ if(isset($_POST['input'])){
 			}
 		}
 	}else{
-		echo '500';
+		echo '501';
 	}
 }else{
-	echo "500";
+	echo "404";
 }
 ?>
