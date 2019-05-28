@@ -12,7 +12,7 @@
         </h2>
         <p class="lead">
           <span class="text-primary">
-            <?php echo count($admin->publicAllCourses()); ?>
+            <?php echo count($admin->loadCourses('ACTIVE')); ?>
           </span> courses found
         </p>
        </div>

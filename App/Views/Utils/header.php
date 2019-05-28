@@ -34,65 +34,7 @@
     </div> <!-- END END row-->
   </div> <!-- END container-->
 </header>
-<nav class="ec-nav sticky-top bg-white">
-<div class="container">
-  <div class="navbar p-0 navbar-expand-lg">
-    <div class="navbar-brand">
-      <a class="logo-default" href="index"><img alt="" src="assets/img/logo-white.png"></a>
-    </div>
-    <span aria-expanded="false" class="navbar-toggler ml-auto collapsed" data-target="#ec-nav__collapsible" data-toggle="collapse">
-      <div class="hamburger hamburger--spin js-hamburger">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
-        </div>
-      </div>
-    </span>
-    <div class="collapse navbar-collapse when-collapsed" id="ec-nav__collapsible">
-      <ul class="nav navbar-nav ec-nav__navbar ml-auto">
-
-
-          <li style="display: non" class="nav-item nav-item__has-dropdown">
-              <a class="nav-link dropdown-toggle" href="courses" data-toggle="dropdown">Courses</a>
-              <ul class="dropdown-menu">
-                <li><a href="courses" class="nav-link__list">All Courses</a></li>
-                <li><a href="#" class="nav-link__list">Courses 1</a></li>
-                <li><a href="#" class="nav-link__list">cardiac courses</a></li>
-                <li><a href="#" class="nav-link__list">Courses pharmacy</a></li>
-                <li><a href="#" class="nav-link__list">Courses 7</a></li>
-                <li><a href="#" class="nav-link__list">Courses conbien </a></li>
-              </ul>
-          </li>
-
-          <li class="nav-item nav-item__has-dropdown">
-              <a class="nav-link" href="about">About</a>
-          </li>
-          <li>
-            <a class="nav-link" href="faq"> FAQs </a>
-          </li>
-          <li>
-           <a class="nav-link" href="contact">Contact</a>
-        </li>
-       
-        
-      
-      </ul>
-    </div>
-    <div class="nav-toolbar">
-      <ul class="navbar-nav ec-nav__navbar">
-       
-        <li class="nav-item">
-          <a class="nav-link site-search-toggler" href="#">
-            <i class="ti-search"></i>
-          </a>
-        </li>
-        <li class="nav-link list-inline-item ">
-          <a href="login">login</a>
-        </li>
-      </ul>
-    </div>		
-  </div>
-</div> <!-- END container-->		
-</nav> <!-- END ec-nav -->  
+<?php include 'navs.php'; ?> 
 <div class="site-search">
  <div class="site-search__close bg-black-0_8"></div>
  <form class="form-site-search" action="#" method="POST">
