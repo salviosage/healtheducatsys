@@ -1,0 +1,8 @@
+RewriteEngine on
+# Rewrite for index.php
+RewriteRule ^index$ index.php [NC,L]
+RewriteRule ^save_credit$ App/Views/Teacher/save_credit.php [NC,L]
+RewriteRule ^request_handler$ App/Views/Admin/request_handler.php [NC,L]
+RewriteRule ^login$ access_system.php [NC,L]
+RewriteRule ^login_request$ App/Views/Login/login_user.php [NC,L]
+RewriteRule ^logoff$ App/Views/Login/log_user_out.php [NC,L]

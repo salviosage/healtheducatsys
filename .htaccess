@@ -1,0 +1,28 @@
+RewriteEngine on
+# Rewrite for index.php
+RewriteRule ^404$ page_404.php [NC,L]
+ErrorDocument 404 http://localhost/lean/404
+RewriteRule ^index$ index.php [NC,L]
+RewriteRule ^courses$ courses_all.php [NC,L]
+RewriteRule ^course$ view_course.php [NC,L]
+RewriteRule ^login$ user_login.php [NC,L]
+RewriteRule ^register$ sign_up.php [NC,L]
+RewriteRule ^about$ about_us.php [NC,L]
+RewriteRule ^faq$ faq_questions.php [NC,L]
+RewriteRule ^contact$ contact_us.php [NC,L]
+RewriteRule ^become-instructor$ be_instructor.php [NC,L]
+RewriteRule ^events$ events_all.php [NC,L]
+RewriteRule ^event$ view_event.php [NC,L]
+RewriteRule ^instructor$ instructor_full_profile.php [NC,L]
+RewriteRule ^help_support$ page_help_support.php [NC,L]
+RewriteRule ^privacy$ privacy_page.php [NC,L]
+RewriteRule ^learner$ student_dashboard.php [NC,L]
+RewriteRule ^student$ student_full_profile.php [NC,L]
+RewriteRule ^password-recovery$ password_recovering.php [NC,L]
+RewriteRule ^notice$ notice_page.php [NC,L]
+RewriteRule ^view_course$ course_page.php [NC,L]
+
+RewriteRule ^register_student$ learn/App/Views/Register/register_student.php
+RewriteRule ^login_user$ learn/App/Views/Register/login_user.php
+RewriteRule ^upload_pic$ learn/App/Views/Profile/upload_photo.php
+RewriteRule ^logoff$ learn/App/Views/Login/log_user_out.php [NC,L]
