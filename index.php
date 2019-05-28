@@ -153,64 +153,65 @@ require APP_URL;
 
 
     
-<section class="padding-y-100 bg-light">
-  <div class="container">
-    <div class="row">
-     <div class="col-12 text-center">
-        <h2>
-          What Other Said
-        </h2>
-        <div class="width-4rem height-4 bg-primary my-2 mx-auto rounded"></div>
-      </div>
-      
-      <div class="col-md-4 mt-5">
-        <div class="card height-100p text-center px-4 py-5 shadow-v2">
-          <p>
-            Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
-          </p>
-          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/4.jpg" alt="">
-          <h6 class="mb-0">
-            Kenelia Deshmukh
-          </h6>
-          <p class="font-size-14 text-gray mb-0">
-            Developer Instructor
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-md-4 mt-5">
-        <div class="card height-100p text-center px-4 py-5 shadow-v2">
-          <p>
-            Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
-          </p>
-          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/5.jpg" alt="">
-          <h6 class="mb-0">
-            Colt Steele
-          </h6>
-          <p class="font-size-14 text-gray mb-0">
-            Developer Instructor
-          </p>
-        </div>
-      </div>
-      
-      <div class="col-md-4 mt-5">
-        <div class="card height-100p text-center px-4 py-5 shadow-v2">
-          <p>
-            Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
-          </p>
-          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/6.jpg" alt="">
-          <h6 class="mb-0">
-            Stephen Grider
-          </h6>
-          <p class="font-size-14 text-gray mb-0">
-            Developer Instructor
-          </p>
-        </div>
-      </div>
-      
-    </div> <!-- END row-->
-  </div> <!-- END container-->
-</section>
+        <section class="padding-y-100 bg-light">
+          <div class="container">
+            <div class="row">
+             <div class="col-12 text-center">
+                <h2>
+                  What Other Said
+                </h2>
+                <div class="width-4rem height-4 bg-primary my-2 mx-auto rounded"></div>
+              </div>
+              
+              <div class="col-md-4 mt-5">
+                <div class="card height-100p text-center px-4 py-5 shadow-v2">
+                  <p>
+                    I have enjoyed doing courses online and helped me to save time and money, this process allowed me to balance my work and I had the capacity to time for myself in learning. 
+                    
+                  </p>
+                  <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/julie.jpeg" alt="">
+                  <h6 class="mb-0">
+                    Ingabire Marie Julie
+                  </h6>
+                  <p class="font-size-14 text-gray mb-0">
+                    Biomedical Laboratory Scientist
+                  </p>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mt-5">
+                <div class="card height-100p text-center px-4 py-5 shadow-v2">
+                  <p>
+                    I developed a course on "NDT Bobath Approach for this platform, this is a smart way to develop our capacity in continuous professional education for Health Professionals
+                  </p>
+                  <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/ines.jpeg" alt="">
+                  <h6 class="mb-0">
+                    Ines Musabyemariya 
+                  </h6>
+                  <p class="font-size-14 text-gray mb-0">
+                    NDT Bobath Specialist, PT
+                  </p>
+                </div>
+              </div>
+              
+              <div class="col-md-4 mt-5">
+                <div class="card height-100p text-center px-4 py-5 shadow-v2">
+                  <p>
+                    I am a Physical Therapist, I have had courses online on this platform, it eased my work and gave me access to different specialists, I enjoyed learning on my free time and can recommend this process to my fellow colleagues
+                  </p>
+                  <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/ujeneza.jpeg" alt="">
+                  <h6 class="mb-0">
+                    UJENEZA Jeniffer 
+                  </h6>
+                  <p class="font-size-14 text-gray mb-0">
+                    Physical Theapist.
+                  </p>
+                </div>
+              </div>
+              
+            </div> <!-- END row-->
+          </div> <!-- END container-->
+        </section>
 
 
   
