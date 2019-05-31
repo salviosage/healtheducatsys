@@ -22,6 +22,7 @@ RewriteRule ^password-recovery$ password_recovering.php [NC,L]
 RewriteRule ^notice$ notice_page.php [NC,L]
 RewriteRule ^view_course$ course_page.php [NC,L]
 
+RewriteRule ^register_teacher$ learn/App/Views/Register/register_teacher.php
 RewriteRule ^register_student$ learn/App/Views/Register/register_student.php
 RewriteRule ^login_user$ learn/App/Views/Register/login_user.php
 RewriteRule ^upload_pic$ learn/App/Views/Profile/upload_photo.php

@@ -14,9 +14,10 @@ if(isset($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['
 	$confirm_pwd=$function->sanitize($_POST['confirm_pwd']);
 	$names=$first_name.' '.$last_name;
 	$address=$user_country.' / '.$user_city;
+	$token=md5($function->generateHash());
 	if($user_password==$confirm_pwd){
 	//save student record
-	$save_status=$admin->registerStudent($names,$user_email,$user_password,$user_phone,$address,$user_degree,$user_profession);
+	$save_status=$admin->registerStudent($names,$user_email,$user_password,$user_phone,$address,$user_degree,$user_profession,$token);
 	if($save_status){
 		echo "200";
 	}else{

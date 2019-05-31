@@ -39,7 +39,7 @@ include ROUTER_HEAD;
                         <?php 
                         if(isset($_GET['request']) && $_GET['request']!=''){
                             $request=$_GET['request'];
-                            $admin_request=array("course_listing","create_course","manage_teachers","create_teacher");
+                            $admin_request=array("course_listing","create_course","manage_teachers","create_teacher","unverified_teachers","verified_teachers","clients_list");
                             $teacher_request=array("assigned_courses","course_credits","add_course_credit","list_credits","credit_quiz");
                             if(USER_TYPE==1){
                                 if(in_array($request, $admin_request)){

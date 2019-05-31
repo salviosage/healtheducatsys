@@ -16,6 +16,7 @@ define("DIV_LOADER", UTILS."div_loader.php");
 define("APP", ROOT_URL.'App/');
 define("REGISTER", VIEWS."Register/");
 define("STUDENT_REG", REGISTER.'/student_reg.php');
+define("TEACHER_REG", REGISTER.'instructor_reg.php');
 define("USER_LOGIN", REGISTER.'user_login.php');
 define('APP_NAME', 'Top Upgrade');
 

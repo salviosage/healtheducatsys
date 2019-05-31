@@ -8,6 +8,12 @@ $profile_image=$function->extract_array($personalInfo,"profile_image");
 $profession_id=$function->extract_array($personalInfo,"profession");
 $profession_array=$user->getUserProffession($profession_id);
 $profession=$function->extract_array($profession_array,"name");
+$profile_url='';
+if(USER_TYPE==2){
+  $profile_url="instructor";
+}elseif(USER_TYPE==3){
+  $profile_url="student";
+}
 ?>
 <header class="site-header bg-dark text-white-0_5">        
   <div class="container">
@@ -49,7 +55,7 @@ $profession=$function->extract_array($profession_array,"name");
 <div class="container">
   <div class="navbar p-0 navbar-expand-lg">
     <div class="navbar-brand">
-      <a class="logo-default" href="index.html"><img alt="" src="assets/img/logo-white.png"></a>
+      <a class="logo-default" href="index"><img alt="" src="assets/img/logo-white.png"></a>
     </div>
     <span aria-expanded="false" class="navbar-toggler ml-auto collapsed" data-target="#ec-nav__collapsible" data-toggle="collapse">
       <div class="hamburger hamburger--spin js-hamburger">
@@ -63,7 +69,7 @@ $profession=$function->extract_array($profession_array,"name");
 
 
         <li class="nav-item ">
-          <a href="login.html" class=" btn btn-primary mt-3 mx-2 animated slideInUp">All Courses</a>
+          <a href="loall-courses" class=" btn btn-primary mt-3 mx-2 animated slideInUp">All Courses</a>
         </li>
 
           <li class="nav-item ">
@@ -77,8 +83,8 @@ $profession=$function->extract_array($profession_array,"name");
         </li>
         
         <li class="nav-item">
-          
-                  <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+
+                  <a href="<?php echo $profile_url; ?>" class="dropdown-toggle nav-link">
                    <span>
                      <?php echo USER_NAMES; ?>
                    </span>

@@ -5,7 +5,7 @@ define("AUTH", ROOT_URL.'App/Views/Utils/auth.php');
 define("VIEWS", ROOT_URL.'App/Views/');
 define("ADMIN_URL", VIEWS.'Admin/');
 define("MEMBER_URL", VIEWS.'Member/');
-define("APP_NAME", 'Arums Group');
+define("APP_NAME", 'Top upgrade LTD');
 define("ROUTER_HEAD", ROOT_URL.'App/Views/Utils/router_head.php');
 require AUTH;
 //user constants

@@ -30,6 +30,12 @@ class Tables {
 	public function themes(){
 		return 'theme_colors';
 	}
+	public function profession(){
+		return 'users_profession';
+	}
+	public function degree(){
+		return 'users_degree';
+	}
 }
 $tables=new Tables();
 ?>

@@ -2,9 +2,14 @@
 class Admin extends Execute{
 	private $allowed_status=array("ACTIVE","SUBMITTED","ENDED","PENDING");
 	private $users_types=array(1,2,3,4,5);
+	//register teacher
+	public function registerTeacher($names,$email,$password,$phone,$address,$degree,$profession,$token){
+		$array=array("names"=>$names,"email"=>$email,"password"=>$password,"phone"=>$phone,"user_type"=>2,"verified"=>0,"verification_code"=>mt_rand(10,10000),"address"=>$address,"status"=>0,"degree"=>$degree,"profession"=>$profession,"token"=>$token);
+		return $this->multi_insert(Tables::users(),$array);
+	}
 	//register student
-	public function registerStudent($names,$email,$password,$phone,$address,$degree,$profession){
-		$array=array("names"=>$names,"email"=>$email,"password"=>$password,"phone"=>$phone,"user_type"=>3,"verified"=>1,"verification_code"=>mt_rand(10,10000),"address"=>$address,"status"=>1,"degree"=>$degree,"profession"=>$profession);
+	public function registerStudent($names,$email,$password,$phone,$address,$degree,$profession,$token){
+		$array=array("names"=>$names,"email"=>$email,"password"=>$password,"phone"=>$phone,"user_type"=>3,"verified"=>1,"verification_code"=>mt_rand(10,10000),"address"=>$address,"status"=>1,"degree"=>$degree,"profession"=>$profession,"token"=>$token);
 		return $this->multi_insert(Tables::users(),$array);
 	}
 	//save course
@@ -24,6 +29,28 @@ class Admin extends Execute{
 		}
 
 		return $this->querying($sql);	
+	}
+	//load course instructor
+	public function unverifiedTeachers(){
+		$sql="SELECT * FROM ".Tables::users()." WHERE user_type=2 AND verified=0 ORDER BY names ASC";
+		return $this->querying($sql);
+
+	}
+	public function verifiedTeachers(){
+		$sql="SELECT * FROM ".Tables::users()." WHERE user_type=2 AND (verified=1 AND status=1) ORDER BY names ASC";
+		return $this->querying($sql);
+
+	}
+	//verify reg instructor
+	public function verifyRegTeacher($teacher_id){
+		$array=array("verified"=>1,"status"=>1);
+		$where=array("id"=>$teacher_id);
+		return $this->query_update(Tables::users(),$where,$array);
+	}
+	public function clientsList(){
+		$sql="SELECT * FROM ".Tables::users()." WHERE user_type=3 AND (verified=1 AND status=1) ORDER BY names ASC";
+		return $this->querying($sql);
+
 	}
 	public function saveTeacher($names,$email,$phone,$status){
 		$array=array("names"=>$names,"email"=>$email,"password"=>'123456',"phone"=>$phone,"user_type"=>2,"verified"=>1,"verification_code"=>mt_rand(10,10000),"status"=>$status);
@@ -115,6 +142,16 @@ class Admin extends Execute{
 		}
 		
 		return $this->querying($sql);
+	}
+	//get profession name from id
+	public function getProfDegreeFromId($table,$prof_id){
+		$sql="SELECT name FROM ".$table." WHERE id=\"$prof_id\" LIMIT 1 ";
+		$result=$this->querying($sql);
+		$prof='';
+		foreach ($result as $key => $value) {
+			$prof=$value['name'];
+		}
+		return $prof;
 	}
 }
 $admin=new Admin();

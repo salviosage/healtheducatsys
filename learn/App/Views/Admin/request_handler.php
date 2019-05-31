@@ -66,6 +66,14 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
+		}elseif($action=='verify_reg_teacher'){
+			$teacher_id=$function->sanitize($input[1]);
+			$status=$admin->verifyRegTeacher($teacher_id);
+			if($status){
+				echo $success;
+			}else{
+				echo $error;
+			}
 		}
 	}else{
 		echo '501';

@@ -1,14 +1,14 @@
 <?php 
 $available_courses=$admin->loadCourses('ACTIVE');
 ?>
-<section class="padding-y-100 bg-light-v5">
+<section class="padding-y-5 bg-light-v5">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center mb-5">
-        <h2 class="mb-4">
+        <h2 class="mb-1">
           Browse Our Top Courses
         </h2>
-        <div class="width-3rem height-4 rounded bg-primary mx-auto"></div>
+        <div class="width-3rem height-1 rounded bg-primary mx-auto"></div>
       </div>
       
       <div class="col-12">

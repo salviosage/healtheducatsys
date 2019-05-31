@@ -2,7 +2,7 @@
 <div class="container">
   <div class="navbar p-0 navbar-expand-lg">
     <div class="navbar-brand">
-      <a class="logo-default" href="index.html"><img alt="" src="assets/img/logo-white.png"></a>
+      <a class="logo-default" href="index"><img alt="" src="assets/img/logo-white.png"></a>
     </div>
     <span aria-expanded="false" class="navbar-toggler ml-auto collapsed" data-target="#ec-nav__collapsible" data-toggle="collapse">
       <div class="hamburger hamburger--spin js-hamburger">
@@ -37,7 +37,7 @@
             <a href="login" class=" btn  mt-3 mx-2 animated slideInUp ">login</a>
           </li>
           <li class="nav-item ">
-              <a href="login" class=" btn btn-primary mt-3 mx-2 animated slideInUp">Get Started</a>
+              <a href="register" class=" btn btn-primary mt-3 mx-2 animated slideInUp">Get Started</a>
             </li>
             <li class="nav-item">
                 <a class=" btn  mt-3 mx-2  slideInUp site-search-toggler" href="#">

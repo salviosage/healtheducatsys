@@ -23,11 +23,24 @@
                         <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-users"></i> <span>Manage Clients </span> <span class="menu-arrow"></span></a>
                         <ul class="list-unstyled">
                             <li><a href="?create_course">Create new Client</a></li>
-                            <li><a href="?list_courses">Clients Listing</a></li>
+                            <li><a href="?request=clients_list">Clients Listing</a></li>
                         </ul>
                     </li>
                     <li class="has_sub">
                         <a href="?request=manage_teachers" class="waves-effect"><i class="fa fa-user-plus"></i><span> Manage Teachers </span> </a>
+                    </li>
+                   <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user-plus"></i> <span>Manage Teachers </span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="?request=create_course">Create new Teacher</a></li>
+                            <li><a href="?request=verified_teachers">Verified Teachers</a></li>
+                            <li><a href="?request=unverified_teachers">Unverified Teachers</a></li>
+                            <li>
+                                <a href="?request=manage_teachers">
+                                    All Teachers
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <?php
                 }elseif(USER_TYPE==2){

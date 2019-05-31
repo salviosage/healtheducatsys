@@ -5,6 +5,14 @@ require LOADER;
 define("USER_NAMES", $_SESSION['user_names']);
 define("USER_ID", $_SESSION['user_id']);
 define("USER_TYPE", $_SESSION['user_type']);
+if($_SESSION['user_type']!=3){
+  backHome();
+}
+function backHome(){
+  ?>
+  <script type="text/javascript">window.location='index';</script>
+  <?php
+}
 // //get user information
 $personalInfo=$user->getUserPersonalInfo(USER_ID);
 ?>
