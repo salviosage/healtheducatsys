@@ -2,6 +2,21 @@
 class Admin extends Execute{
 	private $allowed_status=array("ACTIVE","SUBMITTED","ENDED","PENDING");
 	private $users_types=array(1,2,3,4,5);
+
+	public function getFieldValue($table,$field_name,$id_name,$id_value){
+		$sql="SELECT ".$field_name." FROM ".$table." WHERE ".$id_name."=".$id_value;
+		$result=$this->querying($sql);
+		$field_value='';
+		foreach ($result as $key => $value) {
+			$field_value=$value[$field_name];
+		}
+		return $field_value;
+	}
+	public function changeFieldValue($table,$field_name,$field_value,$id_name,$id_value){
+		$array=array($field_name=>$field_value);
+		$where=array($id_name=>$id_value);
+		return $this->query_update($table,$where,$array);
+	}
 	//register teacher
 	public function registerTeacher($names,$email,$password,$phone,$address,$degree,$profession,$token){
 		$array=array("names"=>$names,"email"=>$email,"password"=>$password,"phone"=>$phone,"user_type"=>2,"verified"=>0,"verification_code"=>mt_rand(10,10000),"address"=>$address,"status"=>0,"degree"=>$degree,"profession"=>$profession,"token"=>$token);
@@ -152,6 +167,46 @@ class Admin extends Execute{
 			$prof=$value['name'];
 		}
 		return $prof;
+	}
+	//requesting course
+	public function StudentCourseRequest(){
+		$sql="SELECT * FROM ".Tables::requesting()." WHERE status!='DELETED' ORDER BY id DESC";
+		return $this->querying($sql);
+	}
+	public function saveStudentCourseRequest($token,$course_id,$student_id,$save_date){
+		$array=array("token"=>$token,"course_id"=>$course_id,"student_id"=>$student_id,"status"=>'REQUESTED',"request_date"=>$save_date);
+		return $this->multi_insert(Tables::requesting(),$array);
+	}
+	//check if student have already requested a course
+	public function isCourseRequested($course_id,$student_id){
+		$sql="SELECT * FROM ".Tables::requesting()." WHERE course_id=\"$course_id\" AND student_id=\"$student_id\"";
+		$result=$this->querying($sql);
+		$status=false;
+		if(count($result)>0){
+			$status=true;
+		}else{
+			$status=false;
+		}
+		return $status;
+	}
+	public function isRequestedApproved($course_id,$student_id){
+		$sql="SELECT * FROM ".Tables::requesting()." WHERE (course_id=\"$course_id\" AND student_id=\"$student_id\") AND status='APPROVED'";
+		$result=$this->querying($sql);
+		$status=false;
+		if(count($result)>0){
+			$status=true;
+		}else{
+			$status=false;
+		}
+		return $status;
+	}
+	public function saveToLearn($token,$course_id,$to_learn,$save_date){
+		$array=array("token"=>$token,"course_id"=>$course_id,"to_learn"=>$to_learn,"status"=>'ACTIVE',"save_date"=>$save_date);
+		return $this->multi_insert(Tables::to_learn(),$array);
+	}
+	public function getWhatToLearn($course_id){
+		$sql="SELECT * FROM ".Tables::to_learn()." WHERE course_id=\"$course_id\" AND status!='DELETED' ORDER BY id DESC";
+		return $this->querying($sql);
 	}
 }
 $admin=new Admin();

@@ -36,6 +36,12 @@ class Tables {
 	public function degree(){
 		return 'users_degree';
 	}
+	public function requesting(){
+		return "courses_requesting";
+	}
+	public function to_learn(){
+		return 'what_to_learn';
+	}
 }
 $tables=new Tables();
 ?>

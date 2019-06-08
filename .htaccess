@@ -21,6 +21,8 @@ RewriteRule ^student$ student_full_profile.php [NC,L]
 RewriteRule ^password-recovery$ password_recovering.php [NC,L]
 RewriteRule ^notice$ notice_page.php [NC,L]
 RewriteRule ^view_course$ course_page.php [NC,L]
+RewriteRule ^course-details$ auth_course.php [NC,L]
+RewriteRule ^request_handler$ learn/App/Views/Admin/request_handler.php [NC,L]
 
 RewriteRule ^register_teacher$ learn/App/Views/Register/register_teacher.php
 RewriteRule ^register_student$ learn/App/Views/Register/register_student.php

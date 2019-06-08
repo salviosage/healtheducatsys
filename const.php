@@ -19,6 +19,6 @@ define("STUDENT_REG", REGISTER.'/student_reg.php');
 define("TEACHER_REG", REGISTER.'instructor_reg.php');
 define("USER_LOGIN", REGISTER.'user_login.php');
 define('APP_NAME', 'Top Upgrade');
-
+define("AUTH_CONST", UTILS.'auth_const.php');
 require APP_URL;
 ?>

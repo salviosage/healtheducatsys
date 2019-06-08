@@ -4,4 +4,5 @@ define("ROOT_URL", $_SERVER['DOCUMENT_ROOT'].'/lean/');
 define("VIEWS", ROOT_URL."App/Views/");
 define("UTILS", VIEWS."Utils/");
 define("HEADER",UTILS."header.php");
+define("AUTH_CONST", UTILS.'auth_const.php');
 ?>

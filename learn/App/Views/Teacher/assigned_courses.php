@@ -30,6 +30,7 @@ $courses=$admin->loadTeacherCourses(USER_ID);
                         foreach ($courses as $key => $course) {
                             $addCreditUrl="?request=add_course_credit&title=".$course['title']."&course=".$course['id'];
                             $listCreditsUrl="?request=list_credits&title=".$course['title']."&course=".$course['id'];
+                            $to_learn="?request=what_you_learn&title=".$course['title']."&course=".$course['id'];
                             ?>
                             <tr role="row" class="even">
                                 <td class="sorting_1" tabindex="0">
@@ -64,13 +65,13 @@ $courses=$admin->loadTeacherCourses(USER_ID);
                                     ?>
                                 </td>
                                 <td>
-                                    <div class="btn-group m-b-10">
-                                        <a href="<?php echo $addCreditUrl; ?>" class="btn btn-success waves-effect">
-                                            <i class="fa fa-plus"></i>
-                                        </a>
-                                        <a href="<?php echo $listCreditsUrl; ?>" class="btn btn-danger waves-effect">
-                                            <i class="fa fa-eye"></i>
-                                        </a>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false"> Actions <span class="caret"></span> </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="<?php echo $addCreditUrl; ?>">Add Credit</a></li>
+                                            <li><a href="<?php echo $to_learn; ?>">What you will Learn</a></li>
+                                            <li><a href="<?php echo $listCreditsUrl; ?>">List Credits</a></li>
+                                        </ul>
                                     </div>
                                 </td>
                             </tr>

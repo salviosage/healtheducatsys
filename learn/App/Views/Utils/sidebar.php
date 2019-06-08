@@ -24,6 +24,9 @@
                         <ul class="list-unstyled">
                             <li><a href="?create_course">Create new Client</a></li>
                             <li><a href="?request=clients_list">Clients Listing</a></li>
+                            <li><a href="?request=requested_courses">
+                                Requested Courses
+                            </a></li>
                         </ul>
                     </li>
                     <li class="has_sub">

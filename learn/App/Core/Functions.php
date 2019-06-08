@@ -212,6 +212,13 @@ class Validate{
         $hash = base64_encode($bytes);
         return $hash;
     }
+    public function backHome(){
+        ?>
+        <script type="text/javascript">
+            window.location='index';
+        </script>
+        <?php
+    }
 }
 $function=new Validate();
 ?>

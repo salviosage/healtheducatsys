@@ -30,7 +30,10 @@ include ROUTER_HEAD;
             <?php include VIEWS.'Utils/navbar.php'; ?>
             <?php include VIEWS.'Utils/sidebar.php'; ?>
             <?php include VIEWS.'Modal/add_quiz.php'; ?>
-            <?php include VIEWS.'Modal/add_question.php'; ?>
+            <?php
+                include VIEWS.'Modal/add_question.php';
+                include VIEWS.'Modal/what_to_learn.php';
+            ?>
             <div class="content-page">
                 <!-- Start content -->
                 <div class="content">
@@ -39,8 +42,8 @@ include ROUTER_HEAD;
                         <?php 
                         if(isset($_GET['request']) && $_GET['request']!=''){
                             $request=$_GET['request'];
-                            $admin_request=array("course_listing","create_course","manage_teachers","create_teacher","unverified_teachers","verified_teachers","clients_list");
-                            $teacher_request=array("assigned_courses","course_credits","add_course_credit","list_credits","credit_quiz");
+                            $admin_request=array("course_listing","create_course","manage_teachers","create_teacher","unverified_teachers","verified_teachers","clients_list","requested_courses");
+                            $teacher_request=array("assigned_courses","course_credits","add_course_credit","list_credits","credit_quiz","what_you_learn");
                             if(USER_TYPE==1){
                                 if(in_array($request, $admin_request)){
                                     include VIEWS.'Admin/'.$request.'.php';
@@ -53,6 +56,8 @@ include ROUTER_HEAD;
                         }else{
                             if(USER_TYPE==1){
                                 include VIEWS.'Admin/dashboard.php';
+                            }elseif(USER_TYPE==2){
+                                include VIEWS.'Teacher/dashboard.php';
                             }
                         }
                         ?>

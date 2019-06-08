@@ -1,4 +1,5 @@
 <?php
+$personalInfo=$user->getUserPersonalInfo(USER_ID);
 $email=$function->extract_array($personalInfo,"email");
 $names=$function->extract_array($personalInfo,"names");
 $phone=$function->extract_array($personalInfo,"phone");
@@ -69,7 +70,7 @@ if(USER_TYPE==2){
 
 
         <li class="nav-item ">
-          <a href="loall-courses" class=" btn btn-primary mt-3 mx-2 animated slideInUp">All Courses</a>
+          <a href="courses" class=" btn btn-primary mt-3 mx-2 animated slideInUp">All Courses</a>
         </li>
 
           <li class="nav-item ">
@@ -81,50 +82,52 @@ if(USER_TYPE==2){
           <li class="nav-item ">
            <a class="nav-link" href="contact">Contact</a>
         </li>
-        
-        <li class="nav-item">
-
-                  <a href="<?php echo $profile_url; ?>" class="dropdown-toggle nav-link">
-                   <span>
-                     <?php echo USER_NAMES; ?>
-                   </span>
-                    <?php 
-                    if($profile_image!=''){
+        <li class="nav-item nav-item__has-dropdown">
+            <a class="nav-link dropdown-toggle" href="<?php echo $profile_url; ?>" data-toggle="dropdown"> 
+                 <span>
+                   <?php echo USER_NAMES; ?>
+                 </span>
+                  <?php 
+                  if($profile_image!=''){
+                    ?>
+                    <img class="iconbox iconbox-sm mx-1" src="learn/Uploads/Profiles/<?php echo $profile_image; ?>" alt="">
+                    <?php
+                  }
+                  ?>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                  <?php 
+                    if(USER_TYPE==2){
                       ?>
-                      <img class="iconbox iconbox-sm mx-1" src="learn/Uploads/Profiles/<?php echo $profile_image; ?>" alt="">
+                        <a href="learn/index" class="nav-link__list" target="_blank">
+                          <span class="mr-2">
+                          <i class="fa fa-file-pdf"></i> Courses Dashboard
+                        </span>
+                        </a>
+                      <?php
+                    }elseif(USER_TYPE==3){
+                      ?>
+                        <a href="#" class="nav-link__list"><span class="mr-2">
+                          <i class="fa fa-file"></i> My Courses
+                        </span>
+                        </a>
                       <?php
                     }
-                    ?>
-                  </a>
-                 <div class="dropdown-menu">
-                   <a class="dropdown-item" href="#">
-                    <i class="ti-user mr-2"></i>
-                    <span class="mr-2">
-                      My profile
-                    </span>
-                   </a>
-                   <a class="dropdown-item" href="#">
-                    <i class="ti-email mr-2"></i>
-                    <span class="mr-2">Message</span>
-                    <span class="badge badge-success ml-auto">78</span>
-                   </a>
-                   <a class="dropdown-item" href="#">
-                    <i class="ti-settings mr-2"></i>
-                    <span class="mr-2">Another Action</span>
-                    <span class="badge badge-success ml-auto">27</span>
-                   </a>
-                   <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="#">
-                    <i class="ti-back-left mr-2"></i>
-                    <span class="mr-2">Logout</span>
-                   </a>
-                 </div>
+                  ?>
+                </li>
               
-          
-      </li>
-      <li class="nav-item ">
-          <a href="logoff" class="btn btn-primary mt-3 mx-2 animated slideInUp">LOG OUT</a>
-      </li> 
+             
+              <li><a href="" class="nav-link__list"><span class="mr-2">Notifications</span>
+                <span class="badge badge-success ml-auto">78</span></a></li>
+              
+                <li><a href="profile" class="nav-link__list"><span class="mr-2">
+                    setting
+                  </span></a></li>
+              <li><a href="logoff" class="nav-link__list"><span class="mr-2">Logout</span></a></li>
+              
+            </ul>
+        </li>
       <li class="nav-item">
           <a class=" btn  mt-3 mx-2  slideInUp site-search-toggler" href="#">
             <i class="ti-search"></i>
