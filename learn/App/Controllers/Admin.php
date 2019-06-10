@@ -45,6 +45,10 @@ class Admin extends Execute{
 
 		return $this->querying($sql);	
 	}
+	public function getPublicCourses($limit){
+		$sql="SELECT * FROM ".Tables::courses()." WHERE status='ACTIVE' ORDER BY id LIMIT ".$limit;
+		return $this->querying($sql);
+	}
 	//load course instructor
 	public function unverifiedTeachers(){
 		$sql="SELECT * FROM ".Tables::users()." WHERE user_type=2 AND verified=0 ORDER BY names ASC";

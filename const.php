@@ -20,5 +20,7 @@ define("TEACHER_REG", REGISTER.'instructor_reg.php');
 define("USER_LOGIN", REGISTER.'user_login.php');
 define('APP_NAME', 'Top Upgrade');
 define("AUTH_CONST", UTILS.'auth_const.php');
+
+define("HOME_TITLE", "Home | topugrade LTD bridge the gap between qualified health professionals who are able to deliver Continuous Professional with top uprwanda");
 require APP_URL;
 ?>

@@ -1,5 +1,5 @@
 <?php 
-$available_courses=$admin->loadCourses('ACTIVE');
+$available_courses=$admin->getPublicCourses(6);
 ?>
 <section class="padding-y-5 bg-light-v5">
   <div class="container">
