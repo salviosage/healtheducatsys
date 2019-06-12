@@ -42,6 +42,9 @@ class Tables {
 	public function to_learn(){
 		return 'what_to_learn';
 	}
+	public function contact_us(){
+		return 'contact_us';
+	}
 }
 $tables=new Tables();
 ?>

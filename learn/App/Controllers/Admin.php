@@ -212,6 +212,23 @@ class Admin extends Execute{
 		$sql="SELECT * FROM ".Tables::to_learn()." WHERE course_id=\"$course_id\" AND status!='DELETED' ORDER BY id DESC";
 		return $this->querying($sql);
 	}
+	public function savePublicMessage($names,$email,$phone,$message,$token,$save_date){
+		$array=array("token"=>$token,"names"=>$names,"email"=>$email,"phone"=>$phone,"message"=>$message,"status"=>'UNREAD',"sent_date"=>$save_date);
+		return $this->multi_insert(Tables::contact_us(),$array);
+	}
+	public function getPublicMessage($status,$limit){
+		$sql="SELECT * FROM ".Tables::contact_us();
+		if($status!="*"){
+			$sql.=" WHERE status=\"$status\" ";
+		}
+		$sql.=" ORDER BY id DESC";
+		if($limit>0){
+			$sql.=" LIMIT ".$limit;
+		}
+		
+		//return $sql;
+		return $this->querying($sql);
+	}
 }
 $admin=new Admin();
 ?>

@@ -45,6 +45,21 @@
                             </li>
                         </ul>
                     </li>
+                <li class="has_sub">
+                    <a href="index?request=contact_us" class="waves-effect"><i class="fa fa-download"></i><span> Contact Us
+                        <?php 
+                        $Messages=$admin->getPublicMessage("UNREAD",0);
+                        if(count($Messages)>0){
+                            ?>
+                            <span class="label label-danger pull-right">
+                                <?php echo count($Messages); ?>
+                            </span>
+                            <?php
+                        }
+                        ?>
+                            
+                        </span> </a>
+                </li>
                     <?php
                 }elseif(USER_TYPE==2){
                     ?>

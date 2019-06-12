@@ -69,9 +69,9 @@ $courses=$admin->loadCourses('*');
                                         <button type="button" class="btn btn-default waves-effect">
                                             <i class="fa fa-close"></i>
                                         </button>
-                                        <button type="button" class="btn btn-default waves-effect">
+                                        <a course_id="<?php echo $value['id']; ?>" href="#" class="btn btn-danger waves-effect btn_delete_course">
                                             <i class="fa fa-trash-o"></i>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>

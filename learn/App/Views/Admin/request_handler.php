@@ -112,6 +112,26 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
+		}elseif($action=="contact_us"){
+			$names=$function->sanitize($input[1]);
+			$email=$function->sanitize($input[2]);
+			$phone=$function->sanitize($input[3]);
+			$message=$function->sanitize($input[4]);
+
+			$save_status=$admin->savePublicMessage($names,$email,$phone,$message,$token,$current_date);
+			if($save_status){
+				echo "Your Message was sent Successfully we will keep in touch as Soon as Possible";
+			}else{
+				echo $error;
+			}
+		}elseif($action=="read_message"){
+			$message_id=$function->sanitize($input[1]);
+			$update_status=$admin->changeFieldValue(Tables::contact_us(),"status","READ","id",$message_id);
+			if($update_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
 		}
 	}else{
 		echo '501';

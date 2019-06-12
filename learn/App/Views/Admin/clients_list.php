@@ -5,6 +5,7 @@ $Teachers=$admin->clientsList();
     <div class="col-sm-12">
         <div class="card-box table-responsive">
             <h4 class="m-t-0 header-title"><b>Client List</b></h4>
+            <button class="btn btn-success" style="margin:5px;" data-toggle="modal" data-target="#csvModal">UPLOAD CLIENT CSV</button>
             <div id="datatable-buttons_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                 <div class="dt-buttons btn-group">
                 </div>
