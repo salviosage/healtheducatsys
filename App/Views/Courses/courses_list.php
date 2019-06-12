@@ -7,7 +7,7 @@ $available_courses=$admin->loadCourses('ACTIVE');
             <?php 
             foreach ($available_courses as $key => $course) {
               $image_url='learn/Courses/'.$course['path'];
-              $course_url='course?name='.$course['title'].'&key='.$function->generateHash().'&course_id='.$course['id'];
+              $course_url='course-details?name='.$course['title'].'&key='.$function->generateHash().'&course_id='.$course['id'];
               ?>
               <div class="col-lg-4 col-md-6 marginTop-30">
                 <div class="card text-gray overflow-hidden height-100p shadow-v1">

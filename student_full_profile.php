@@ -5,8 +5,14 @@ require LOADER;
 define("USER_NAMES", $_SESSION['user_names']);
 define("USER_ID", $_SESSION['user_id']);
 define("USER_TYPE", $_SESSION['user_type']);
-if($_SESSION['user_type']!=3){
+if($_SESSION['user_type']!=3 && $_SESSION['user_type']!=2){
   backHome();
+}else{
+  if($_SESSION['user_type']==2){
+    ?>
+     <script type="text/javascript">window.location="instructor";</script>
+    <?php
+  }
 }
 function backHome(){
   ?>
