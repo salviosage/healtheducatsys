@@ -16,7 +16,7 @@ $teacher_names=$function->extract_array($teacherInfo,"names");
       </div> 
       <?php 
       foreach ($PopularCourses as $key => $course) {
-        $course_url='course?name='.$course['title'].'&key='.$function->generateHash().'&course_id='.$course['id'];
+        $course_url='course-details?name='.$course['title'].'&key='.$function->generateHash().'&course_id='.$course['id'];
         ?>
         <div class="col-md-4 mt-5">
           <div class="card wow slideInUp" data-wow-delay=".1s">
