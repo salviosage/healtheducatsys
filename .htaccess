@@ -23,6 +23,7 @@ RewriteRule ^notice$ notice_page.php [NC,L]
 RewriteRule ^view_course$ course_page.php [NC,L]
 RewriteRule ^course-details$ auth_course.php [NC,L]
 RewriteRule ^home$ auth_home.php [NC,L]
+RewriteRule ^how-it-work$ how_it_works.php [NC,L]
 RewriteRule ^request_handler$ learn/App/Views/Admin/request_handler.php [NC,L]
 
 RewriteRule ^register_teacher$ learn/App/Views/Register/register_teacher.php

@@ -132,6 +132,40 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
+		}elseif($action=="change_password"){
+			$current_pwd=$function->sanitize($input[1]);
+			$new_pwd=$function->sanitize($input[2]);
+			$confirm_pwd=$function->sanitize($input[3]);
+			$user_id=$function->sanitize($input[4]);
+			//validate current password with user id
+			$validate_pwd=$user->validatePwd($user_id,$current_pwd);
+			if($validate_pwd){
+				//update new password
+				if($new_pwd==$confirm_pwd){
+					$update_status=$user->updateUserPassword($user_id,$new_pwd,$current_date);
+					if($update_status){
+						echo "Your Password have been Updated Successfully.Your change will take effect on next login";
+					}else{
+						echo "Something went wrong Please contact system Administrators";
+					}
+				}else{
+					echo "Entered Password do not Match.Please check new Password and their Confirmation";
+				}
+			}else{
+				echo "Current password is not correct.Please check your Credentials";
+			}
+		}elseif($action=="changes_user_profile"){
+			$user_names=$function->sanitize($input[1]);
+			$user_email=$function->sanitize($input[2]);
+			$user_phone=$function->sanitize($input[3]);
+			$user_address=$function->sanitize($input[4]);
+			$user_id=$function->sanitize($input[5]);
+			$update_status=$user->updateuserProfile($user_id,$user_names,$user_email,$user_phone,$user_address,$current_date);
+			if($update_status){
+				echo "Profile Information Updated Successfully";
+			}else{
+				echo "Something went wrong. Please contact system Administrators";
+			}
 		}
 	}else{
 		echo '501';

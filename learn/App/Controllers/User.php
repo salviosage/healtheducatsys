@@ -32,6 +32,27 @@ class User extends Execute{
 		$where=array("id"=>$user_id);
 		return $this->query_update(Tables::users(),$where,$array);
 	}
+	public function validatePwd($user_id,$current_pwd){
+		$sql="SELECT * FROM ".Tables::users()." WHERE id=\"$user_id\" AND password=\"$current_pwd\"";
+		$status=false;
+		$result_set=$this->querying($sql);
+		if(count($result_set)>0){
+			$status=true;
+		}else{
+			$status=false;
+		}
+		return $status;
+	}
+	public function updateUserPassword($user_id,$new_pwd,$current_date){
+		$array=array("password"=>$new_pwd,"save_date"=>$current_date);
+		$where=array("id"=>$user_id);
+		return $this->query_update(Tables::users(),$where,$array);
+	}
+	public function updateuserProfile($user_id,$user_names,$user_email,$user_phone,$user_address,$current_date){
+		$array=array("names"=>$user_names,"email"=>$user_email,"phone"=>$user_phone,"address"=>$user_address,"save_date"=>$current_date);
+		$where=array("id"=>$user_id);
+		return $this->query_update(Tables::users(),$where,$array);
+	}
 }
 $user=new User();
 ?>

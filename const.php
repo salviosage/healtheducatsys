@@ -10,6 +10,7 @@ define("PROFILE", VIEWS.'Profile/');
 define("PROFILE_BREAD", PROFILE.'breadcumb.php');
 define("UTILS", VIEWS."Utils/");
 define("HEADER",UTILS."header.php");
+define("FOOTER",UTILS."footer.php");
 define("STYLES",UTILS."styles.php");
 define("SCRIPT",UTILS."script.php");
 define("DIV_LOADER", UTILS."div_loader.php");

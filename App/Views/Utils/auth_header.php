@@ -16,6 +16,9 @@ if(USER_TYPE==2){
   $profile_url="student";
 }
 ?>
+<script type="text/javascript">
+  const logged_in="<?php echo USER_ID; ?>";
+</script>
 <header class="site-header bg-dark text-white-0_5">        
   <div class="container">
     <div class="row align-items-center justify-content-between mx-0">
@@ -109,21 +112,27 @@ if(USER_TYPE==2){
                     }elseif(USER_TYPE==3){
                       ?>
                         <a href="#" class="nav-link__list"><span class="mr-2">
-                          <i class="fa fa-file"></i> My Courses
+                          My Courses
                         </span>
                         </a>
+
                       <?php
                     }
                   ?>
                 </li>
-              
-             
+                <?php 
+                if(USER_TYPE==3){
+                  ?>
+                  <li>
+                    <a href="student" class="nav-link__list">
+                        <span class="mr-2">Profile Settings</span>
+                    </a>
+                  </li>
+                  <?php
+                }
+                ?>
               <li><a href="" class="nav-link__list"><span class="mr-2">Notifications</span>
                 <span class="badge badge-success ml-auto">78</span></a></li>
-              
-                <li><a href="profile" class="nav-link__list"><span class="mr-2">
-                    setting
-                  </span></a></li>
               <li><a href="logoff" class="nav-link__list"><span class="mr-2">Logout</span></a></li>
               
             </ul>

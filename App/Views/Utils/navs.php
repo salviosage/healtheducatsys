@@ -30,7 +30,7 @@
            <a class="nav-link" href="contact">Contact</a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="howitworks.html">How it works</a>
+            <a class="nav-link" href="how-it-work">How it works</a>
          </li>
        
          <li class="nav-item  ">
