@@ -9,6 +9,12 @@ if(isset($_GET['course_id']) && $_GET['course_id']!='' && isset($_GET['name']) &
   $courseInfo=$admin->loadCourseInfo($course_id);
   $teacher_id=$function->extract_array($courseInfo,"assigned_teacher");
   $Tolearn=$admin->getWhatToLearn($course_id);
+  //check if has paid for this course
+  $is_approved=$admin->isRequestedApproved($course_id,USER_ID);
+  $course_tab_nav="nav-link";
+  if(!$is_approved){
+    $course_tab_nav.=" disabled";
+  }
 }else{
   backHome();
 }
@@ -23,7 +29,7 @@ function backHome(){
         <meta charset="UTF-8">
         
         <!-- Title-->
-        <title>course | topugrade ltd </title>
+        <title><?php echo $name; ?> | topugrade ltd </title>
         <?php include VIEWS.'Utils/meta.php'; ?>  
         <?php include VIEWS.'Utils/styles.php'; ?>  
       </head>
@@ -62,7 +68,7 @@ function backHome(){
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#Modules" role="tab" aria-selected="false">
+                    <a class="<?php echo $course_tab_nav; ?>" data-toggle="tab" href="#Modules" role="tab" aria-selected="false" x>
                      <i class="ti-user mr-1"></i>
                      Course
                     </a>
@@ -303,55 +309,7 @@ function backHome(){
                </div>
               </div>
               <div class="tab-pane fade" id="Modules" role="tabpanel">
-                <section class="padding-y-100 border-bottom border-light">
-                  <div class="container">
-                    <div class="row">
-                      
-                    <div class="col-md-2 my-2">
-                        <ul class="nav flex-column tab-state-primary mb-3 justify-content-center" role="tablist">
-                           <li class="nav-item m-2">
-                             <a class="nav-link bg-light rounded text-center p-3 active show" data-toggle="tab" href="#Tabs_14-1" role="tab" aria-selected="true">
-                              <i class="ti-home d-block mb-2"></i>
-                               Introduction module
-                             </a>
-                           </li>
-                           <li class="nav-item m-2">
-                             <a class="nav-link bg-light rounded text-center p-3" data-toggle="tab" href="#Tabs_14-2" role="tab" aria-selected="false">
-                              <i class="ti-user d-block mb-2"></i>
-                               Reading
-                             </a>
-                           </li>
-                           <li class="nav-item m-2">
-                             <a class="nav-link bg-light rounded text-center p-3" data-toggle="tab" href="#Tabs_14-3" role="tab" aria-selected="false">
-                              <i class="ti-settings d-block mb-2"></i>
-                               Evaluation and certification
-                             </a>
-                           </li>
-                         </ul>
-                      </div>
-                      <div class="col-md-10 my-2">
-                        <div class="tab-content">
-                          <div class="tab-pane fade show active" id="Tabs_14-1" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <p>
-                              Investig ationes demons travge vunt lectores legee lrus quodk legunt saepius claritas est conctetur adip sicing. Dummy text of the printing was and typesetting industry. Lorem Ipsum has been the industry standad dummy text ever since the 1500s.
-                            </p>
-                          </div>
-                          <div class="tab-pane fade" id="Tabs_14-2" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odit beatae dolor commodi, accusamus obcaecati suscipit magnam! Incidunt dolorum laboriosam aperiam veritatis debitis voluptate veniam magnam, illum dolor pariatur ex?
-                              Investig ationes demons travge vunt lectores legee lrus quodk legunt saepius claritas est conctetur adip sicing. Dummy text of the printing was and typesetting industry. Lorem Ipsum has been the industry standad dummy text ever since the 1500s.
-                            </p>
-                          </div>
-                          <div class="tab-pane fade" id="Tabs_14-3" role="tabpanel" aria-labelledby="pills-contact-tab">
-                            <p>
-                              Investig ationes demons travge vunt lectores legee lrus quodk legunt saepius claritas est conctetur adip sicing. Dummy text of the printing was and typesetting industry. Lorem Ipsum has been the industry standad dummy text ever since the 1500s.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div> <!-- END row-->
-                  </div> <!-- END container-->
-                </section> <!-- END section-->
+                <?php include VIEWS.'Course/Modules.php'; ?>
               </div>
               <div class="tab-pane fade" id="CourseDiscussion" role="tabpanel">
                <div class="p-3">

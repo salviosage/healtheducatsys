@@ -125,6 +125,14 @@ class Admin extends Execute{
 		$sql="SELECT * FROM ".Tables::credits()." WHERE course_id=\"$course_id\" AND teacher_id=\"$teacher_id\" ORDER BY id DESC LIMIT 50";
 		return $this->querying($sql);
 	}
+	public function getCourseInfo($course_id){
+		$sql="SELECT * FROM ".Tables::courses()." WHERE id=\"$course_id\" AND status!='DELETED' LIMIT 1";
+		return $this->querying($sql);
+	}
+	public function courseModules($course_id){
+		$sql="SELECT * FROM ".Tables::credits()." WHERE course_id=\"$course_id\" AND status!='DELETED' ORDER BY id ASC LIMIT 50";
+		return $this->querying($sql);
+	}
 	//save credit quiz
 	public function saveQuiz($credit,$title,$summary,$current_date){
 		$array=array("credit_id"=>$credit,"title"=>$title,"summary"=>$summary,"save_date"=>$current_date);
@@ -175,6 +183,10 @@ class Admin extends Execute{
 	//requesting course
 	public function StudentCourseRequest(){
 		$sql="SELECT * FROM ".Tables::requesting()." WHERE status!='DELETED' ORDER BY id DESC";
+		return $this->querying($sql);
+	}
+	public function StudentCourse($student_id){
+		$sql="SELECT * FROM ".Tables::requesting()." WHERE student_id=\"$student_id\" AND status!='DELETED' ORDER BY id DESC LIMIT 10";
 		return $this->querying($sql);
 	}
 	public function saveStudentCourseRequest($token,$course_id,$student_id,$save_date){
@@ -229,6 +241,7 @@ class Admin extends Execute{
 		//return $sql;
 		return $this->querying($sql);
 	}
+
 }
 $admin=new Admin();
 ?>

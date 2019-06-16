@@ -111,7 +111,7 @@ if(USER_TYPE==2){
                       <?php
                     }elseif(USER_TYPE==3){
                       ?>
-                        <a href="#" class="nav-link__list"><span class="mr-2">
+                        <a href="dashboard" class="nav-link__list"><span class="mr-2">
                           My Courses
                         </span>
                         </a>

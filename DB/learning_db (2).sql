@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2019 at 09:54 PM
+-- Generation Time: Jun 16, 2019 at 01:53 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -21,6 +21,32 @@ SET time_zone = "+00:00";
 --
 -- Database: `learning_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_us`
+--
+
+CREATE TABLE `contact_us` (
+  `id` int(100) NOT NULL,
+  `token` varchar(1024) NOT NULL,
+  `names` varchar(1024) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `phone` varchar(200) NOT NULL,
+  `message` text NOT NULL,
+  `status` varchar(100) NOT NULL,
+  `sent_date` varchar(200) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact_us`
+--
+
+INSERT INTO `contact_us` (`id`, `token`, `names`, `email`, `phone`, `message`, `status`, `sent_date`, `timestamp`) VALUES
+(1, '79a80be714a8ef692e875e705eff7757', 'dsds', 'dsdsds@gmail.com', '0124678966', 'dssdsdsdsds', 'READ', '2019/06/10 02:54:56pm', '2019-06-10 12:54:56'),
+(2, '0c01e3e0c5d64f43c311a4df3d084452', 'dsds', 'admin@plaza.com', '0454122185445', 'lorem proigfsjfgdafdadjsadhsadksadjsagdhsagdjhsagdhsa', 'READ', '2019/06/10 02:59:12pm', '2019-06-10 12:59:12');
 
 -- --------------------------------------------------------
 
@@ -72,7 +98,8 @@ CREATE TABLE `courses_requesting` (
 --
 
 INSERT INTO `courses_requesting` (`id`, `token`, `course_id`, `student_id`, `status`, `request_date`, `timestamp`) VALUES
-(1, 'f44538610793a686122da9bfbc98fcf9', 7, 4, 'APPROVED', '2019/06/08 07:24:30pm', '2019-06-08 17:24:30');
+(1, 'f44538610793a686122da9bfbc98fcf9', 7, 4, 'APPROVED', '2019/06/08 07:24:30pm', '2019-06-08 17:24:30'),
+(2, 'f323db30e4f8a525d4681cd8a8a778b0', 5, 26, 'APPROVED', '2019/06/16 11:34:50am', '2019-06-16 09:34:50');
 
 -- --------------------------------------------------------
 
@@ -82,6 +109,7 @@ INSERT INTO `courses_requesting` (`id`, `token`, `course_id`, `student_id`, `sta
 
 CREATE TABLE `course_credits` (
   `id` int(11) NOT NULL,
+  `token` varchar(1024) NOT NULL,
   `course_id` int(100) NOT NULL,
   `teacher_id` int(100) NOT NULL,
   `credit` varchar(1024) NOT NULL,
@@ -98,12 +126,15 @@ CREATE TABLE `course_credits` (
 -- Dumping data for table `course_credits`
 --
 
-INSERT INTO `course_credits` (`id`, `course_id`, `teacher_id`, `credit`, `summary`, `credit_type`, `video_url`, `attachment`, `status`, `save_date`, `timestamp`) VALUES
-(1, 0, 2, 'Welcome to my homeland of technology', '&lt;p&gt;&lt;em&gt;&lt;strong&gt;Welcome to my homeland of technologyWelcome to my&lt;/strong&gt; &lt;/em&gt;homeland of technologyWelcome to my homeland of technologyWelcome to my homeland of technology&lt;/p&gt;', NULL, NULL, 'C:/xampp/htdocs/learn/Uploads/12-775057870319791161.PNG', 'ACTIVE', '2019/04/13 08:14:26am', '2019-04-13 06:14:26'),
-(2, 1, 0, 'Welcome to my homeland of technology', '&lt;p&gt;Software Engineering:Introduction to COmputing Eras.&lt;/p&gt;', NULL, NULL, '122121-6548822882050345270.PNG', 'ACTIVE', '2019/04/13 08:22:03am', '2019-04-13 06:22:03'),
-(3, 1, 2, 'Welcome to my homeland of technology', '&lt;p&gt;Welcome to my homeland of technologyWelcome to my homeland of technologyWelcome to my homeland of technologyWelcome to my homeland of technology&lt;/p&gt;', NULL, NULL, 'andela_proficiency_certificate-8044823061943953113.pdf', 'ACTIVE', '2019/04/13 08:24:20am', '2019-04-13 06:24:20'),
-(4, 1, 2, 'Welcome to my homeland of technology', '&lt;p&gt;Software Engineering:Introduction to COmputing Eras.&lt;/p&gt;', 'WRITTEN', '', 'search_done-1902251871146891194.PNG', 'ACTIVE', '2019/05/27 03:11:03pm', '2019-05-27 13:11:03'),
-(5, 1, 2, 'Welcome to my homeland of technology', '&lt;p&gt;video_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_url&lt;/p&gt;', 'VIDEO', 'video_url', 'search_done-15021253431437999173.PNG', 'ACTIVE', '2019/05/27 03:13:48pm', '2019-05-27 13:13:48');
+INSERT INTO `course_credits` (`id`, `token`, `course_id`, `teacher_id`, `credit`, `summary`, `credit_type`, `video_url`, `attachment`, `status`, `save_date`, `timestamp`) VALUES
+(1, '', 0, 2, 'Welcome to my homeland of technology', '&lt;p&gt;&lt;em&gt;&lt;strong&gt;Welcome to my homeland of technologyWelcome to my&lt;/strong&gt; &lt;/em&gt;homeland of technologyWelcome to my homeland of technologyWelcome to my homeland of technology&lt;/p&gt;', NULL, NULL, 'C:/xampp/htdocs/learn/Uploads/12-775057870319791161.PNG', 'ACTIVE', '2019/04/13 08:14:26am', '2019-04-13 06:14:26'),
+(2, '', 1, 0, 'Welcome to my homeland of technology', '&lt;p&gt;Software Engineering:Introduction to COmputing Eras.&lt;/p&gt;', NULL, NULL, '122121-6548822882050345270.PNG', 'ACTIVE', '2019/04/13 08:22:03am', '2019-04-13 06:22:03'),
+(3, '', 1, 2, 'Welcome to my homeland of technology', '&lt;p&gt;Welcome to my homeland of technologyWelcome to my homeland of technologyWelcome to my homeland of technologyWelcome to my homeland of technology&lt;/p&gt;', NULL, NULL, 'andela_proficiency_certificate-8044823061943953113.pdf', 'ACTIVE', '2019/04/13 08:24:20am', '2019-04-13 06:24:20'),
+(4, '', 1, 2, 'Welcome to my homeland of technology', '&lt;p&gt;Software Engineering:Introduction to COmputing Eras.&lt;/p&gt;', 'WRITTEN', '', 'search_done-1902251871146891194.PNG', 'ACTIVE', '2019/05/27 03:11:03pm', '2019-05-27 13:11:03'),
+(5, '', 1, 2, 'Welcome to my homeland of technology', '&lt;p&gt;video_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_urlvideo_url&lt;/p&gt;', 'VIDEO', 'video_url', 'search_done-15021253431437999173.PNG', 'ACTIVE', '2019/05/27 03:13:48pm', '2019-05-27 13:13:48'),
+(6, '', 5, 2, 'introduction to programming and World', '&lt;p&gt;&lt;strong&gt;introduction to programming and World&lt;/strong&gt;&lt;/p&gt;', 'WRITTEN', '', '1183126753-28679097141196350.jpg', 'ACTIVE', '2019/06/16 11:54:45am', '2019-06-16 09:54:45'),
+(7, '', 5, 2, 'variables and Data Types', '&lt;p&gt;Welcoeme to the world of variables and data types&lt;/p&gt;\r\n&lt;p&gt;&lt;iframe src=&quot;//www.youtube.com/embed/0MFC_Vw9NxY&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;allowfullscreen&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;', 'WRITTEN', '', 'millestone topupgrade application -18702060201937979998.docx', 'ACTIVE', '2019/06/16 11:56:35am', '2019-06-16 09:56:35'),
+(8, '', 8, 2, 'Customer care in Health setting', '&lt;p&gt;Customer care in Health setting&lt;/p&gt;', 'WRITTEN', '', 'logo-white-608806131455382922.png', 'ACTIVE', '2019/06/16 12:52:06pm', '2019-06-16 10:52:06');
 
 -- --------------------------------------------------------
 
@@ -142,7 +173,9 @@ CREATE TABLE `credit_quiz` (
 --
 
 INSERT INTO `credit_quiz` (`id`, `credit_id`, `title`, `summary`, `duration`, `status`, `save_date`, `timestamp`) VALUES
-(2, 3, 'Learning the Basics of Computing Era', '&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt;&amp;nbsp;dolor sit ame&lt;em&gt;t, consectetur adipisicing elit, sed do&lt;/em&gt;&amp;nbsp;eiusmod&lt;br /&gt;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&lt;br /&gt;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&lt;br /&gt;consequat. Duis aute irure dolor in r&lt;strong&gt;eprehenderit i&lt;/strong&gt;n voluptate velit esse&lt;br /&gt;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&lt;br /&gt;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;', '', '', '2019/04/13 12:32:43pm', '2019-04-13 10:32:43');
+(2, 3, 'Learning the Basics of Computing Era', '&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt;&amp;nbsp;dolor sit ame&lt;em&gt;t, consectetur adipisicing elit, sed do&lt;/em&gt;&amp;nbsp;eiusmod&lt;br /&gt;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&lt;br /&gt;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&lt;br /&gt;consequat. Duis aute irure dolor in r&lt;strong&gt;eprehenderit i&lt;/strong&gt;n voluptate velit esse&lt;br /&gt;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&lt;br /&gt;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;', '', '', '2019/04/13 12:32:43pm', '2019-04-13 10:32:43'),
+(3, 6, 'Assess your Skills ', '&lt;p&gt;&lt;strong&gt;Assess your Skills&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;', '', '', '2019/06/16 12:25:29pm', '2019-06-16 10:25:29'),
+(4, 7, 'Data scope and Access level', '&lt;p&gt;&lt;strong&gt;Lorem ipsum dolor sit amet&lt;/strong&gt;, consectetur adipisicing elit, sed do eiusmod&lt;br /&gt;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&lt;br /&gt;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&lt;br /&gt;consequat. D&lt;em&gt;uis aute irure dolor in reprehen&lt;/em&gt;derit in voluptate velit esse&lt;br /&gt;cillum dolore eu fugiat nulla pariatu&lt;em&gt;&lt;strong&gt;r. Excepteur sint occaecat&lt;/strong&gt;&lt;/em&gt; cupidatat non&lt;br /&gt;proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;', '', '', '2019/06/16 01:00:24pm', '2019-06-16 11:00:24');
 
 -- --------------------------------------------------------
 
@@ -171,7 +204,10 @@ CREATE TABLE `questions` (
 
 INSERT INTO `questions` (`id`, `quiz_id`, `question`, `answer1`, `answer2`, `answer3`, `answer4`, `answer5`, `correct`, `status`, `save_date`, `timestamp`) VALUES
 (1, 2, 'When the first Computer was invented?', 'In 1960', 'In 1962', 'In 1964', 'In 1950', 'In 1980', 'answer3', 'ACTIVE', '2019/04/13 01:23:33pm', '2019-04-13 11:23:33'),
-(2, 2, 'Who was the Inventor of C Programming Language?', 'Dennis Ritchies', 'Mark Zuckerburg', 'Bill Gates', 'Bjarne Straustop', 'No Correct Answer', 'answer1', 'ACTIVE', '2019/04/13 01:35:44pm', '2019-04-13 11:35:44');
+(2, 2, 'Who was the Inventor of C Programming Language?', 'Dennis Ritchies', 'Mark Zuckerburg', 'Bill Gates', 'Bjarne Straustop', 'No Correct Answer', 'answer1', 'ACTIVE', '2019/04/13 01:35:44pm', '2019-04-13 11:35:44'),
+(3, 3, 'How to print Hello world in C?', 'using printg', 'using printf', 'using echo function', 'Nothing', 'using include stdio', 'answer2', 'ACTIVE', '2019/06/16 12:26:11pm', '2019-06-16 10:26:11'),
+(4, 3, 'How to Declare a variable in C++', 'Datatype variable-name', 'Using var keyword', 'Text in Based', 'Video in Based', 'None', 'answer1', 'ACTIVE', '2019/06/16 12:48:07pm', '2019-06-16 10:48:07'),
+(5, 4, 'Which Level does global variable reach', 'inside scope are', 'inside main function', 'anywhere in the script', 'nowhere', 'Everywhere in proeject structure', 'answer2', 'ACTIVE', '2019/06/16 01:01:15pm', '2019-06-16 11:01:15');
 
 -- --------------------------------------------------------
 
@@ -194,6 +230,7 @@ CREATE TABLE `system_users` (
   `verified` int(2) NOT NULL,
   `verification_code` varchar(100) NOT NULL,
   `status` int(2) NOT NULL,
+  `save_date` varchar(1024) NOT NULL,
   `reg_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -201,13 +238,15 @@ CREATE TABLE `system_users` (
 -- Dumping data for table `system_users`
 --
 
-INSERT INTO `system_users` (`id`, `token`, `names`, `email`, `password`, `phone`, `degree`, `profession`, `user_type`, `address`, `profile_image`, `verified`, `verification_code`, `status`, `reg_date`) VALUES
-(1, '', 'Sugira Samuel', 'sam@gmail.com', '123456', '', NULL, NULL, 1, '', '', 1, '4545341415', 1, '2019-04-12 10:04:11'),
-(2, '', 'Teacher Mpamire', 'teacher@top.rw', '123456', '', NULL, NULL, 2, '', '', 1, '4545648', 1, '2019-04-12 11:37:16'),
-(3, '', 'Sugira samuel', 'sugira@top.rw', '123456', '0784512565', NULL, NULL, 2, '', '', 1, '1387', 1, '2019-05-27 12:22:29'),
-(4, '', 'Jean Salvi Dukuzwenimana', 'salvio@top.rw', '123456', '0784512565', 4, 1, 3, 'Rwanda / Kigali', '79c46b9bd825eb53bc3a1de43655fec9.jpg', 1, '6173', 1, '2019-05-27 23:04:14'),
-(5, '', 'salvi', 'salvi@gmail.com', '123456', '078451256', NULL, NULL, 2, '', '', 1, '5395', 1, '2019-05-28 08:28:04'),
-(6, '39e78306b1d32f8c0f1d104eb476ab83', 'sindaza green', 'sindaza@top.rw', '123456', '2507845122', 4, 5, 2, 'Rwanda / City', '', 1, '1063', 1, '2019-05-31 08:36:50');
+INSERT INTO `system_users` (`id`, `token`, `names`, `email`, `password`, `phone`, `degree`, `profession`, `user_type`, `address`, `profile_image`, `verified`, `verification_code`, `status`, `save_date`, `reg_date`) VALUES
+(1, '', 'Sugira Samuel', 'sam@gmail.com', '123456', '', NULL, NULL, 1, '', '', 1, '4545341415', 1, '', '2019-04-12 10:04:11'),
+(2, '', 'Teacher Mpamire', 'teacher@top.rw', '123456', '', NULL, NULL, 2, '', '', 1, '4545648', 1, '', '2019-04-12 11:37:16'),
+(3, '', 'Sugira samuel', 'sugira@top.rw', '123456', '0784512565', NULL, NULL, 2, '', '', 1, '1387', 1, '', '2019-05-27 12:22:29'),
+(5, '', 'salvi', 'salvi@gmail.com', '123456', '078451256', NULL, NULL, 2, '', '', 1, '5395', 1, '', '2019-05-28 08:28:04'),
+(23, '29cbe205b695a02fbf70d328a8ba0100', 'Names', 'Email', '123456', 'phone', 0, 0, 3, '', '', 1, '4429', 1, '', '2019-06-10 14:12:51'),
+(24, '964fcff5d066a8efcc38c1188e876cd8', 'Elise gakuba', 'elise@health.com', '123456', '7451211212', 0, 0, 3, '', '', 1, '4625', 1, '', '2019-06-10 14:12:51'),
+(25, '01454aec46aecad310b19df603c19284', 'Elise gakuba', 'elise@health.com', '123456', '7451211213', 0, 0, 3, '', '', 1, '7195', 1, '', '2019-06-10 14:12:51'),
+(26, '5c050edd6a5a3bc43593a38b7d039bf7', 'Ernesto Valdes', 'lean@top.rw', '123456', '0745121121', 5, 2, 3, 'Rwanda / kigali', 'b05ba568446a93b9312199d61fdfff27.jpg', 1, '7265', 1, '2019/06/16 11:01:17am', '2019-06-16 09:00:40');
 
 -- --------------------------------------------------------
 
@@ -309,6 +348,12 @@ INSERT INTO `what_to_learn` (`id`, `token`, `course_id`, `to_learn`, `status`, `
 --
 
 --
+-- Indexes for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `courses`
 --
 ALTER TABLE `courses`
@@ -373,6 +418,12 @@ ALTER TABLE `what_to_learn`
 --
 
 --
+-- AUTO_INCREMENT for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
@@ -382,13 +433,13 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `courses_requesting`
 --
 ALTER TABLE `courses_requesting`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `course_credits`
 --
 ALTER TABLE `course_credits`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `credits_attachments`
@@ -400,19 +451,19 @@ ALTER TABLE `credits_attachments`
 -- AUTO_INCREMENT for table `credit_quiz`
 --
 ALTER TABLE `credit_quiz`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `system_users`
 --
 ALTER TABLE `system_users`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `users_info`
