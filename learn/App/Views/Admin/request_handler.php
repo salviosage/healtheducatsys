@@ -17,8 +17,6 @@ if(isset($_POST['input'])){
 			$teacher=$function->sanitize($input[3]);
 			$summary=htmlspecialchars($input[4]);
 			$course_token=md5($function->generateHash());
-			echo $teacher;
-			die();
 			$save_status=$admin->saveCourse($title,$price,$teacher,$summary,$current_date,$course_token);
 			if($save_status){
 				echo $success;
