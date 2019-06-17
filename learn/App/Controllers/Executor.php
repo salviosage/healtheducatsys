@@ -39,7 +39,7 @@ class Execute extends Query{
 			}
 			$query.=")";
 		}
-		$status=$this->insert($query);
+		$status=$this->insertRecord($query);
 		return $status;
 	}
 	public function query_update($table,$where,$array){

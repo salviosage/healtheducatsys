@@ -29,14 +29,19 @@ class Admin extends Execute{
 	}
 	//save course
 	public function saveCourse($title,$price,$teacher,$summary,$current_date,$course_token){
-		$array=array("title"=>$title,"course_price"=>$price,"assigned_teacher"=>$teacher,"summary"=>$summary,"status"=>'ACTIVE',"regDate"=>$current_date,"course_token"=>$course_token);
+		$array=array("title"=>$title,"course_price"=>$price,"assigned_teacher"=>$teacher,"summary"=>$summary,"status"=>'ACTIVE',"regDate"=>$current_date,"token"=>$course_token);
 		return $this->multi_insert(Tables::courses(),$array);
+	}
+	public function editCourse($course_id,$title,$price,$teacher,$summary,$current_date){
+		$array=array("title"=>$title,"course_price"=>$price,"assigned_teacher"=>$teacher,"summary"=>$summary,"status"=>'ACTIVE',"regDate"=>$current_date);
+		$where=array("id"=>$course_id);
+		return $this->query_update(Tables::courses(),$where,$array);
 	}
 	//load available courses
 	public function loadCourses($status){
 		$sql='';
 		if($status=='*'){
-			$sql="SELECT * FROM ".Tables::courses()." ORDER BY timestamp DESC LIMIT 50";
+			$sql="SELECT * FROM ".Tables::courses()." WHERE status!='DELETED' ORDER BY timestamp DESC LIMIT 50";
 		}elseif(in_array(strtoupper($status), $this->allowed_status)){
 			$sql="SELECT * FROM ".Tables::courses()." WHERE status=\"$status\" ORDER BY timestamp DESC LIMIT 50";
 		}else{
@@ -126,7 +131,7 @@ class Admin extends Execute{
 		return $this->querying($sql);
 	}
 	public function getCourseInfo($course_id){
-		$sql="SELECT * FROM ".Tables::courses()." WHERE id=\"$course_id\" AND status!='DELETED' LIMIT 1";
+		$sql="SELECT * FROM ".Tables::courses()." WHERE id=\"$course_id\" OR token=\"$course_id\" AND status!='DELETED' LIMIT 1";
 		return $this->querying($sql);
 	}
 	public function courseModules($course_id){
