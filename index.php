@@ -46,7 +46,7 @@ require 'const.php';
                         This modern and inviting academic template is perfectly suited for school, colleges, university, on-line course, and other educational institutions.  Investig ationes demons travge
                       </p>
                       <a href="#" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
-                      <a href="#" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Registration</a>
+                      <a href="register" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Registration</a>
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ require 'const.php';
                         This modern and inviting academic template is perfectly suited for school, colleges, university, on-line course, and other educational institutions.  Investig ationes demons travge
                       </p>
                       <a href="#" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
-                      <a href="#" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Registration</a>
+                      <a href="register" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Registration</a>
                     </div>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ require 'const.php';
                         This modern and inviting academic template is perfectly suited for school, colleges, university, on-line course, and other educational institutions.  Investig ationes demons travge 
                       </p>
                       <a href="#" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
-                      <a href="#" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Get started </a>
+                      <a href="register" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Get started </a>
                     </div>
                   </div>
                 </div>
