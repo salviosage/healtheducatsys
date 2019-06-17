@@ -1,18 +1,10 @@
 <?php 
-$teachers=$admin->loadUsers(2,1);
+$teachers=$admin->loadUsers(4,1);
 ?>
 <div class="row">
     <div class="col-sm-12">
         <div class="card-box table-responsive">
-            <h4 class="m-t-0 header-title"><b>Available Instructors</b>
-                <?php 
-                if(USER_TYPE==1){
-                    ?>
-                        <a href="?request=create_teacher" class="btn btn-success pull-right">ADD NEW TEACHER</a>
-                    <?php
-                }
-                ?>
-            </h4>
+            <h4 class="m-t-0 header-title"><b>Available Regulatory bodies </b><a href="?request=create_user" class="btn btn-success pull-right">ADD REGULATORY BODY</a></h4>
             <p>You can export Resultset</p>
             <div id="datatable-buttons_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                 <div class="dt-buttons btn-group">
@@ -64,23 +56,17 @@ $teachers=$admin->loadUsers(2,1);
                                     ?>
                                 </td>
                                 <td>
-                                    <?php 
-                                    if(USER_TYPE==1){
-                                        ?>
-                                        <div class="btn-group m-b-10">
-                                            <button type="button" class="btn btn-default waves-effect">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-default waves-effect">
-                                                <i class="fa fa-close"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-default waves-effect">
-                                                <i class="fa fa-trash-o"></i>
-                                            </button>
-                                        </div>
-                                        <?php
-                                    }
-                                    ?>
+                                    <div class="btn-group m-b-10">
+                                        <button type="button" class="btn btn-default waves-effect">
+                                            <i class="fa fa-pencil"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default waves-effect">
+                                            <i class="fa fa-close"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-default waves-effect">
+                                            <i class="fa fa-trash-o"></i>
+                                        </button>
+                                    </div>
                                 </td>
                             </tr>
                             <?php

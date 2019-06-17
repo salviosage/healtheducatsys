@@ -80,6 +80,10 @@ class Admin extends Execute{
 		$array=array("names"=>$names,"email"=>$email,"password"=>'123456',"phone"=>$phone,"user_type"=>2,"verified"=>1,"verification_code"=>mt_rand(10,10000),"status"=>$status);
 		return $this->multi_insert(Tables::users(),$array);
 	}
+	public function saveUser($names,$email,$phone,$password,$status,$token,$save_date){
+		$array=array("names"=>$names,"email"=>$email,"password"=>$password,"phone"=>$phone,"user_type"=>4,"verified"=>1,"verification_code"=>mt_rand(1000,10000),"status"=>$status,"token"=>$token,"save_date"=>$save_date);
+		return $this->multi_insert(Tables::users(),$array);
+	}
 	public function getTeacherField($teacher_id,$field_name){
 		$array="SELECT * FROM ".Tables::users()." WHERE user_type=2 AND id=\"$teacher_id\"";
 		$result=$this->querying($array);

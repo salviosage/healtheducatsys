@@ -5,7 +5,13 @@ $Teachers=$admin->clientsList();
     <div class="col-sm-12">
         <div class="card-box table-responsive">
             <h4 class="m-t-0 header-title"><b>Client List</b></h4>
-            <button class="btn btn-success" style="margin:5px;" data-toggle="modal" data-target="#csvModal">UPLOAD CLIENT CSV</button>
+            <?php 
+            if(USER_TYPE==1){
+                ?>
+                <button class="btn btn-success" style="margin:5px;" data-toggle="modal" data-target="#csvModal">UPLOAD CLIENT CSV</button>
+                <?php
+            }
+            ?>
             <div id="datatable-buttons_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                 <div class="dt-buttons btn-group">
                 </div>
@@ -48,14 +54,20 @@ $Teachers=$admin->clientsList();
                                     0
                                 </td>
                                 <td>
-                                    <div class="btn-group m-b-10">
-                                        <a teacher_id="<?php echo $value['id']; ?>" href="#" class="btn btn-success waves-effect btn_approve_teacher">
-                                            <i class="fa fa-close"></i>
-                                        </a>
-                                        <button type="button" class="btn btn-danger waves-effect">
-                                            <i class="fa fa-trash-o"></i>
-                                        </button>
-                                    </div>
+                                    <?php 
+                                    if(USER_TYPE==1){
+                                        ?>
+                                        <div class="btn-group m-b-10">
+                                            <a teacher_id="<?php echo $value['id']; ?>" href="#" class="btn btn-success waves-effect btn_approve_teacher">
+                                                <i class="fa fa-close"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-danger waves-effect">
+                                                <i class="fa fa-trash-o"></i>
+                                            </button>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
                                 </td>
                             </tr>
                             <?php

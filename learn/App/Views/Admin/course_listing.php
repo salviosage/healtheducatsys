@@ -63,17 +63,23 @@ $courses=$admin->loadCourses('*');
                                     ?>
                                 </td>
                                 <td>
-                                    <div class="btn-group m-b-10">
-                                        <a href="<?php echo $edit_url; ?>" class="btn btn-default waves-effect">
-                                            <i class="fa fa-pencil"></i>
-                                        </a>
-                                        <button type="button" class="btn btn-default waves-effect">
-                                            <i class="fa fa-close"></i>
-                                        </button>
-                                        <a course_id="<?php echo $course['id']; ?>" href="#" class="btn btn-danger waves-effect btn_delete_course">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </div>
+                                    <?php 
+                                    if(USER_TYPE==1){
+                                        ?>
+                                        <div class="btn-group m-b-10">
+                                            <a href="<?php echo $edit_url; ?>" class="btn btn-default waves-effect">
+                                                <i class="fa fa-pencil"></i>
+                                            </a>
+                                            <button type="button" class="btn btn-default waves-effect">
+                                                <i class="fa fa-close"></i>
+                                            </button>
+                                            <a course_id="<?php echo $course['id']; ?>" href="#" class="btn btn-danger waves-effect btn_delete_course">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
                                 </td>
                             </tr>
                             <?php

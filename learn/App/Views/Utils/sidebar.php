@@ -30,7 +30,7 @@
                         </ul>
                     </li>
                     <li class="has_sub">
-                        <a href="?request=manage_teachers" class="waves-effect"><i class="fa fa-user-plus"></i><span> Manage Teachers </span> </a>
+                        <a href="?request=system_users" class="waves-effect"><i class="fa fa-user-times"></i><span> System Users </span> </a>
                     </li>
                    <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user-plus"></i> <span>Manage Teachers </span> <span class="menu-arrow"></span></a>
@@ -77,6 +77,24 @@
                         <a href="?request=manage_quiz" class="waves-effect"><i class="fa fa-comments-o"></i><span> Manage Quiz</span> </a>
                     </li>
                     <?php
+                }elseif(USER_TYPE==4){
+                ?>
+                    <li class="has_sub">
+                        <a href="?request=clients_list" class="waves-effect">
+                            <i class="fa fa-users"></i>
+                            <span> Clients </span> </a>
+                    </li>
+                    <li class="has_sub">
+                        <a href="?request=manage_teachers" class="waves-effect">
+                            <i class="fa fa-user-plus"></i>
+                            <span> Instructors </span> </a>
+                    </li>
+                    <li class="has_sub">
+                        <a href="?request=course_listing" class="waves-effect">
+                            <i class="fa fa-book"></i>
+                            <span> Courses </span> </a>
+                    </li>
+                <?php
                 }
                 ?>
                     <li class="has_sub">

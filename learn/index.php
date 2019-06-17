@@ -44,8 +44,9 @@ include ROUTER_HEAD;
                         <?php 
                         if(isset($_GET['request']) && $_GET['request']!=''){
                             $request=$_GET['request'];
-                            $admin_request=array("course_listing","create_course","manage_teachers","create_teacher","unverified_teachers","verified_teachers","clients_list","requested_courses","contact_us","edit_course");
-                            $teacher_request=array("assigned_courses","course_credits","add_course_credit","list_credits","credit_quiz","what_you_learn","general_quiz");
+                            $admin_request=array("course_listing","create_course","manage_teachers","create_teacher","unverified_teachers","verified_teachers","clients_list","requested_courses","contact_us","edit_course","system_users","create_user");
+                            $teacher_request=array("assigned_courses","course_credits","add_course_credit","list_credits","credit_quiz","what_you_learn","general_quiz","");
+                            $body_request=array("clients_list","manage_teachers","course_listing");
                             if(USER_TYPE==1){
                                 if(in_array($request, $admin_request)){
                                     include VIEWS.'Admin/'.$request.'.php';
@@ -53,6 +54,10 @@ include ROUTER_HEAD;
                             }elseif(USER_TYPE==2){
                                 if(in_array($request, $teacher_request)){
                                    include VIEWS.'Teacher/'.$request.'.php'; 
+                                }
+                            }elseif(USER_TYPE==4){
+                                if(in_array($request, $body_request)){
+                                    include VIEWS.'Admin/'.$request.'.php'; 
                                 }
                             }
                         }else{

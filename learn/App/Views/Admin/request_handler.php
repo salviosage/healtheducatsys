@@ -69,7 +69,20 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
-		}elseif($action=='create_teacher'){
+		}elseif($action=="create_user"){
+			$names=$function->sanitize($input[1]);
+			$email=$function->sanitize($input[2]);
+			$phone=$function->sanitize($input[3]);
+			$status=$function->sanitize($input[4]);
+			$password=$function->sanitize($input[5]);
+			$save_status=$admin->saveUser($names,$email,$phone,$password,$status,$token,$current_date);
+			if($save_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
+		}
+		elseif($action=='create_teacher'){
 			$inst_names=$function->sanitize($input[1]);
 			$inst_mail=$function->sanitize($input[2]);
 			$inst_phone=$function->sanitize($input[3]);
