@@ -11,6 +11,10 @@ class Alternate extends Database{
         $result = $conn->query($sql) or die($conn->error);
         return $result;
 	}
+	public function insertRecord($query){
+		$conn=$this->connect();
+		$result = $conn->query($sql) or die($conn->error);
+	}
 }
 $alter=new Alternate();
 ?>

@@ -28,6 +28,7 @@ $courses=$admin->loadCourses('*');
                 <tbody>
                     <?php 
                         foreach ($courses as $key => $course) {
+                            $edit_url="?request=edit_course&action=edit&course=".$course['token'];
                             ?>
                             <tr role="row" class="even">
                                 <td class="sorting_1" tabindex="0">
@@ -63,13 +64,13 @@ $courses=$admin->loadCourses('*');
                                 </td>
                                 <td>
                                     <div class="btn-group m-b-10">
-                                        <button type="button" class="btn btn-default waves-effect">
+                                        <a href="<?php echo $edit_url; ?>" class="btn btn-default waves-effect">
                                             <i class="fa fa-pencil"></i>
-                                        </button>
+                                        </a>
                                         <button type="button" class="btn btn-default waves-effect">
                                             <i class="fa fa-close"></i>
                                         </button>
-                                        <a course_id="<?php echo $value['id']; ?>" href="#" class="btn btn-danger waves-effect btn_delete_course">
+                                        <a course_id="<?php echo $course['id']; ?>" href="#" class="btn btn-danger waves-effect btn_delete_course">
                                             <i class="fa fa-trash-o"></i>
                                         </a>
                                     </div>

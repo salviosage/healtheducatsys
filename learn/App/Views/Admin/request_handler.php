@@ -25,7 +25,20 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
-		}elseif($action=='save_quiz'){
+		}elseif($action=="edit_course"){
+			$title=$function->sanitize($input[1]);
+			$price=$function->sanitize($input[2]);
+			$teacher=$function->sanitize($input[3]);
+			$summary=htmlspecialchars($input[4]);
+			$course_id=$function->sanitize($input[5]);
+			$save_status=$admin->editCourse($course_id,$title,$price,$teacher,$summary,$current_date);
+			if($save_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
+		}
+		elseif($action=='save_quiz'){
 			$credit_id=$function->sanitize($input[1]);
 			$quiz_title=$function->sanitize($input[2]);
 			$quiz_summary=htmlspecialchars($input[3]);
@@ -167,6 +180,15 @@ if(isset($_POST['input'])){
 				echo "Profile Information Updated Successfully";
 			}else{
 				echo "Something went wrong. Please contact system Administrators";
+			}
+		}elseif($action=="delete_course"){
+			$course_id=$function->sanitize($input[1]);
+			$update_status=$admin->changeFieldValue(Tables::courses(),"status","DELETED","id",$course_id);
+
+			if($update_status){
+				echo $success;
+			}else{
+				echo $error;
 			}
 		}
 	}else{
