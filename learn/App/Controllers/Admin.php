@@ -250,6 +250,15 @@ class Admin extends Execute{
 		//return $sql;
 		return $this->querying($sql);
 	}
+	//save newsletter subscription
+	public function saveNewsLetterSubscriber($names,$email,$token,$save_date){
+		$array=array("token"=>$token,"full_names"=>$names,"email"=>$email,"status"=>'UNSEND',"save_date"=>$save_date);
+		return $this->multi_insert(Tables::subscribers(),$array);
+	}
+	public function getNewsLetterSubscribers(){
+		$sql="SELECT * FROM ".Tables::subscribers()." ORDER BY id DESC ";
+		return $this->querying($sql);
+	}
 
 }
 $admin=new Admin();

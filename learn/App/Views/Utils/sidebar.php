@@ -60,6 +60,10 @@
                             
                         </span> </a>
                 </li>
+                <li class="has_sub">
+                    <a href="?request=newsletters_subscribers" class="waves-effect"><i class="fa fa-newspaper-o"></i>
+                        <span> NewsLetters </span> </a>
+                </li>
                     <?php
                 }elseif(USER_TYPE==2){
                     ?>

@@ -353,20 +353,7 @@ require 'const.php';
                   <p class="mb-4">
                     Get the latest news and update from topupgrade  
                   </p>
-                 <div class="input-group input-group--focus mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-white ti-user"></span>
-                    </div>
-                    <input type="text" class="form-control border-left-0 pl-0" placeholder="Full Names ">
-                  </div>
-                 <div class="input-group input-group--focus mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text bg-white ti-email"></span>
-                    </div>
-                    <input type="email" class="form-control border-left-0 pl-0" placeholder="Email">
-                  </div>
-                 
-                  <button class="btn btn-block btn-primary">Subscribe</button>
+                  <?php include HOME.'subscribe.php'; ?>
                 </div>
               </div>
             </div> <!-- END row-->
@@ -467,9 +454,6 @@ require 'const.php';
         <div class="scroll-top">
           <i class="ti-angle-up"></i>
         </div>
-             
-           
-          <script src="assets/js/vendors.bundle.js"></script>
-          <script src="assets/js/scripts.js"></script>
+        <?php include SCRIPT; ?>
         </body>
         </html>

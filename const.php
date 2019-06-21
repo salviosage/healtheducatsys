@@ -7,6 +7,7 @@ define("APP_URL", $_SERVER['DOCUMENT_ROOT'].'/lean/learn/App/Views/Utils/classes
 define("ROOT_URL", $_SERVER['DOCUMENT_ROOT'].'/lean/');
 define("VIEWS", ROOT_URL."App/Views/");
 define("PROFILE", VIEWS.'Profile/');
+define("HOME", VIEWS.'Home/');
 define("PROFILE_BREAD", PROFILE.'breadcumb.php');
 define("UTILS", VIEWS."Utils/");
 define("HEADER",UTILS."header.php");

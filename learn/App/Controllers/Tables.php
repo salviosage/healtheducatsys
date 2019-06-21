@@ -45,6 +45,9 @@ class Tables {
 	public function contact_us(){
 		return 'contact_us';
 	}
+	public function subscribers(){
+		return 'newsletter_subscribers';
+	}
 }
 $tables=new Tables();
 ?>

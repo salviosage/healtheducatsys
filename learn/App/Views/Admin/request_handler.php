@@ -201,6 +201,16 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
+		}elseif($action=="save_newsletter"){
+			$full_names=$function->sanitize($input[1]);
+			$email=$function->sanitize($input[2]);
+
+			$save_status=$admin->saveNewsLetterSubscriber($full_names,$email,$token,$current_date);
+			if($save_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
 		}
 	}else{
 		echo '501';
