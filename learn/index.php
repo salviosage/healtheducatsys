@@ -35,6 +35,7 @@ include ROUTER_HEAD;
                 include VIEWS.'Modal/what_to_learn.php';
                 include VIEWS.'Modal/message_modal.php';
                 include VIEWS.'Modal/upload_csv.php';
+                include VIEWS.'Modal/addPoster.php';
             ?>
             <div class="content-page">
                 <!-- Start content -->

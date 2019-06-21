@@ -70,9 +70,9 @@ $courses=$admin->loadCourses('*');
                                             <a href="<?php echo $edit_url; ?>" class="btn btn-default waves-effect">
                                                 <i class="fa fa-pencil"></i>
                                             </a>
-                                            <button type="button" class="btn btn-default waves-effect">
-                                                <i class="fa fa-close"></i>
-                                            </button>
+                                            <a course_id="<?php echo $course['id']; ?>" class="btn btn-default waves-effect btn_add_poster" data-toggle="tooltip" data-placement="top" data-original-title="Add Poster">
+                                                <i class="fa fa-photo"></i>
+                                            </a>
                                             <a course_id="<?php echo $course['id']; ?>" href="#" class="btn btn-danger waves-effect btn_delete_course">
                                                 <i class="fa fa-trash-o"></i>
                                             </a>
