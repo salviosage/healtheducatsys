@@ -7,12 +7,23 @@ $Modules=$admin->courseModules($course_id);
   <div class="panel-group" id="accordion">
       <?php 
        foreach ($Modules as $key => $value) {
+        $Quiz=$admin->getQuiz($value['id']);
+        $quiz_id=$function->extract_array($Quiz,"id");
+        $is_quiz_available=$admin->isQuizAvailable(USER_ID,$quiz_id);
          ?>
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
                 <a class="nav-link bg-light rounded text-center p-3 active show" data-toggle="collapse" data-parent="#accordion" href="#<?php echo $value['id']; ?>">
-                  <?php echo $value['credit']; ?>
+                  <?php
+                  $credit_title="";
+                  if($is_quiz_available){
+                    $credit_title=$value['credit'];
+                  }else{
+                    $credit_title=$value['credit'].' <i class="fa fa-check text-danger"></i> <sub class="text-danger">Module Done</sub>';
+                  }
+                  echo $credit_title;
+                  ?>
                 </a>
               </h4>
             </div>
@@ -34,71 +45,47 @@ $Modules=$admin->courseModules($course_id);
                             <div class="panel-body">
                               <?php 
                               $Quiz=$admin->getQuiz($value['id']);
+                              $quiz_id=$function->extract_array($Quiz,"id");
                               $quiz_title=$function->extract_array($Quiz,"title");
                               $quiz_summary=$function->extract_array($Quiz,"summary");
+                              $is_quiz_available=$admin->isQuizAvailable(USER_ID,$quiz_id);
                                if(count($Quiz)>0){
-                                ?>
-                                  <h4>
-                                    <?php echo $quiz_title; ?>
-                                  </h4>
-                                  <p>
-                                    <?php echo htmlspecialchars_decode($quiz_summary); ?>
-                                  </p>
+                                if($is_quiz_available){
+                                  ?>
+                                    <h4>
+                                      <?php echo $quiz_title; ?>
+                                    </h4>
+                                    <p>
+                                      <?php echo htmlspecialchars_decode($quiz_summary); ?>
+                                    </p>
 
-                                <?php
-                                //get Quiz question
-                                foreach ($Quiz as $key => $quiz) {
-                                  $Questions=$admin->getQuizQuestions($quiz['id']);
-                                  foreach ($Questions as $key => $question) {
-                                    ?>
-                                      <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                          <a data-toggle="collapse" href="#<?php echo $question['id']; ?>">
-                                            <blockquote class="p-1">
-                                              <?php echo $question['question']; ?>
-                                            </blockquote>
-                                          </a>
-                                        </h4>
-                                      </div>
-                                      <div id="<?php echo $question['id']; ?>" class="panel-collapse">
-                                        <div class="panel-body">
-                                          <ul class="questions_list" style="list-style: none;">
-                                            <li style="list-style: none;">
-                                                <div class="radio">
-                                                  <label><input question="<?php echo $question['id']; ?>" answer="<?php echo $question['answer1'] ?>" type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer1'] ?></label>
-                                                </div>
-                                            </li>
-                                            <li style="list-style: none;">
-                                                <div class="radio">
-                                                  <label><input type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer2'] ?></label>
-                                                </div>
-                                            </li>
-                                            <li style="list-style: none;">
-                                                <div class="radio">
-                                                  <label><input type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer3'] ?></label>
-                                                </div>
-                                            </li>
-                                            <li style="list-style: none;">
-                                                <div class="radio">
-                                                  <label><input type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer4'] ?></label>
-                                                </div>
-                                            </li>
-                                            <li style="list-style: none;">
-                                                <div class="radio">
-                                                  <label><input type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer5'] ?></label>
-                                                </div>
-                                            </li>
-                                          </ul>
+                                  <?php
+                                  //get Quiz question
+                                  foreach ($Quiz as $key => $quiz) {
+                                    $Questions=$admin->getQuizQuestions($quiz['id']);
+                                    foreach ($Questions as $key => $question) {
+                                      ?>
+                                        <div class="panel-heading">
+                                          <h4 class="panel-title">
+                                            <a data-toggle="collapse" href="#<?php echo $question['id']; ?>">
+                                              <blockquote class="p-1">
+                                                <?php echo $question['question']; ?>
+                                              </blockquote>
+                                            </a>
+                                          </h4>
                                         </div>
-                                      </div>
-                                    <?php
+                                        <?php include VIEWS.'Course/quiz.php'; ?>
+                                      <?php
+                                    }
                                   }
+                                  ?>
+                                        <a quiz="<?php echo $quiz_id; ?>" class="btn btn-primary btn_finish_quiz" href="#">
+                                          FINISH QUIZ
+                                        </a>
+                                  <?php
+                                }else{
+                                  echo '<h4 class="text-danger">'.$quiz_title.' (<strike> Quiz Finished</strike>)</h4>';
                                 }
-                                ?>
-                                      <a href="#" class="btn btn-primary">
-                                        FINISH QUIZ
-                                      </a>
-                                <?php
                                }else{
                                 ?>
                                   <div class="alert alert-danger">
@@ -119,6 +106,8 @@ $Modules=$admin->courseModules($course_id);
          <?php
        }
       ?>
-
+      <a href="#" class="btn btn-danger" style="color: #fff;">
+        <i class="fa fa-check"></i> FINISH COURSE
+      </a>
   </div> 
 </section>

@@ -128,6 +128,11 @@ if(USER_TYPE==2){
                         <span class="mr-2">Profile Settings</span>
                     </a>
                   </li>
+                  <li>
+                    <a href="test.php" target="_blank" class="nav-link__list">
+                      View Certificate
+                    </a>
+                  </li>
                   <?php
                 }
                 ?>

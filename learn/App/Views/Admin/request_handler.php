@@ -211,6 +211,37 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
+		}elseif($action=="answer_question"){
+			$question=$function->sanitize($input[1]);
+			$answer=$function->sanitize($input[2]);
+			$user_id=$function->sanitize($input[3]);
+			//get question answer to check if it is first or not
+			$questionAnswers=$admin->getQuestionAnswer($question,$user_id);
+			if(count($questionAnswers)==0){
+				$save_status=$admin->answerQuestion($user_id,$question,$answer,$token,$current_date);
+				if($save_status){
+					echo $success;
+				}else{
+					echo $error;
+				}
+			}else{
+				$update_status=$admin->updateAnswer($question,$answer,$user_id,$current_date);
+				if($update_status){
+					echo $success;
+				}else{
+					echo $error;
+				}
+			}
+		}elseif($action=="finish_quiz"){
+			$quiz_id=$function->sanitize($input[1]);
+			$user_id=$function->sanitize($input[2]);
+
+			$save_status=$admin->finishQuiz($token,$quiz_id,$user_id,$current_date);
+			if($save_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
 		}
 	}else{
 		echo '501';

@@ -259,6 +259,36 @@ class Admin extends Execute{
 		$sql="SELECT * FROM ".Tables::subscribers()." ORDER BY id DESC ";
 		return $this->querying($sql);
 	}
+	///////////////// answer question ///////////////////////////////////////////////
+	public function answerQuestion($user_id,$question,$answer,$token,$save_date){
+		$array=array("user_id"=>$user_id,"token"=>$token,"question_id"=>$question,"answer"=>$answer,"status"=>'ANSWERED',"save_date"=>$save_date);
+		return $this->multi_insert(Tables::answering(),$array);
+	}
+	public function updateAnswer($question,$answer,$user_id,$save_date){
+		$array=array("answer"=>$answer,"save_date"=>$save_date);
+		$where=array("question_id"=>$question,"user_id"=>$user_id);
+		return $this->query_update(Tables::answering(),$where,$array);
+	}
+	public function getQuestionAnswer($question,$user_id){
+		$sql="SELECT * FROM ".Tables::answering()." WHERE question_id=\"$question\" AND user_id=\"$user_id\"";
+		return $this->querying($sql);
+	}
+	public function finishQuiz($token,$quiz_id,$user_id,$save_date){
+		$array=array("token"=>$token,"quiz_id"=>$quiz_id,"user_id"=>$user_id,"status"=>'FINISHED',"save_date"=>$save_date);
+		return $this->multi_insert(Tables::users_quiz(),$array);
+	}
+	//check user quiz if it is available
+	public function isQuizAvailable($user_id,$quiz_id){
+		$sql="SELECT * FROM ".Tables::users_quiz()." WHERE quiz_id=\"$quiz_id\" AND user_id=\"$user_id\"";
+		$result=$this->querying($sql);
+		$status=false;
+		if(count($result)==0){
+			$status=true;
+		}else{
+			$status=false;
+		}
+		return $status;
+	}
 
 }
 $admin=new Admin();

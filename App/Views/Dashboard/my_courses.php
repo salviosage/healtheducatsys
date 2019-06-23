@@ -8,7 +8,9 @@ $MyCourses=$admin->StudentCourse(USER_ID);
      foreach ($MyCourses as $key => $course) {
       //get course info
       $CourseInfo=$admin->getCourseInfo($course['course_id']);
+      $course_id=$function->extract_array($CourseInfo,"id");
       $course_name=$function->extract_array($CourseInfo,"title");
+      $course_url='course-details?name='.$course_name.'&key='.$function->generateHash().'&course_id='.$course_id;
         if($course['status']=='APPROVED'){
           ?>
             <div class="d-md-flex justify-content-between align-items-center bg-white shadow-v1 rounded mb-4 py-4 px-5 hover:transformLeft">
@@ -30,7 +32,7 @@ $MyCourses=$admin->StudentCourse(USER_ID);
                   </a>
                 </div>
               </div>
-              <a href="#" class="btn btn-outline-primary">Start Course</a> 
+              <a href="<?php echo $course_url; ?>" class="btn btn-outline-primary">Start Course</a> 
             </div> 
           <?php
         }elseif($course['status']=='REQUESTED'){

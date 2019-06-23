@@ -25,6 +25,7 @@ RewriteRule ^course-details$ auth_course.php [NC,L]
 RewriteRule ^home$ auth_home.php [NC,L]
 RewriteRule ^how-it-work$ how_it_works.php [NC,L]
 RewriteRule ^request_handler$ learn/App/Views/Admin/request_handler.php [NC,L]
+RewriteRule ^answer_question$ learn/App/Views/Admin/answer_question.php [NC,L]
 
 RewriteRule ^register_teacher$ learn/App/Views/Register/register_teacher.php
 RewriteRule ^register_student$ learn/App/Views/Register/register_student.php

@@ -48,6 +48,12 @@ class Tables {
 	public function subscribers(){
 		return 'newsletter_subscribers';
 	}
+	public function answering(){
+		return 'questions_answers';
+	}
+	public function users_quiz(){
+		return "users_quiz";
+	}
 }
 $tables=new Tables();
 ?>
