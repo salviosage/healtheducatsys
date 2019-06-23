@@ -57,15 +57,9 @@ $teachers=$admin->loadUsers(4,1);
                                 </td>
                                 <td>
                                     <div class="btn-group m-b-10">
-                                        <button type="button" class="btn btn-default waves-effect">
-                                            <i class="fa fa-pencil"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-default waves-effect">
-                                            <i class="fa fa-close"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-default waves-effect">
+                                        <a system_user="<?php echo $teacher['id']; ?>" names="<?php echo $teacher['names']; ?>"  class="btn btn-danger waves-effect btn_delete_user">
                                             <i class="fa fa-trash-o"></i>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>

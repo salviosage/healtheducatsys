@@ -242,6 +242,14 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
+		}elseif($action=="delete_client" OR $action=="delete_body"){
+			$client_id=$function->sanitize($input[1]);
+			$update_status=$admin->changeFieldValue(Tables::users(),"status",0,"id",$client_id);
+			if($update_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
 		}
 	}else{
 		echo '501';

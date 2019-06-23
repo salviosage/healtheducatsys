@@ -58,12 +58,9 @@ $Teachers=$admin->clientsList();
                                     if(USER_TYPE==1){
                                         ?>
                                         <div class="btn-group m-b-10">
-                                            <a teacher_id="<?php echo $value['id']; ?>" href="#" class="btn btn-success waves-effect btn_approve_teacher">
-                                                <i class="fa fa-close"></i>
-                                            </a>
-                                            <button type="button" class="btn btn-danger waves-effect">
+                                            <a client_id="<?php echo $value['id']; ?>" names="<?php echo $value['names']; ?>" class="btn btn-danger waves-effect btn_delete_client">
                                                 <i class="fa fa-trash-o"></i>
-                                            </button>
+                                            </a>
                                         </div>
                                         <?php
                                     }
