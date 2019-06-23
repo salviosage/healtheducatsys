@@ -12,7 +12,7 @@ $courses=$admin->loadCourses('*');
                 <div id="datatable-buttons_filter" class="dataTables_filter">
 
                 </div>
-                <table id="datatable-buttons" class="table table-striped table-bordered dataTable no-footer dtr-inline" role="grid" aria-describedby="datatable-buttons_info">
+                <table class="table table-striped table-bordered dataTable no-footer dtr-inline" role="grid" aria-describedby="datatable-buttons_info">
                 <thead>
                 <tr role="row">
                     <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 53px;">#</th>
