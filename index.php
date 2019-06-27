@@ -37,15 +37,15 @@ require 'const.php';
                   <div class="row">
                     <div class="col-lg-10 mx-auto text-center text-white">
                       <h2 class="display-lg-4 font-weight-bold text-white animated slideInUp mb-0">
-                        Be on demand  in 
+                       CPD Courses in
                       </h2>
                       <h1 class="display-lg-3 font-weight-bold text-primary animated slideInUp">
-                        Dental health
+                        Health related topics 
                       </h1>
                       <p class="font-size-md-18 animated slideInUp">
-                        This modern and inviting academic template is perfectly suited for school, colleges, university, on-line course, and other educational institutions.  Investig ationes demons travge
+                      This platform will connect you to many health specialist across Rwanda, the region and internationally - Keep updated with us
                       </p>
-                      <a href="#" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
+                      <a href="courses" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
                       <a href="register" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Registration</a>
                     </div>
                   </div>
@@ -58,15 +58,15 @@ require 'const.php';
                   <div class="row">
                     <div class="col-lg-10 mx-auto text-center text-white">
                       <h2 class="display-lg-4 font-weight-bold text-white animated slideInUp">
-                        Be on demand 
+                      CPD Courses in
                       </h2>
                       <h1 class="display-lg-3 font-weight-bold text-primary animated slideInUp">
-                        college / university
+                      Cross-Cutting CPD Courses
                       </h1>
                       <p class="font-size-md-18 animated slideInUp">
-                        This modern and inviting academic template is perfectly suited for school, colleges, university, on-line course, and other educational institutions.  Investig ationes demons travge
+                      This platform will connect you to many health specialist across Rwanda, the region and internationally - Keep updated with us
                       </p>
-                      <a href="#" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
+                      <a href="courses" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
                       <a href="register" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Registration</a>
                     </div>
                   </div>
@@ -81,15 +81,15 @@ require 'const.php';
                   <div class="row">
                     <div class="col-lg-10 mx-auto text-center text-white">
                       <h4 class="display-lg-4 font-weight-bold text-white animated slideInUp">
-                        Be on demand in
+                      CPD Courses in
                       </h4>
                       <h2 class="display-lg-3 font-weight-bold text-primary animated slideInUp">
-                        pscycology
+                      Health Provider Skills
                       </h2>
                       <p class="font-size-md-18 animated slideInUp">
-                        This modern and inviting academic template is perfectly suited for school, colleges, university, on-line course, and other educational institutions.  Investig ationes demons travge 
+                      This platform will connect you to many health specialist across Rwanda, the region and internationally - Keep updated with us 
                       </p>
-                      <a href="#" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
+                      <a href="courses" class="btn btn-primary mt-3 mx-2 animated slideInUp">Our Courses</a>
                       <a href="register" class="btn btn-outline-white mt-3 mx-2 animated slideInUp">Get started </a>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ require 'const.php';
                        <span class="text-primary">Topupgrade</span> platform
                     </h2>
                     <p class="my-4">
-                        Top-Upgrade Ltd is a Company created with the support of Health Volunteers Overseas (HVO) – 
+                        Healthedu Ltd is a Company created with the support of Health Volunteers Overseas (HVO) – 
                         United States of America; it was initiated by Jean Damascene Bigirimana, who developed a web-based 
                         platform for online trainings in 2016. With the support of Student Alumni 
                         of Misercodia University (USA), Jean Damascene Bigirimana was able to establish the online training.
