@@ -14,6 +14,7 @@ function backHome(){
 }
 //get user information
 $personalInfo=$user->getUserPersonalInfo(USER_ID);
+$verified=$function->extract_array($personalInfo,"verified");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +38,11 @@ $personalInfo=$user->getUserPersonalInfo(USER_ID);
   
   <body>
     <?php include VIEWS.'Utils/auth_header.php'; ?> 
-    <?php include VIEWS.'Utils/unverified_teacher.php' ?>
+    <?php 
+      if($verified!=1){
+        include VIEWS.'Utils/unverified_teacher.php'; 
+      }
+    ?>
     <?php //include PROFILE.'teacher_bread.php'; ?>
   <section class="paddingTop-50 paddingBottom-120 bg-light">
     <div class="container">

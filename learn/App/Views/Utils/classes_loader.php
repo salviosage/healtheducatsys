@@ -13,4 +13,5 @@ require_once $root_url.'App/Controllers/Executor.php';
 require_once $root_url.'App/Controllers/Login.php';
 require_once $root_url.'App/Controllers/Admin.php';
 require_once $root_url.'App/Controllers/User.php';
+require_once $root_url.'App/Controllers/Mailer.php';
 ?>

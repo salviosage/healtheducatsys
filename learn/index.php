@@ -29,14 +29,7 @@ include ROUTER_HEAD;
         <div id="wrapper">
             <?php include VIEWS.'Utils/navbar.php'; ?>
             <?php include VIEWS.'Utils/sidebar.php'; ?>
-            <?php include VIEWS.'Modal/add_quiz.php'; ?>
-            <?php
-                include VIEWS.'Modal/add_question.php';
-                include VIEWS.'Modal/what_to_learn.php';
-                include VIEWS.'Modal/message_modal.php';
-                include VIEWS.'Modal/upload_csv.php';
-                include VIEWS.'Modal/addPoster.php';
-            ?>
+            <?php include VIEWS.'Utils/modals.php'; ?>
             <div class="content-page">
                 <!-- Start content -->
                 <div class="content">
