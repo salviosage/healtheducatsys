@@ -7,6 +7,7 @@ $Modules=$admin->courseModules($course_id);
   <div class="panel-group" id="accordion">
       <?php 
        foreach ($Modules as $key => $value) {
+        $attach_url='learn/Uploads/'.$value['attachment'];
         $Quiz=$admin->getQuiz($value['id']);
         $quiz_id=$function->extract_array($Quiz,"id");
         $is_quiz_available=$admin->isQuizAvailable(USER_ID,$quiz_id);
@@ -31,7 +32,11 @@ $Modules=$admin->courseModules($course_id);
               <div class="panel-body">
                 <?php 
                  echo htmlspecialchars_decode($value['summary']);
+
                 ?>
+                <a href="<?php echo $attach_url; ?>" target="_blank">
+                  <i class="fa fa-file"></i> Click Here to View and Download Attached Document
+                </a>
                 <div class="row">
                   <div class="col-lg-12">
                       <div class="panel-group">
@@ -84,7 +89,7 @@ $Modules=$admin->courseModules($course_id);
                                         </a>
                                   <?php
                                 }else{
-                                  echo '<h4 class="text-danger">'.$quiz_title.' (<strike> Quiz Finished</strike>)</h4>';
+                                  include VIEWS.'Modules/finished_quiz.php';
                                 }
                                }else{
                                 ?>

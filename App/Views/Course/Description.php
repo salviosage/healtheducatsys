@@ -1,4 +1,4 @@
-<div class="tab-pane fade show" id="Home" role="tabpanel">
+<div class="tab-pane fade show active" id="Home" role="tabpanel">
  <div class="p-3">
     <div class="tab-pane fade show" id="Home" role="tabpanel">
         <section class="paddingBottom-100">
@@ -10,7 +10,7 @@
                     <?php echo $name; ?>
                   </h1>
                   <div class="row mt-3">
-                    <div class="col-lg-3 col-md-6 my-2">
+                    <div class="col-lg-6 col-md-6 my-2">
                       <div class="media border-right height-100p">
                         <div class="media-body">
                           <span class="text-gray d-block">Instructor:</span>
@@ -18,12 +18,6 @@
                             <?php echo $admin->getTeacherField($function->extract_array($courseInfo,'assigned_teacher'),'names'); ?>
                           </a>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 my-2">
-                      <div class="border-right height-100p">
-                        <span class="text-gray d-block">Categories:</span>
-                        <a href="#" class="h6">Development</a>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-6 my-2">
@@ -64,7 +58,7 @@
                     <img src="<?php echo $image_url; ?>" class='responsive'>
                   </div>                                
                   <div class="col-12 mt-4">
-                   <ul class="nav tab-line tab-line tab-line--3x border-bottom mb-5" role="tablist">
+                   <ul class="nav tab-line nav-justified tab-line tab-line--3x border-bottom mb-5" role="tablist">
                      <li class="nav-item">
                       <a class="nav-link active" data-toggle="tab" href="#tabDescription" role="tab" aria-selected="true">
                         Description
@@ -73,16 +67,6 @@
                      <li class="nav-item">
                       <a class="nav-link" data-toggle="tab" href="#tabCurriculum" role="tab" aria-selected="true">
                         Curriculum
-                      </a>
-                     </li>
-                     <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#tabInstructors" role="tab" aria-selected="true">
-                        Instructors
-                      </a>
-                     </li>
-                     <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#tabReviews" role="tab" aria-selected="true">
-                        Reviews
                       </a>
                      </li>
                    </ul>
@@ -113,83 +97,28 @@
                               ?>
                               
                             </ul>
-                          </div>                                         
-                          <div class="col-md-6 my-2">
-                           <h4>
-                             Course Requirments
-                           </h4>
-                            <ul class="list-unstyled list-style-icon list-icon-bullet">
-                              <li>Learn how to captivate your audience</li>
-                              <li>Take your business / job to the next level</li>
-                              <li>Overcome the fear of public speaking</li>
-                              <li>Learn how to captivate your audience</li>
-                              <li>Take your business / job to the next level</li>
-                            </ul>
-                          </div> 
-                          
-                          <div class="col-md-6 my-2">
-                           <h4>
-                             Who is the Target Audience?
-                           </h4>
-                            <ul class="list-unstyled list-style-icon list-icon-bullet">
-                              <li>Learn how to captivate your audience</li>
-                              <li>Take your business / job to the next level</li>
-                              <li>Overcome the fear of public speaking</li>
-                              <li>Learn how to captivate your audience</li>
-                              <li>Take your business / job to the next level</li>
-                            </ul>
-                          </div> 
+                          </div>
                         </div> <!-- END row-->
                       </div> <!-- END tab-pane-->
                       
                       <div class="tab-pane fade" id="tabCurriculum" role="tabpanel">
                       <div id="accordionCurriculum">
-          
-      
-                        
-      
-                        <div class="list-group-item">
-                          <span class="row">
-                            <span class="col-9 col-md-8" href="#">
-                              <i class="ti-control-play small mr-1 text-primary"></i>
-                              Creating A Full Webpage
-                            </span>
-                            <span class="col-3 col-md-2 ml-auto text-right">7:12</span>
-                          </span>
-                        </div>
-      
-                        <div class="list-group-item">
-                          <span class="row">
-                            <span class="col-9 col-md-8" href="#">
-                              <i class="ti-files small mr-1 text-primary"></i>
-                              Accessing Elements - Files
-                            </span>
-                            <span class="col-3 col-md-2 ml-auto text-right">4:07</span>
-                          </span>
-                        </div>
-      
-                        <div class="list-group-item">
-                          <span class="row">
-                            <span class="col-9 col-md-8" href="#">
-                              <i class="ti-control-play small mr-1 text-primary"></i>
-                              Responding To A Click
-                            </span>
-                            <span class="col-3 col-md-2 ml-auto text-right">4:07</span>
-                          </span>
-                        </div>
-      
-                        <div class="list-group-item">
-                          <span class="row">
-                            <span class="col-9 col-md-8" href="#">
-                              <i class="ti-control-play small mr-1 text-primary"></i>
-                              Changing Website Content - Files
-                            </span>
-                            <span class="col-3 col-md-2 ml-auto text-right">4:07</span>
-                          </span>
-                        </div>
-          
-                   
-          
+                        <?php 
+                        $Modules=$admin->courseModules($course_id);
+                        //var_dump($Modules);
+                        foreach ($Modules as $key => $value) {
+                           ?>
+                            <div class="list-group-item">
+                              <span class="row">
+                                <span class="col-9 col-md-8" href="#">
+                                  <i class="ti-control-play small mr-1 text-primary"></i>
+                                   <?php echo $value['credit']; ?>
+                                </span>
+                              </span>
+                            </div>
+                           <?php
+                        }
+                        ?>      
                         </div> <!-- END accordion-->
                       </div> <!-- END tab-pane -->
                       
@@ -198,7 +127,7 @@
                         <h4 class="mb-4">
                           About Instructors
                         </h4>
-                        <?php include VIEWS.'Course/instructor.php'; ?>  
+                        <?php //include VIEWS.'Course/instructor.php'; ?>  
                       </div> <!-- END tab-pane -->
                       
                      

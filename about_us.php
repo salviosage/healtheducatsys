@@ -42,7 +42,18 @@ require 'const.php';
   </head>
   
   <body>
-  <?php include HEADER; ?> 
+    <?php 
+    session_start();
+
+      if(isset($_SESSION['user_id']) && isset($_SESSION['user_names']) && isset($_SESSION['user_type'])){
+        define("USER_NAMES", $_SESSION['user_names']);
+        define("USER_ID", $_SESSION['user_id']);
+        define("USER_TYPE", $_SESSION['user_type']);
+        include VIEWS.'Utils/auth_header.php';
+      }else{
+        include HEADER;
+      }
+    ?>
    <div class="py-5 bg-dark">
     <div class="container">
      <div class="row align-items-center">

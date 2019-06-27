@@ -34,24 +34,12 @@ $available_courses=$admin->getPublicCourses(6);
                       <i class="ti-user mr-2"></i>
                       <?php echo $admin->getTeacherField($course['assigned_teacher'],'names'); ?>
                     </p>
-                    <ul class="list-unstyled ec-review-rating">
-                      <li class="active"><i class="fas fa-star"></i></li>
-                      <li class="active"><i class="fas fa-star"></i></li>
-                      <li class="active"><i class="fas fa-star"></i></li>
-                      <li class="active"><i class="fas fa-star"></i></li>
-                      <li class="active"><i class="fas fa-star"></i></li>
-                      <li class="text-gray">
-                        <span>(4.9)</span>
-                        <span>4578</span>
-                      </li>
-                    </ul>
-
                   </div>
                   <div class="card-footer media align-items-center justify-content-between">
                     <ul class="list-unstyled mb-0">
                       <li class="mb-1">
                         <i class="fa fa-book"></i>
-                        <?php echo count($admin->getCourseCredits($course['id'],$course['assigned_teacher'])).' Credits'; ?>
+                        <?php echo $course['credit_no']; ?>
                       </li>
                     </ul>
                     <h4 class="h5">

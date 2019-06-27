@@ -29,18 +29,6 @@ $profile_image=$function->extract_array($TeacherInfo,"profile_image");
       <p class="mb-2">
         <i class="ti-world mr-2"></i><?php echo $t_p_id; ?>
       </p>
-      <ul class="list-inline">
-        <li class="list-inline-item mb-2">
-          <i class="ti-user mr-1"></i>
-          147570 studends
-        </li>
-        <li class="list-inline-item mb-2">
-          <i class="ti-book mr-1"></i>
-          20 Courses
-        </li>
-        
-      </ul>
-      <a href="#" class="btn btn-outline-primary btn-pill btn-sm">View Profile</a>
     </div>
   </div>
   <h6>

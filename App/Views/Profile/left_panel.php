@@ -52,31 +52,4 @@ $profession=$function->extract_array($profession_array,"name");
       </li>
     </ul>
   </div>
-  <div class="card-footer">
-   <p>
-     Social Profile:
-   </p>
-    <ul class="list-inline mb-0">
-      <li class="list-inline-item">
-        <a href="#" class="btn btn-outline-facebook iconbox iconbox-sm">
-          <i class="ti-facebook"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="#" class="btn btn-outline-twitter iconbox iconbox-sm">
-          <i class="ti-twitter"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="#" class="btn btn-outline-google-plus iconbox iconbox-sm">
-          <i class="ti-google"></i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="#" class="btn btn-outline-linkedin iconbox iconbox-sm">
-          <i class="ti-linkedin"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
 </div>

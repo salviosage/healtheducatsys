@@ -141,56 +141,7 @@ require 'const.php';
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 mt-5 mt-md-0">
-                <div class="card shadow-v2 z-index-5" data-offset-top-xl="-160">
-                  <div class="card-header bg-primary text-white border-bottom-0">
-                    <span class="lead font-semiBold text-uppercase">
-                      Notice Board
-                    </span>
-                  </div>
-                  
-                  <div class="p-4 border-bottom wow fadeInUp">
-                    <p class="text-primary mb-1">
-                      July 02, 2018
-                    </p>
-                    <a href="#">
-                      Maximizing potential through individual attention.
-                    </a>
-                  </div>
-                  
-                  <div class="p-4 border-bottom wow fadeInUp">
-                    <p class="text-primary mb-1">
-                      July 17, 2018
-                    </p>
-                    <a href="#">
-                      Nullam quis ante etiam sit amet eget eros faucibus
-                    </a>
-                  </div>
-                  
-                  <div class="p-4 border-bottom wow fadeInUp">
-                    <p class="text-primary mb-1">
-                      June 08, 2018
-                    </p>
-                    <a href="#">
-                      Adsing eusmo tempor indeduny
-                    </a>
-                  </div>
-                  
-                  <div class="p-4 border-bottom wow fadeInUp">
-                    <p class="text-primary mb-1">
-                      June 20, 2018
-                    </p>
-                    <a href="#">
-                      Nullam quis ante etiam sit amet eget eros faucibus
-                    </a>
-                  </div>
-                  <div class="p-4">
-                    <a href="#" class="btn btn-link pl-0">
-                      View All Notices
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <?php include VIEWS.'Home/notice_board.php'; ?>
             </div> <!-- END row-->
           </div> <!-- END container-->
         </section>
@@ -343,7 +294,7 @@ require 'const.php';
                 <h2>
                   Learn a New Skill Online, on Your Time and get a certificate
                 </h2>
-                <a href="signup.html" class="btn btn-primary mt-3">join for free</a>
+                <a href="register" class="btn btn-primary mt-3">join for free</a>
               </div>
               <div class="col-lg-4 col-md-5 my-3">
                 <div class="card px-4 py-5 text-center">

@@ -41,11 +41,11 @@ class Admin extends Execute{
 	public function loadCourses($status){
 		$sql='';
 		if($status=='*'){
-			$sql="SELECT * FROM ".Tables::courses()." WHERE status!='DELETED' ORDER BY timestamp DESC LIMIT 50";
+			$sql="SELECT * FROM ".Tables::courses()." WHERE status!='DELETED' ORDER BY id DESC LIMIT 50";
 		}elseif(in_array(strtoupper($status), $this->allowed_status)){
-			$sql="SELECT * FROM ".Tables::courses()." WHERE status=\"$status\" ORDER BY timestamp DESC LIMIT 50";
+			$sql="SELECT * FROM ".Tables::courses()." WHERE status=\"$status\" ORDER BY id DESC LIMIT 50";
 		}else{
-			$sql="SELECT * FROM ".Tables::courses()." ORDER BY timestamp DESC LIMIT 50";	
+			$sql="SELECT * FROM ".Tables::courses()." ORDER BY id DESC LIMIT 50";	
 		}
 
 		return $this->querying($sql);	
@@ -156,6 +156,16 @@ class Admin extends Execute{
 	public function getQuizQuestions($quiz){
 		$sql="SELECT * FROM ".Tables::questions()." WHERE quiz_id=\"$quiz\" ORDER BY id ASC LIMIT 50";
 		return $this->querying($sql);
+	}
+	//get question correct answer
+	public function getCorrectAnswer($question_id){
+		$sql="SELECT correct FROM ".Tables::questions()." WHERE id=\"$question_id\" LIMIT 1";
+		$result=$this->querying($sql);
+		$correct_answer="";
+		foreach ($result as $key => $value) {
+			$correct_answer=$value['correct'];
+		}
+		return $correct_answer;
 	}
 	//save question
 	public function saveQuestion($quiz_id,$question,$answer1,$answer2,$answer3,$answer4,$answer5,$current_date){

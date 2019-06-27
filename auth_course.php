@@ -11,7 +11,7 @@ if(isset($_GET['course_id']) && $_GET['course_id']!='' && isset($_GET['name']) &
   $Tolearn=$admin->getWhatToLearn($course_id);
   //check if has paid for this course
   $is_approved=$admin->isRequestedApproved($course_id,USER_ID);
-  $course_tab_nav="nav-link active";
+  $course_tab_nav="nav-link";
   if(!$is_approved){
     $course_tab_nav.=" disabled";
   }
@@ -63,9 +63,9 @@ function backHome(){
              
               <div class="col-lg-10 mx-auto">
                 <div class="card">
-                <ul class="nav tabs-portlet" role="tablist">
+                <ul class="nav tabs-portlet nav-justified" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#Home" role="tab" aria-selected="true">
+                    <a class="nav-link active" data-toggle="tab" href="#Home" role="tab" aria-selected="true">
                       <i class="ti-home mr-1"></i>
                       Home
                     </a>
@@ -76,65 +76,13 @@ function backHome(){
                      Course
                     </a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" data-toggle="tab" href="#CourseDiscussion" role="tab" aria-selected="false">
-                       <i class="ti-email mr-1"></i>
-                       Discussion
-                      </a>
-                    </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#CourseProgress" role="tab" aria-selected="false">
-                     <i class="ti-email mr-1"></i>
-                     Progress
-                    </a>
-                  </li>
                 </ul>
                 
             
           <div class="tab-content">
               <?php include VIEWS.'Course/Description.php'; ?>
-              <div class="tab-pane fade show active" id="Modules" role="tabpanel">
+              <div class="tab-pane fade" id="Modules" role="tabpanel">
                 <?php include VIEWS.'Course/Modules.php'; ?>
-              </div>
-              <div class="tab-pane fade" id="CourseDiscussion" role="tabpanel">
-               <div class="p-3">
-                <p>
-                  no discussion yet add one 
-                </p>
-               </div>
-              </div>
-              <div class="tab-pane fade" id="CourseProgress" role="tabpanel">
-                <section class="py-4">
-                  <div class="container">
-                    <div class="row">
-                     <div class="col-md-12 my-2">
-                      <h4 class="mb-4">
-                        Progress Striped
-                      </h4>
-                      
-                      <div class="progress mb-4" style="height:10px">
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress mb-4" style="height:10px">
-                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress mb-4" style="height:10px">
-                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress mb-4" style="height:8px">
-                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="progress mb-4" style="height:10px">
-                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      
-                     </div>
-                     
-                   </div>
-                  </div> <!-- END container-->
-                </section> <!-- END section-->
-        
               </div>
             </div> <!-- END tab-content-->
           </div> <!-- END col-12 -->

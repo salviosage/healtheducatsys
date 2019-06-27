@@ -15,12 +15,11 @@ $courses=$admin->loadCourses('*');
                 <table class="table table-striped table-bordered dataTable no-footer dtr-inline" role="grid" aria-describedby="datatable-buttons_info">
                 <thead>
                 <tr role="row">
-                    <th class="sorting_asc" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 53px;">#</th>
-                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 286px;">Title</th>
-                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 130px;">Price</th>
-                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 65px;">No. Credits</th>
-                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 125px;">Status</th>
-                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1" style="width: 100px;">Action</th>
+                    <th class="sorting" style="width:350px;" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1">Title</th>
+                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1">Price</th>
+                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1">No. Credits</th>
+                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1">Status</th>
+                    <th class="sorting" tabindex="0" aria-controls="datatable-buttons" rowspan="1" colspan="1">Action</th>
                 </tr>
                 </thead>
 
@@ -31,19 +30,16 @@ $courses=$admin->loadCourses('*');
                             $edit_url="?request=edit_course&action=edit&course=".$course['token'];
                             ?>
                             <tr role="row" class="even">
-                                <td class="sorting_1" tabindex="0">
-                                    <?php echo $course['id']; ?>
-                                </td>
                                 <td>
                                     <strong><?php echo $course['title']; ?></strong>
                                 </td>
                                 <td>
                                     <span class="badge badge-success">
-                                        <?php echo $course['course_price']; ?>
+                                        <?php echo number_format($course['course_price']).' RWF'; ?>
                                     </span>
                                 </td>
                                 <td>
-                                    0
+                                    <?php echo $course['credit_no']; ?>
                                 </td>
                                 <td>
                                     <?php 
@@ -67,6 +63,9 @@ $courses=$admin->loadCourses('*');
                                     if(USER_TYPE==1){
                                         ?>
                                         <div class="btn-group m-b-10">
+                                            <a course_id="<?php echo $course['id']; ?>" href="#" class="btn btn-info btn-sm btn_add_credit_no">
+                                                ADD CREDIT NO
+                                            </a>
                                             <a href="<?php echo $edit_url; ?>" class="btn btn-default waves-effect">
                                                 <i class="fa fa-pencil"></i>
                                             </a>

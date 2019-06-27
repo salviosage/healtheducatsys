@@ -250,6 +250,15 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
+		}elseif($action=="add_credit_no"){
+			$course_id=$function->sanitize($input[1]);
+			$credit_no=$function->sanitize($input[2]);
+			$update_status=$admin->changeFieldValue(Tables::courses(),"credit_no",$credit_no,"id",$course_id);
+			if($update_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
 		}
 	}else{
 		echo '501';
