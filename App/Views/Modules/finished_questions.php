@@ -13,8 +13,8 @@
           ?>
           <li style="list-style: none;">
               <div class="radio">
-                <label>
-                  <input class="radio_answer" question="<?php echo $question['id']; ?>" answer="answer1" type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer1'] ?>
+                <label class="disabled">
+                  <?php echo $question['answer1'] ?>
                   <i class="fa fa-check text-success"></i>
                 </label>
               </div>
@@ -25,7 +25,7 @@
           <li style="list-style: none;">
               <div class="radio">
                 <label>
-                  <input class="radio_answer" question="<?php echo $question['id']; ?>" answer="answer2" type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer2'] ?>
+                  <?php echo $question['answer2'] ?>
                   <i class="fa fa-check text-success"></i>
                 </label>
               </div>
@@ -36,7 +36,7 @@
           <li style="list-style: none;">
               <div class="radio">
                 <label>
-                  <input class="radio_answer" question="<?php echo $question['id']; ?>" answer="answer3" type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer3'] ?>
+                 <?php echo $question['answer3'] ?>
                   <i class="fa fa-check text-success"></i>
                 </label>
               </div>
@@ -47,7 +47,7 @@
           <li style="list-style: none;">
               <div class="radio">
                 <label>
-                  <input class="radio_answer" question="<?php echo $question['id']; ?>" answer="answer4" type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer4'] ?>
+                  <?php echo $question['answer4'] ?>
                   <i class="fa fa-check text-success"></i>
                 </label>
               </div>
@@ -58,7 +58,7 @@
           <li style="list-style: none;">
               <div class="radio">
                 <label>
-                  <input class="radio_answer" question="<?php echo $question['id']; ?>" answer="answer5" type="radio" name="optradio" style="padding: 5px;margin: 5px;"><?php echo $question['answer5'] ?>
+                  <?php echo $question['answer5'] ?>
                   <i class="fa fa-check text-success"></i>
                 </label>
               </div>

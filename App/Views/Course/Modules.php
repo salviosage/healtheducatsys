@@ -111,8 +111,5 @@ $Modules=$admin->courseModules($course_id);
          <?php
        }
       ?>
-      <a href="#" class="btn btn-danger" style="color: #fff;">
-        <i class="fa fa-check"></i> FINISH COURSE
-      </a>
   </div> 
 </section>
