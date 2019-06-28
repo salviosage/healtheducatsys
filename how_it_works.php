@@ -43,15 +43,6 @@ require 'const.php';
         </a>
       </div>
      </div>
-     
-     <div class="col-12 text-center mt-5 mb-4">
-        <p>
-          Frequently Asked Questions
-        </p>
-        <h4>
-          Select a Topic to Search for Help
-        </h4>
-     </div>
       
       
       <div class="col-12">
@@ -65,7 +56,7 @@ require 'const.php';
                    Getting Started
                  </h4>
                  <p>
-                   Learn how Educati works and how to start learning.
+                 Register on the platform and get the best quality of health courses.
                  </p>
                </a>
              </div>
@@ -98,10 +89,10 @@ require 'const.php';
                <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary">
                  <i class="ti-stats-up text-primary display-4"></i>
                  <h4 class="my-4">
-                   Product tracking
+                 Online Assistance
                  </h4>
                  <p>
-                   Everything about taking a course on Educati.
+                 We are there to assist you in any problem you may experience to this platform.
                  </p>
                </a>
              </div>
@@ -113,7 +104,7 @@ require 'const.php';
                    Purchase / Refunds
                  </h4>
                  <p>
-                   Learn about coupons, how to send gifts, and refunds.
+                 Learn about how you can get a free course, how you have given a course to a friend and offer a gift to him / her and improve his capacity building. .
                  </p>
                </a>
              </div>
@@ -122,10 +113,10 @@ require 'const.php';
                <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary">
                  <i class="ti-comment-alt text-primary display-4"></i>
                  <h4 class="my-4">
-                   Community
+                 Free Courses
                  </h4>
                  <p>
-                   Learn from EchoTheme community forum.
+                 For online courses refer 4 new health professionals to join the platform and do at least one course each, you will get 3 free courses. 
                  </p>
                </a>
              </div>
@@ -136,56 +127,20 @@ require 'const.php';
           <div class="tab-pane fade" id="TabsInstructor" role="tabpanel">
             <div class="row text-center">
             
-             <div class="col-lg-4 col-md-6 marginTop-30">
-               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary"> 
-                 <i class="ti-stats-up text-primary display-4"></i>
-                 <h4 class="my-4">
-                   Product tracking
-                 </h4>
-                 <p>
-                   Everything about taking a course on Educati.
-                 </p>
-               </a>
-             </div>
-            
-             <div class="col-lg-4 col-md-6 marginTop-30">
-               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary"> 
-                 <i class="ti-credit-card text-primary display-4"></i>
-                 <h4 class="my-4">
-                   Purchase / Refunds
-                 </h4>
-                 <p>
-                   Learn about coupons, how to send gifts, and refunds.
-                 </p>
-               </a>
-             </div>
-            
-             <div class="col-lg-4 col-md-6 marginTop-30">
-               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary"> 
-                 <i class="ti-comment-alt text-primary display-4"></i>
-                 <h4 class="my-4">
-                   Community
-                 </h4>
-                 <p>
-                   Learn from EchoTheme community forum.
-                 </p>
-               </a>
-             </div>
-            
-             <div class="col-lg-4 col-md-6 marginTop-30">
-               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary"> 
+            <div class="col-lg-4 col-md-6 marginTop-30">
+               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary">
                  <i class="ti-bookmark-alt text-primary display-4"></i>
                  <h4 class="my-4">
                    Getting Started
                  </h4>
                  <p>
-                   Learn how Educati works and how to start learning.
+                 Register on the platform and get the best quality of health courses.
                  </p>
                </a>
              </div>
             
              <div class="col-lg-4 col-md-6 marginTop-30">
-               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary"> 
+               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary">
                  <i class="ti-user text-primary display-4"></i>
                  <h4 class="my-4">
                    Account / Profile
@@ -207,6 +162,43 @@ require 'const.php';
                  </p>
                </a>
              </div>
+            
+             <div class="col-lg-4 col-md-6 marginTop-30">
+               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary">
+                 <i class="ti-stats-up text-primary display-4"></i>
+                 <h4 class="my-4">
+                 Online Assistance
+                 </h4>
+                 <p>
+                 We are there to assist you in any problem you may experience to this platform.
+                 </p>
+               </a>
+             </div>
+            
+             <div class="col-lg-4 col-md-6 marginTop-30">
+               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary">
+                 <i class="ti-credit-card text-primary display-4"></i>
+                 <h4 class="my-4">
+                   Purchase / Refunds
+                 </h4>
+                 <p>
+                 Learn about how you can get a free course, how you have given a course to a friend and offer a gift to him / her and improve his capacity building. .
+                 </p>
+               </a>
+             </div>
+            
+             <div class="col-lg-4 col-md-6 marginTop-30">
+               <a href="page-help-%26-support-topics.html" class="card height-100p p-5 shadow-v1 hover:primary">
+                 <i class="ti-comment-alt text-primary display-4"></i>
+                 <h4 class="my-4">
+                 Free Courses
+                 </h4>
+                 <p>
+                 For online courses refer 4 new health professionals to join the platform and do at least one course each, you will get 3 free courses. 
+                 </p>
+               </a>
+             </div>   
+
            </div>
           </div>
         </div> <!-- END tab-content-->
@@ -214,13 +206,13 @@ require 'const.php';
       
       <div class="col-12 mt-5">
         <div class="col-lg-4 col-md-6 mx-auto">
-           <a href="#" class="card height-100p p-5 bg-primary text-center text-white">
+           <a href="contact" class="card height-100p p-5 bg-primary text-center text-white">
              <i class="ti-help text-white display-4"></i>
              <h4 class="my-4">
                Need More Help?
              </h4>
              <p>
-               Open a Support Ticket
+               Contact us 
              </p>
            </a>
         </div>

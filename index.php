@@ -130,7 +130,7 @@ require 'const.php';
                        <span class="text-primary">Topupgrade</span> platform
                     </h2>
                     <p class="my-4">
-                        Healthedu Ltd is a Company created with the support of Health Volunteers Overseas (HVO) – 
+                        HealthEdu Ltd is a Company created with the support of Health Volunteers Overseas (HVO) – 
                         United States of America; it was initiated by Jean Damascene Bigirimana, who developed a web-based 
                         platform for online trainings in 2016. With the support of Student Alumni 
                         of Misercodia University (USA), Jean Damascene Bigirimana was able to establish the online training.
@@ -195,16 +195,18 @@ require 'const.php';
                        <div class="list-card bg-white p-4 shadow-v1">
                          <div class="col-md-6 my-4">
                            <h4>
-                             Choose your Topic
+                           	Choose a topic 
                            </h4>
                            <p>
-                             Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores. Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores. There consectetur.
+                           You will select a course depending on your career, current practice or desire practice. You will be 
+                           free to choose a course you like depending on the period you are in 
+                           or the society is passing through. Remember Code of Conduct and basic life support will be mandatory. 
                            </p>
-                           <ul class="list-unstyled list-style-icon list-icon-check font-weight-semiBold my-4">
+                           <!-- <ul class="list-unstyled list-style-icon list-icon-check font-weight-semiBold my-4">
                               <li>Focused subject concentrations</li>
                               <li>Usually 3 or more coordinated courses</li>
                               <li>Develop a skill set within a specific area</li>
-                           </ul>
+                           </ul> -->
                          </div>
                          <div class="col-md-6 text-center my-4">
                            <img src="assets/img/svg/7.png" alt="">
@@ -289,7 +291,7 @@ require 'const.php';
             <div class="row align-items-center">
               <div class="col-lg-5 col-md-7 mr-auto text-white my-3">
                 <h4 class="text-primary font-weight-semiBold">
-                  enhance you career with topuprwanda.
+                Build your CV continuously with HealthEdu
                 </h4>
                 <h2>
                   Learn a New Skill Online, on Your Time and get a certificate
@@ -299,10 +301,10 @@ require 'const.php';
               <div class="col-lg-4 col-md-5 my-3">
                 <div class="card px-4 py-5 text-center">
                   <h4 class="text-primary">
-                    Subscribe to our Newsletter  
+                  Subscribe to our Newsletters 
                   </h4>
                   <p class="mb-4">
-                    Get the latest news and update from topupgrade  
+                    Get the latest news and update from HealthEdu  
                   </p>
                   <?php include HOME.'subscribe.php'; ?>
                 </div>
@@ -388,12 +390,12 @@ require 'const.php';
             <div class="row">
               <div class="col-lg-6 mx-auto text-center text-white">
                 <h2>
-                  Become an Instructor
+                Become a Facilitator
                 </h2>
                 <p class="lead my-4">
                   Share your knowledge and reach millions of students across the globe. Join the world's largest online learning marketplace.
                 </p>
-                <a href="become-instructor" class="btn btn-white mt-2">become a teacher </a>
+                <a href="become-instructor" class="btn btn-white mt-2">Become a Facilitator </a>
               </div>
             </div>
           </div>
