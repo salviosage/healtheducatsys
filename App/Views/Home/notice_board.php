@@ -6,7 +6,7 @@ $Courses=$admin->loadCourses('ACTIVE');
   <div class="card shadow-v2 z-index-5" data-offset-top-xl="-160">
     <div class="card-header bg-primary text-white border-bottom-0">
       <span class="lead font-semiBold text-uppercase">
-        Notice Board
+        Trending Courses  
       </span>
     </div>
     <?php 
@@ -31,8 +31,8 @@ $Courses=$admin->loadCourses('ACTIVE');
     }
     ?>       
     <div class="p-4">
-      <a href="#" class="btn btn-link pl-0">
-        View All Notices
+      <a href="courses" class="btn btn-link pl-0">
+        View All Courses
       </a>
     </div>
   </div>

@@ -121,7 +121,7 @@
       <div class="col-12 text-center">
         <form id="frm_contact_us" class="card p-4 p-md-5 shadow-v1">
           <p class="lead mt-2">
-            Investig tiones demons travge wunt ectores legere lkurus quod legunt saepiu clear <br> tasest consectetur adipi sicing elitsed eusmod tempor cididunt.
+          Your message will be sent to us automatically via E-mail and an Agent on duty will directly assist you. Feel free to ask any thing you feel can help.
           </p>
           <div class="row mt-5 mx-0">
             <div class="col-md-4 mb-4">

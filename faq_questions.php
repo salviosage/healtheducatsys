@@ -91,33 +91,40 @@
 			<div class="col-md-6">
 				<div class="mb-5">
 					<h4 class="mb-3">
-						What type of personal information do we collect?
+           Why do I have to do CPD Courses?
 					</h4>
 					<p>
-						Nam liber tempor cum soluta nobis eleifend option congue is nihil imper  per tem por legere me that doming vulputate  the molestie Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euis mod tincidunt ut laoreet
+          You have to do CPD Courses to be able to increase your knowledge in different areas; these will be in your
+           professional category or in other areas. These courses are developed by specialist in different areas and can build your CV as long as you learn.
+           This will increase the quality of services you deliver as you will be increasing your skills continuously. 
 					</p>
 				</div>
 				<h4 class="mb-3">
-					How do we use personal information?
+        Who develop these courses? 
 				</h4>
 				<p>
-					Nam liber tempor cum soluta nobis eleifend option congue is nihil imper  per tem por legere me that doming vulputate  the molestie Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        These courses are developed by passionate health specialists in Rwanda, the region and internationally, 
+        these specialists are contacted and are asked to sign an MOU with the organization to be able to make courses
+         and help fellow health practitioners in Rwanda or outside. These professionals have both academic and clinical experience.
+         We have also some course facilitators from different developed countries like UK, USA, Australia etc….
 				</p>
 			</div> <!-- END col-md-6 -->
 			<div class="col-md-6">
 				<div class="mb-5">
 					<h4 class="mb-3">
-						How we collect personal information?
+          Who accredits your Courses? 
 					</h4>
 					<p>
-						Nam liber tempor cum soluta nobis eleifend option congue is nihil imper  per tem por legere me that doming vulputate  the molestie Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+          These courses are accredited by regulatory bodies in Rwanda, given the mandate to protect the public and improve regulation, they check if the content
+           is well developed, they make sure the facilitators are highly qualified or are specialist in a certain field before the accreditation. 
 					</p>
 				</div>
 				<h4 class="mb-3">
-					When may we disclose your personal information?
+        Can I do courses and pay later? 
 				</h4>
 				<p>
-					Nam liber tempor cum soluta nobis eleifend option congue is nihil imper  per tem por legere me that doming vulputate  the molestie Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet.
+        Sure, you can learn and enjoy the trainings and pay a small fee later or after you have done the courses, you register to the platform and get a free course. 
+        After testing you request for others which you can pay later after learning if you want. We are targeting increasing knowledge first
 				</p>
 			</div> <!-- END col-md-6 -->
 		</div> <!-- END row-->
@@ -150,18 +157,20 @@
                 <i class="ti-angle-down"></i>
                 <i class="ti-angle-up"></i>
               </span>
-              What type of personal information do we collect?
+              What Professions do we service with online courses?  
              </a>
               <div id="acc7_1" class="collapse show" data-parent="#accordion-7">
                 <div class="px-4">
                    <p>
-                     Investig ationes demons trave un lectoes legere kliusa quod thlegunt saepius claritas Investig ationes. Investig ationes demons trave runt lectoes legere kliusa. Investig ationes demons trave un lectoes legere kliusa quod thlegunt saepius claritas Investig atio nes. Investig ationes demons trave runt lectoes legere kliusa.
+                   We have courses for Nurses and Midwives, Biomedical Laboratory Practitioners, Clinical Psychologists, Physical 
+                   Therapists, Medical Practitioners, Pharmacists, Dental Therapists, Biomedical Engineers, Medical 
+                   Imaging Officers, optometrists, Social Workers, Public Health Practitioners, Occupational Therapists, Surgeons, Nutritionists and others. 
                    </p>
                 </div>
               </div>
             </div> <!-- END accordion-item-->
 
-            <div class="accordion-item border-bottom border-light">
+            <!-- <div class="accordion-item border-bottom border-light">
              <a href="#acc7_2" class="accordion__title h6 mb-0 py-3 px-4 collapsed" data-toggle="collapse" aria-expanded="true">
                <span class="accordion__icon small mr-2 mt-1">
                 <i class="ti-angle-down"></i>
@@ -176,9 +185,9 @@
                    </p>
                 </div>
               </div>
-            </div> <!-- END accordion-item-->
+            </div> END accordion-item -->
 
-            <div class="accordion-item border-bottom border-light">
+            <!-- <div class="accordion-item border-bottom border-light">
              <a href="#acc7_3" class="accordion__title h6 mb-0 py-3 px-4 collapsed" data-toggle="collapse" aria-expanded="true">
                <span class="accordion__icon small mr-2 mt-1">
                 <i class="ti-angle-down"></i>
@@ -193,9 +202,9 @@
                    </p>
                 </div>
               </div>
-            </div> <!-- END accordion-item-->
+            </div> END accordion-item -->
 
-            <div class="accordion-item border-bottom border-light">
+            <!-- <div class="accordion-item border-bottom border-light">
              <a href="#acc7_4" class="accordion__title h6 mb-0 py-3 px-4 collapsed" data-toggle="collapse" aria-expanded="true">
                <span class="accordion__icon small mr-2 mt-1">
                 <i class="ti-angle-down"></i>
@@ -210,9 +219,9 @@
                    </p>
                 </div>
               </div>
-            </div> <!-- END accordion-item-->
+            </div> END accordion-item -->
 
-            <div class="accordion-item border-bottom border-light">
+            <!-- <div class="accordion-item border-bottom border-light">
              <a href="#acc7_5" class="accordion__title h6 mb-0 py-3 px-4 collapsed" data-toggle="collapse" aria-expanded="true">
                <span class="accordion__icon small mr-2 mt-1">
                 <i class="ti-angle-down"></i>
@@ -227,7 +236,7 @@
                    </p>
                 </div>
               </div>
-            </div> <!-- END accordion-item-->
+            </div> END accordion-item -->
           </div> <!-- END accordion-7-->
          </div> <!-- END col-12 -->  
 
@@ -241,7 +250,7 @@
 
 
 
-<section class="padding-y-100">
+<!-- <section class="padding-y-100">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center">
@@ -265,7 +274,7 @@
 					Nam liber tempor cum soluta nobis eleifend option congue is nihil imper  per tem por legere me that doming vulputate  the molestie Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 				</p>
 			</div> <!-- END col-md-6 -->
-			<div class="col-md-6 mt-4">
+			<!-- <div class="col-md-6 mt-4">
 				<div class="mb-5">
 					<h4 class="mb-3">
 						How we collect personal information?
@@ -281,9 +290,9 @@
 					Nam liber tempor cum soluta nobis eleifend option congue is nihil imper  per tem por legere me that doming vulputate  the molestie Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet.
 				</p>
 			</div> <!-- END col-md-6 -->
-		</div> <!-- END row-->
-	</div> <!-- END container-->
-</section> <!-- END -->
+		<!-- </div> <!-- END row-->
+	<!-- </div> <!-- END container-->
+<!-- </section> END --> 
 
    
    
