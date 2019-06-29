@@ -202,7 +202,7 @@ define("USER_TYPE", $_SESSION['user_type']);
         
            
             
-            
+<!--             
             
         <section class="padding-y-100 bg-light">
           <div class="container">
@@ -216,7 +216,7 @@ define("USER_TYPE", $_SESSION['user_type']);
               </div> 
             </div> <!-- END row-->
             
-            <div class="row mt-4">
+            <!-- <div class="row mt-4">
          
               <div class="col-lg-4 col-md-6 marginTop-30 wow fadeIn" data-wow-delay=".1s">
                 <div class="card shadow-v1">
@@ -336,11 +336,11 @@ define("USER_TYPE", $_SESSION['user_type']);
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
              
-            </div> <!-- END row-->
-          </div> <!-- END container-->
-        </section>
+            <!-- </div> <!-- END row-->
+          <!-- </div> <!-- END container-->
+        <!-- </section> --> 
         
            
             

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     
     <!-- Title-->
-    <title>Become an instructor | topugrade ltd</title>
+    <title>Become an instructor | HealthEdu </title>
     
     <!-- SEO Meta-->
     <meta name="description" content="Education theme by EchoTheme">
@@ -53,44 +53,45 @@
       <div class="row text-center">
         <div class="col-12">
           <h2>
-            Discover your Potential
+          Your expertise can help
           </h2>
           <div class="width-4rem height-4 bg-primary my-2 mx-auto rounded"></div>
         </div>
         
         <div class="col-md-4 mt-5">
           <div class="iconbox iconbox-xxl bg-primary text-white">
-            <i class="ti-money font-size-24"></i>
+            <i class=" ti-thumb-up  font-size-24"></i>
           </div>
           <h4 class="my-4">
-            Earn Extra Income
+          	INSPIRE A LEARNER
           </h4>
           <p>
-            Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores
+          Create courses are customize to the need of Rwanda, East Africa Community and whole Africa. 
           </p>
         </div>
         
         <div class="col-md-4 mt-5">
           <div class="iconbox iconbox-xxl bg-primary text-white">
-            <i class="ti-thumb-up font-size-24"></i>
+            <i class=" ti-blackboard  font-size-24"></i>
           </div>
           <h4 class="my-4">
-            Inspire Students
+          	LIFE LONG LEARNING 
           </h4>
           <p>
-            Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores
+          Your educational materials will help as many as possible in their capacity building, feel proud to have help a generation
           </p>
         </div>
         
         <div class="col-md-4 mt-5">
           <div class="iconbox iconbox-xxl bg-primary text-white">
-            <i class="ti-blackboard font-size-24"></i>
+            <i class=" ti-money  font-size-24"></i>
           </div>
           <h4 class="my-4">
-            Life long learning 
+          	EARN EXTRA INCOME 
           </h4>
           <p>
-            Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores
+          Your free time can generate extra income with HealthEdu. Develop as many courses as you can to help in this
+           struggle of increasing the quality of healthcare in our Society
           </p>
         </div>
       </div> <!-- END row-->
@@ -100,7 +101,7 @@
   
   
   
-  <section class="padding-y-100 bg-light">
+  <!-- <section class="padding-y-100 bg-light">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -109,7 +110,7 @@
           </h2>
           <div class="width-4rem height-4 bg-primary my-2 mx-auto rounded"></div>
         </div> <!-- END col-12 -->
-        <div class="col-12">
+        <!-- <div class="col-12">
           <ul class="nav justify-content-center text-center margin-y-40" role="tablist">
              <li class="nav-item mx-md-4">
               <a class="nav-link active" data-toggle="tab" href="#Tabs_1-1" role="tab" aria-selected="true">
@@ -164,9 +165,9 @@
                    <img src="assets/img/svg/7.png" alt="">
                  </div>
                </div>
-              </div> <!-- END tab-pane -->
+              </div> END tab-pane -->:
               
-              <div class="tab-pane fade" id="Tabs_1-2" role="tabpanel">
+              <!-- <div class="tab-pane fade" id="Tabs_1-2" role="tabpanel">
                <div class="list-card bg-white p-4 shadow-v1">
                  <div class="col-md-6 text-center my-4">
                    <img src="assets/img/svg/7.png" alt="">
@@ -185,9 +186,9 @@
                    </ul>
                  </div>
                </div>
-              </div> <!-- END tab-pane -->
+              </div> END tab-pane -->
               
-              <div class="tab-pane fade" id="Tabs_1-3" role="tabpanel">
+              <!-- <div class="tab-pane fade" id="Tabs_1-3" role="tabpanel">
                <div class="list-card bg-white p-4 shadow-v1">
                  <div class="col-md-6 my-4">
                    <h4>
@@ -205,14 +206,14 @@
                  <div class="col-md-6 text-center my-4">
                    <img src="assets/img/svg/7.png" alt="">
                  </div>
-               </div>
-              </div> <!-- END tab-pane -->
-              
+               </div> -->
+              <!-- </div> <!-- END tab-pane -->
+<!--               
             </div> <!-- END tab-content-->
-        </div>
-      </div> <!-- END row-->
-    </div> <!--END container-->
-  </section>
+        <!-- </div> -->
+      <!-- </div> <!-- END row-->
+    <!-- </div> END container -->
+  <!-- </section> --> 
   
   
   
@@ -268,21 +269,20 @@
       </div>
       <div class="col-lg-6 mt-5">
         <p>
-          Investig tiones demons travge wunt ectores legere lkurus quod legunt saepiu clartas est consectetur adipi sicing elitsed kdo eusmod tempor cididunt wuti labore edolore magna aliqua. Consectetur adipi sicing.
+        For the organization to generate Quality educational materials; instructors have to be experts in a certain field; these instructors must be health 
+        professionals with active license to practice from a competent regulatory body in case they are teaching a health top. 
         </p>
-        <p>
-          Investig tiones demons travge wunt ectores legere lkurus quod legunt saepiu clartas est consectetur adipi sicing elitsed kdo eusmod tempor cididunt.
-        </p>
+   
        <ul class="list-unstyled list-style-icon list-icon-check font-weight-semiBold my-4">
-        <li>Focused subject concentrations</li>
-        <li>Usually 3 or more coordinated courses</li>
-        <li>Develop a skill set within a specific area</li>
-        <li>Focused subject concentrations</li>
+        <li>-	Be with an active license to practice </li>
+        <li>Be loyal with no records of malpractice</li>
+        <li>Be with a good will to help others in capacity building</li>
+        
        </ul>
       </div>
       <div class="col-lg-6 mt-5">
          <img class="w-100" src="assets/img/600x432/4.jpg" alt="">
-          <a href="https://www.youtube.com/watch?v=7e90gBu4pas" data-fancybox="" class="iconbox iconbox-lg bg-white position-absolute absolute-center">
+          <a href="" data-fancybox="" class="iconbox iconbox-lg bg-white position-absolute absolute-center">
             <i class="ti-control-play text-primary"></i>
           </a>
       </div>
@@ -306,14 +306,16 @@
       <div class="col-md-4 mt-5">
         <div class="card height-100p text-center px-4 py-5 shadow-v2">
           <p>
-            Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
+          Je pense que c’est une excellente occasion pour les professionnels de la santé au Rwanda et en Afrique de
+           développer leurs capacités professionnelles via des CPD. Les services 
+          en ligne ont éliminé les obstacles à l'accessibilité, même dans les régions éloignées.
           </p>
-          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/4.jpg" alt="">
+          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/ins1.jpg" alt="">
           <h6 class="mb-0">
-            Kenelia Deshmukh
-          </h6>
+          Dr. Watukalusu M. Hubert.
+           </h6>
           <p class="font-size-14 text-gray mb-0">
-            Developer Instructor
+          Medical Doctor, MSc Cand.
           </p>
         </div>
       </div>
@@ -321,14 +323,16 @@
       <div class="col-md-4 mt-5">
         <div class="card height-100p text-center px-4 py-5 shadow-v2">
           <p>
-            Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
+       Continuous Professional Development has to be in our culture ! As health professionals are catering for life saving and 
+       quality of life improvement ; they really to
+        always update their knowledge… science is moving, we have to also move and upgrade our knowledge day to day. 
           </p>
-          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/5.jpg" alt="">
+          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/ins2.jpg" alt="">
           <h6 class="mb-0">
-            Colt Steele
+          Dr. Anicet Nzabonimpa, MD
           </h6>
           <p class="font-size-14 text-gray mb-0">
-            Developer Instructor
+          Medical Doctor, MSc
           </p>
         </div>
       </div>
@@ -336,14 +340,17 @@
       <div class="col-md-4 mt-5">
         <div class="card height-100p text-center px-4 py-5 shadow-v2">
           <p>
-            Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
+              It is essential that we make sure our knowledge is update, some if not most of techniques that were
+              used in pst years are changing and health professionals need to adapt to the changing environment by enrolling in different CPD packages available….
+              Get them online – no need to travel and loos time! 
+
           </p>
-          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/6.jpg" alt="">
+          <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/ins3.jpg" alt="">
           <h6 class="mb-0">
-            Stephen Grider
+          Jean de Dieu Harelimana, MSc, PhD Cand.
           </h6>
           <p class="font-size-14 text-gray mb-0">
-            Developer Instructor
+          Medical Laboratory Specialist 
           </p>
         </div>
       </div>
@@ -367,7 +374,7 @@
       <div class="col-lg-6 mx-auto mt-5">
         <div class="card text-center shadow-v3 p-5">
           <h4 class="text-primary">
-            Become a Educati Instructor!
+            Become a HealthEdu Instructor!
           </h4>
           <p>
             Discover a supportive community of online instructors. Get instant access to all course creation resources.

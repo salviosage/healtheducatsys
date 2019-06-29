@@ -118,10 +118,10 @@ require 'const.php';
                 <div class="row align-items-center">
                   <div class="col-md-6 my-5">
                    <div class="position-relative">
-                    <img class="rounded w-100" src="assets/img/360x400/1.jpg" alt="">
-                    <a href="https://www.youtube.com/watch?v=7e90gBu4pas" data-fancybox class="iconbox iconbox-lg bg-white position-absolute absolute-center">
-                      <i class="ti-control-play text-primary"></i>
-                    </a>
+                     <img class="w-100" src="assets/img/600x432/4.jpg" alt="">
+                      <a href="" data-fancybox="" class="iconbox iconbox-lg bg-white position-absolute absolute-center">
+                        <i class="ti-control-play text-primary"></i>
+                      </a>
                    </div>
                   </div>
                   <div class="col-md-6 mt-4">
@@ -173,7 +173,7 @@ require 'const.php';
                          2
                        </span>
                         <span class="d-block mt-2">
-                          take Course  and get certification
+                        Enroll in a course & Get a Certificate
                         </span>
                       </a>
                      </li>
@@ -183,7 +183,7 @@ require 'const.php';
                          3
                        </span>
                         <span class="d-block mt-2">
-                          Connect with expertise
+                        Move as a Giant!
                         </span>
                       </a>
                      </li>
@@ -221,15 +221,19 @@ require 'const.php';
                          </div>
                          <div class="col-md-6 my-4">
                            <h4>
-                             Create a Course
+                           Enroll in a Course
                            </h4>
                            <p>
-                             Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores. Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores. There consectetur.
+                           Health Professionals will get to choose the best they think is
+                                right for them. You take a course in the expected time, go
+                                through it and make sure you are able gain some knowledge
+                                because that is the most important value of doing CPD
+                                Courses.
                            </p>
                            <ul class="list-unstyled list-style-icon list-icon-check font-weight-semiBold my-4">
-                              <li>Focused subject concentrations</li>
-                              <li>Usually 3 or more coordinated courses</li>
-                              <li>Develop a skill set within a specific area</li>
+                              <li>-	Focus on your career	</li>
+                              <li>Challenge yourself in enrolling in many courses </li>
+                              <li>Develop a skill and be able to expand your knowledge</li>
                            </ul>
                          </div>
                        </div>
@@ -242,12 +246,13 @@ require 'const.php';
                              Connect with Students
                            </h4>
                            <p>
-                             Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores. Investig ationes demons travg ectores legere lruske quod legunt saepius ationes demons ectores. There consectetur.
+                           After gaining knowledge in different areas, you feel confident and move as a giant. Your brain is 
+                           capable to accommodate many insights and generates ideas connecting to all the knowledge you acquired. 
                            </p>
                            <ul class="list-unstyled list-style-icon list-icon-check font-weight-semiBold my-4">
-                              <li>Focused subject concentrations</li>
-                              <li>Usually 3 or more coordinated courses</li>
-                              <li>Develop a skill set within a specific area</li>
+                              <li>	Be valuable</li>
+                              <li>Do not loose time</li>
+                              <li>Start now</li>
                            </ul>
                          </div>
                          <div class="col-md-6 text-center my-4">
