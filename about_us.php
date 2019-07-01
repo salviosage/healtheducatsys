@@ -9,7 +9,7 @@ require 'const.php';
     <meta charset="UTF-8">
     
     <!-- Title-->
-    <title>About |Topupgrade LTD</title>
+    <title>About |HealthEdu LTD</title>
     
     <!-- SEO Meta-->
     <meta name="description" content="Digital innovation art ">
@@ -88,25 +88,26 @@ require 'const.php';
             
             <div class="width-4rem height-4 bg-primary rounded mt-4 marginBottom-40"></div>
             <p class="mb-5">
-                Top-Upgrade Ltd is a Company created with the support of Health Volunteers Overseas (HVO) – United States of America; it was initiated by Jean
+                HealthEdu is a Company created with the support of Health Volunteers Overseas (HVO) – United States of America; it was initiated by Jean
                  Damascene Bigirimana, who developed a web-based platform for online trainings in 2016. With the support of Student Alumni of Misercodia University (USA), 
                  Jean Damascene Bigirimana was able to establish the online training. </p>
            
         </div> 
         <div class="col-lg-5 mb-4 mr-auto text-center">
-            <img class="wow fadeInLeft w-100 rounded" src="assets/img/384x320/3.jpg" alt="">
+            <img class="wow fadeInLeft w-100 rounded" src="assets/img/384x320/owner.jpg" alt="Founder and Managing Director ">
+            <p>Founder and Managing Director </p>
         </div> 
 
         <div class="col-lg-6 mb-4 mr-auto ">
             
                  
              <p class="mb-5"> 
-                    The company started with only training for Physical Therapy Practitioners; Dr. Maureen Pascal has contributed a lot in the establishment of the organization. Health Volunteers Overseas has funded Top-Upgrade Ltd and avail some IT Equipments for its activities. 
+                    The company started with only training for Physical Therapy Practitioners; Dr. Maureen Pascal has contributed a lot in the establishment of the organization. Health Volunteers Overseas has funded HealthEdu and avail some IT Equipments for its activities. 
                    In October 2017, the company was officially registered in Rwanda Development Board (RDB) as Domestic Company.
              </p>
              <p class="mb-5"> Since its opening the company has been able to training nearly 730 health Professionals by qualified health Instructors. 
-                As added value; Top-Upgrade Ltd has received functional 2 partners (Mutoni Jean d’Amour and Harelimana Jean de Dieu) both Biomedical Laboratory Specialists
-                 working hard in improving service delivery and general management of Top-Upgrade Ltd.
+                As added value; HealthEdu has received functional 2 partners (Mutoni Jean d’Amour and Harelimana Jean de Dieu) both Biomedical Laboratory Specialists
+                 working hard in improving service delivery and general management of HealthEdu.
           </p>
            
         </div> 
@@ -228,16 +229,20 @@ require 'const.php';
                   <div id="acc2_7" class="collapse show" data-parent="#accordion-2_1" style="">
                     <div class="p-0">
                        <p>
-                        •	Motivation
+                        •	Health Professionals have to abide to the code of conduct and Ethics 
                         </p>
                         <p>
-                          •	Collective responsibility and leadership
+                          •	Building Rwanda we want by increasing skills of Health care Providers
                         </p>
                         <p>
-                            •	Professionalism and ethics 
+                            •	Healthcare quality improvement
+
                         </p>
                         <p>
-                        •	Adding values to our client needs
+                        •	Rwandan Citizens deserve the best quality of Health Care Service
+                       </p>
+                        <p>
+                        •	Enrolling in our courses will increase the capacity of health Professionals
                        </p>
                     </div>
                   </div>
@@ -310,16 +315,16 @@ require 'const.php';
               </div>
             </div>
             <p>
-                Top-Upgrade Ltd has the expertise also of organizing high ranking training for leaders
+                HealthEdu has the expertise also of organizing high ranking training for leaders
                  and Managers in health System. It invites Special Category of Professionals / administrators/
                   Directors/Head of Departments and trains them of selected topics for the improvement of their
-                   daily work. By doing this; Top-Upgrade Ltd Contributes in raising the private
+                   daily work. By doing this; HealthEdu Contributes in raising the private
                  sector and build the nation by increasing the knowledge of the Rwandan Work force. 
             </p>
             <p><b>•	Institutional Staff Trainings –</b> The Company Provides Institutional Staff trainings, by evaluating types
                of employees and planning for the 
               appropriate trainings needed to develop their professions in different perspective. </p>
-              <p><b>•	Personal Trainings –</b>  Top-Upgrade Ltd has the Capacity to organized personal trainings depending on the needed skills and willingness of the applicant.        </p>
+              <p><b>•	Personal Trainings –</b>  HealthEdu has the Capacity to organized personal trainings depending on the needed skills and willingness of the applicant.        </p>
           </div>
          
           <div class="col-md-6 mt-5 pr-lg-5 wow fadeInUp" data-wow-delay=".3s">
@@ -335,9 +340,7 @@ require 'const.php';
             </div>
             <p>
                 
-                Top-Upgrade Ltd has a Training Center at Acts of Gratitude – KG 147 Street 7. This hall is equipped with overhead Projector
-                 and is able to accommodate near 50 participants. When Participants are many; Top-Upgrade Ltd works with Scheba Hotel,
-                  Dove Hotel and Heart Land Hotel. Top-Upgrade Ltd is opening Partnership with Hospitals in Kigali and in different Districts
+                HealthEdu has a Training Center at Acts of Gratitude – KG 147 Street 7. HealthEdu is opening Partnership with Hospitals in Kigali and in different Districts
                    so that it can use its infrastructure with the same goal of increase health practitioners’ knowledge and hence increase the service delivery. 
                 
             </p>
@@ -355,7 +358,7 @@ require 'const.php';
               </div>
             </div>
             <p>
-                In Order for Top-Upgrade Ltd communicate with its customers; there is use of Bulk SMS delivered by one 
+                In Order for HealthEdu communicate with its customers; there is use of Bulk SMS delivered by one 
                 of our partner. The company shares images on different networks for participants to get aware of available trainings.
                  Bulk E-mail messages and calls are also sent by the Secretariat.
             </p>
@@ -379,24 +382,29 @@ require 'const.php';
         </h2>
         <div class="width-4rem height-4 bg-primary rounded mt-4 marginBottom-40"></div>
         <p class="mb-5">
-            In special designed venues; TOP-UPGRADE LTD join both parties and facilitate good learning environment for the expected outcomes. The Company has a network of qualified professionals able to instruct a class and deliver the best of high learning skills for health professionals. 
+            In special designed venues; HealthEdu join both parties and facilitate good learning environment for the 
+            expected outcomes. The Company has a network of qualified professionals able to instruct a class and deliver the best
+             of high learning skills for health professionals. 
 
-            This Company has both face to face training and online based CPD Courses for Health Professionals in East Africa to get enrolled and enjoy the benefits of online learning. 
+            This Company has both face to face training and online based CPD Courses for Health Professionals in East Africa to
+             get enrolled and enjoy the benefits of online learning. 
         <div class="media mb-4">
           <i class="ti-user text-primary font-size-30 mt-2"></i>
           <div class="media-body pl-3">
-            <h4 class="h5">online courses</h4>
+            <h4 class="h5">ONLINE COURSES</h4>
             <p>
-              Nam liber tempor cum soluta nobis eleifend option congue is nihil imper per tem por legere me that doming vulputate.
+            Online courses are organized by Health specialist locally and internationally. The courses are accredited locally and start us face 
+            to face and are transformed to online to allow many other health professionals who have not been to attend to access them. 
             </p>
           </div>
         </div>
         <div class="media mb-4">
           <i class="ti-basketball text-primary font-size-30 mt-2"></i>
           <div class="media-body pl-3">
-            <h4 class="h5">onsite trainning </h4>
+            <h4 class="h5">ONSITE TRAINING </h4>
             <p>
-              Nam liber tempor cum soluta nobis eleifend option congue is nihil imper per tem por legere me that doming vulputate.
+            Some courses need practicals definitely e.g. Basic Life Support and First Aid. These sessions are 
+            also organized to make sure that the organization is delivering the best quality service.
             </p>
           </div>
         </div>
@@ -415,7 +423,7 @@ require 'const.php';
       <div class="row align-items-center">
         <div class="col-lg-5 col-md-7 mr-auto text-white my-3">
           <h4 class="text-primary font-weight-semiBold">
-            enhance you career with topuprwanda.
+            enhance you career with HealthEdu.
           </h4>
           <h2>
             Learn a New Skill Online, on Your Time and get a certificate
@@ -428,7 +436,7 @@ require 'const.php';
               Subscribe to our Newsletter  
             </h4>
             <p class="mb-4">
-              Get the latest news and update from topupgrade  
+              Get the latest news and update from HealthEdu  
             </p>
            <div class="input-group input-group--focus mb-3">
               <div class="input-group-prepend">
@@ -463,14 +471,18 @@ require 'const.php';
           <div class="col-md-4 mt-5">
             <div class="card height-100p text-center px-4 py-5 shadow-v2">
               <p>
-                Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
+              It is great to see that Health Professionals can get courses from different corners of 
+              the country and abroad. I felt honored to make a course of Patient Centered Approach for this 
+              Organization, and glad that it helped participants. 
+Congratulations
+
               </p>
-              <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/4.jpg" alt="">
+              <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/umale.jpg" alt="">
               <h6 class="mb-0">
-                Kenelia Deshmukh
+              Jovial Thomas Ntawukuriryayo
               </h6>
               <p class="font-size-14 text-gray mb-0">
-                Developer Instructor
+              Physical Therapy Practitioner, Public Health Officer.
               </p>
             </div>
           </div>
@@ -478,14 +490,15 @@ require 'const.php';
           <div class="col-md-4 mt-5">
             <div class="card height-100p text-center px-4 py-5 shadow-v2">
               <p>
-                Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
+              Online services have been transforming lives, Health Professionals are also encouraged to benefit from this platform. I have been able to develop a course on Medical Biorisk Assessment and Management and it helped many participants,
+               it’s up to us to develop the country and we have all it takes to move forward! 
               </p>
-              <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/5.jpg" alt="">
+              <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/umale.jpg" alt="">
               <h6 class="mb-0">
-                Colt Steele
+              Celestin Musabyumuremyi 
               </h6>
               <p class="font-size-14 text-gray mb-0">
-                Developer Instructor
+              Biomedical Laboratory Specialist
               </p>
             </div>
           </div>
@@ -493,14 +506,15 @@ require 'const.php';
           <div class="col-md-4 mt-5">
             <div class="card height-100p text-center px-4 py-5 shadow-v2">
               <p>
-                Investig tiones was demons trave wunt was ectores is legere lkurus quod legunt the saepiu clartas consectetur sicing elitsed.
+              With this innovative platform, health professionals working in a remote area an all access the best quality courses that customized to the need of health providers in Rwanda. A course on Peer Influence & Behavior and course on Neuro Anatomy % Behavior 
+              I developed; joined the struggle to build the capacity of health Providers in Rwanda.
               </p>
-              <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/6.jpg" alt="">
+              <img class="iconbox iconbox-xxl mx-auto my-3" src="assets/img/avatar/ufemale.jpg" alt="">
               <h6 class="mb-0">
-                Stephen Grider
+              Mukansanga Marie Chantal 
               </h6>
               <p class="font-size-14 text-gray mb-0">
-                Developer Instructor
+              Clinical Psychology Specialist 
               </p>
             </div>
           </div>
@@ -588,7 +602,7 @@ require 'const.php';
   
     <div class="footer-bottom bg-black-0_9 py-5 text-center">
       <div class="container">
-        <p class="text-white-0_5 mb-0">&copy; 2019 topupgrade ltd. All rights reserved. designed by <a href="https://sagesalvio.000webhostapp.com" target="_blunk">DIA Lab</a></p>
+        <p class="text-white-0_5 mb-0">&copy; 2019 HealthEdu ltd. All rights reserved. designed by <a href="https://sagesalvio.000webhostapp.com" target="_blunk">DIA Lab</a></p>
       </div>
     </div>  <!-- END footer-bottom-->
   </footer> <!-- END site-footer -->

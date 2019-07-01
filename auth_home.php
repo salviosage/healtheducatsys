@@ -13,7 +13,7 @@ define("USER_TYPE", $_SESSION['user_type']);
         <meta charset="UTF-8">
         
         <!-- Title-->
-        <title>course | topugrade ltd </title>
+        <title>course | Healthedu ltd </title>
         
         <!-- SEO Meta-->
         <meta name="description" content="Digital innovation art ">
@@ -32,16 +32,16 @@ define("USER_TYPE", $_SESSION['user_type']);
             <div class="row">
               <div class="col-lg-9 mx-auto text-center text-white">
                 <h4 class="display-5 font-weight-bold text-primary wow slideInUp">
-                  Best Ever Trendy
+                CPD Courses in
                 </h4>
                 <h2 class="display-md-3 font-weight-bold text-white wow slideInUp">
-                  School Template
+                Health related topics 
                 </h2>
                 <p class="lead wow slideInUp">
-                  This modern and inviting academic template is perfectly suited for school, colleges, university, on-line course, and other educational institutions. 
+                This platform will connect you to many health specialist across Rwanda, the region and internationally - Keep updated with us
                 </p>
-                <a href="#" class="btn btn-primary btn-lg  mt-3 mx-2 wow slideInUp">Our Courses</a>
-                <a href="#" class="btn btn-outline-white btn-lg  mt-3 mx-2 wow slideInUp">Your Dashboard</a>
+                <a href="courses" class="btn btn-primary btn-lg  mt-3 mx-2 wow slideInUp">Our Courses</a>
+                <a href="dashboard" class="btn btn-outline-white btn-lg  mt-3 mx-2 wow slideInUp">Your Dashboard</a>
               </div>
             </div>
           </div>
@@ -56,9 +56,9 @@ define("USER_TYPE", $_SESSION['user_type']);
                     Success Needs a Plan
                   </h4>
                   <p>
-                    Investig ationes demons tavge khsed vunt lectores legere doka kuus quodk legunt saepius claritas esekist
+                    Begin your success journey with us and make most of it 
                   </p>
-                  <a href="#" class="btn btn-outline-primary mt-3 align-self-start">
+                  <a href="about" class="btn btn-outline-primary mt-3 align-self-start">
                     Read More
                   </a>
                 </div>
@@ -70,9 +70,9 @@ define("USER_TYPE", $_SESSION['user_type']);
                     Learn Courses Online
                   </h4>
                   <p>
-                    Investig ationes demons tavge khsed vunt lectores legere doka kuus quodk legunt saepius claritas esekist
+                    Learn and get  to know whatever it take to become a health professional 
                   </p>
-                  <a href="#" class="btn btn-outline-primary mt-3 align-self-start">
+                  <a href="about" class="btn btn-outline-primary mt-3 align-self-start">
                     Read More
                   </a>
                 </div>
@@ -81,12 +81,12 @@ define("USER_TYPE", $_SESSION['user_type']);
                 <div class="card">
                   <img src="assets/img/school/3.jpg" class="card-img-top" alt="">
                   <h4 class="my-4">
-                    The Best Courses Tutors
+                    Make a connection
                   </h4>
                   <p>
-                    Investig ationes demons tavge khsed vunt lectores legere doka kuus quodk legunt saepius claritas esekist
+                    Connect with many industry expert in health sector 
                   </p>
-                  <a href="#" class="btn btn-outline-primary mt-3 align-self-start">
+                  <a href="about" class="btn btn-outline-primary mt-3 align-self-start">
                     Read More
                   </a>
                 </div>
@@ -104,12 +104,15 @@ define("USER_TYPE", $_SESSION['user_type']);
               <div class="col-lg-6 mt-5">
                 <h2>
                   <small class="d-block text-gray">Welcome to</small>
-                   <span class="text-primary">Educati</span> Online School
+                   <span class="text-primary">Healthedu</span> Online Platform
                 </h2>
                 <p class="my-4">
-                  Investig ationes demons travge vunt lectores legee lrus quodk legunt saepius claritas est conctetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore edolore magna aliqua. Consectetur adipi sicing elited do eiusm tempor incididunt ut labore et.dolore magna.
+                Top-Upgrade Ltd is a Company created with the support of Health Volunteers Overseas (HVO) – 
+                United States of America; it was initiated by Jean Damascene Bigirimana, who developed a web-based 
+                platform for online trainings in 2016. With the support of Student Alumni of
+                 Misercodia University (USA), Jean Damascene Bigirimana was able to establish the online training.
                 </p>
-                <a href="#" class="btn btn-outline-primary">
+                <a href="about" class="btn btn-outline-primary">
                   Read More
                 </a>
               </div>
@@ -117,7 +120,7 @@ define("USER_TYPE", $_SESSION['user_type']);
           </div> <!-- END container-->
         </section>
         <?php include VIEWS.'Home/popular_courses.php'; ?>
-        <section class="paddingTop-60 paddingBottom-100">
+        <!-- <section class="paddingTop-60 paddingBottom-100">
           <div class="container">
             <div class="row text-center">
              
@@ -141,7 +144,7 @@ define("USER_TYPE", $_SESSION['user_type']);
              
               <div class="col-lg-3 col-md-6  mt-5 wow zoomIn" data-wow-delay=".3s">
                 <h1 class="ec-counter text-primary" data-to="856084" data-speed="3000">
-                  235K
+                  235
                 </h1>
                 <p class="lead text-dark">
                   Online Students
@@ -159,7 +162,7 @@ define("USER_TYPE", $_SESSION['user_type']);
               
             </div> <!-- END row-->
           </div> <!-- END container-->
-        </section>
+        </section> -->
            
             
             
@@ -174,7 +177,7 @@ define("USER_TYPE", $_SESSION['user_type']);
                   GET 100S OF ONLINE COURSES
                 </p>
                 <h1 class="display-lg-4">
-                  Begin your Freshman Year Online with <span class="text-primary">Topugrade</span>
+                  Begin your Freshman Year Online with <span class="text-primary">Healthedu</span>
                 </h1>
               </div>
               <div class="col-lg-4 mt-5">
@@ -199,7 +202,7 @@ define("USER_TYPE", $_SESSION['user_type']);
         
            
             
-            
+<!--             
             
         <section class="padding-y-100 bg-light">
           <div class="container">
@@ -213,7 +216,7 @@ define("USER_TYPE", $_SESSION['user_type']);
               </div> 
             </div> <!-- END row-->
             
-            <div class="row mt-4">
+            <!-- <div class="row mt-4">
          
               <div class="col-lg-4 col-md-6 marginTop-30 wow fadeIn" data-wow-delay=".1s">
                 <div class="card shadow-v1">
@@ -333,11 +336,11 @@ define("USER_TYPE", $_SESSION['user_type']);
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
              
-            </div> <!-- END row-->
-          </div> <!-- END container-->
-        </section>
+            <!-- </div> <!-- END row-->
+          <!-- </div> <!-- END container-->
+        <!-- </section> --> 
         
            
             
