@@ -68,15 +68,9 @@ $teachers=$admin->loadUsers(2,1);
                                     if(USER_TYPE==1){
                                         ?>
                                         <div class="btn-group m-b-10">
-                                            <button type="button" class="btn btn-default waves-effect">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-default waves-effect">
-                                                <i class="fa fa-close"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-default waves-effect">
+                                            <a teacher_id="<?php echo $teacher['id']; ?>" class="btn btn-danger waves-effect btn_delete_teacher">
                                                 <i class="fa fa-trash-o"></i>
-                                            </button>
+                                            </a>
                                         </div>
                                         <?php
                                     }

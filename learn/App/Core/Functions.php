@@ -29,7 +29,6 @@ class Validate{
 		$str=stripcslashes(strip_tags(htmlentities(htmlspecialchars($str))));
 		return $str;
 	}
-
     public function formatTransactionID($random,$id,$currency_id,$sender_names,$receiver_names){
         return ($id.$random.strtoupper(substr($sender_names,0,1)).$currency_id.strtoupper(substr($receiver_names,0,1)));
     }
@@ -117,7 +116,10 @@ class Validate{
         $monthName = strftime('%B', mktime(0, 0, 0, $result));
         return $monthName.' '.$day.', '.$year;
     }
-
+    public function getLastCharacter($str){
+        $str_length=strlen($str);
+        return substr($str,($str_length - 1), $str_length);
+    }
     public function getUserIpAddr(){
         if(!empty($_SERVER['HTTP_CLIENT_IP'])){
             //ip from share internet

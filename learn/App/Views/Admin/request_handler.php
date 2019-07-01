@@ -101,7 +101,16 @@ if(isset($_POST['input'])){
 			}else{
 				echo $error;
 			}
-		}elseif($action=="request_course"){
+		}elseif($action=="delete_teacher"){
+			$teacher_id=$function->sanitize($input[1]);
+			$update_status=$admin->changeFieldValue(Tables::users(),"status","DELETED","id",$teacher_id);
+			if($update_status){
+				echo $success;
+			}else{
+				echo $error;
+			}
+		}
+		elseif($action=="request_course"){
 			$course_id=$function->sanitize($input[1]);
 			$student_id=$function->sanitize($input[2]);
 

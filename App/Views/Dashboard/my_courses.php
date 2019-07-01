@@ -32,7 +32,25 @@ $MyCourses=$admin->StudentCourse(USER_ID);
                   </a>
                 </div>
               </div>
-              <a href="<?php echo $course_url; ?>" class="btn btn-outline-primary">Start Course</a> 
+              <a href="<?php echo $course_url; ?>" class="btn btn-outline-primary">Start Course</a>
+              <?php 
+              $courseModules=$admin->courseModules($course_id);
+              $module_id=$function->extract_array($courseModules,"id");
+              $Quiz=$admin->getQuiz($module_id);
+              $quiz_id=$function->extract_array($Quiz,'id');
+              //Quiz Questions
+              $Questions=$admin->getQuizQuestions($quiz_id);
+              $question_id=$function->extract_array($Questions,"id");
+              $userAnswers=$admin->getQuestionAnswer($question_id,USER_ID);
+              if(count($userAnswers)>0){
+                $certificate_url="view-certificate?course=".$course_id;
+                ?>
+                <a href="<?php echo $certificate_url; ?>" class="btn btn-success" target="_blank">
+                  VIEW CERTIFICATE
+                </a>
+                <?php
+              }
+              ?> 
             </div> 
           <?php
         }elseif($course['status']=='REQUESTED'){

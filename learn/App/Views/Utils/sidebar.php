@@ -36,7 +36,6 @@
                         <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user-plus"></i> <span>Manage Teachers </span> <span class="menu-arrow"></span></a>
                         <ul class="list-unstyled">
                             <li><a href="?request=create_course">Create new Teacher</a></li>
-                            <li><a href="?request=verified_teachers">Verified Teachers</a></li>
                             <li><a href="?request=unverified_teachers">Unverified Teachers</a></li>
                             <li>
                                 <a href="?request=manage_teachers">

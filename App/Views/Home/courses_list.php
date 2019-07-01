@@ -39,7 +39,7 @@ $available_courses=$admin->getPublicCourses(6);
                     <ul class="list-unstyled mb-0">
                       <li class="mb-1">
                         <i class="fa fa-book"></i>
-                        <?php echo $course['credit_no']; ?>
+                        <?php echo $course['credit_no'].' CPD Credit'; ?>
                       </li>
                     </ul>
                     <h4 class="h5">

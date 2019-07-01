@@ -54,7 +54,18 @@ $personalInfo=$user->getUserPersonalInfo(USER_ID);
           your Activities
         </h4>
     <div class="row">      
-      <?php include VIEWS.'Dashboard/my_courses.php'; ?>
+      <?php
+       if(isset($_GET['request']) && $_GET['request']!=''){
+        $request=$_GET['request'];
+        if($request=='my_certificates'){
+          include VIEWS.'Dashboard/my_certificates.php';
+        }else{
+          include VIEWS.'Dashboard/my_courses.php'; 
+        }
+       }else{
+         include VIEWS.'Dashboard/my_courses.php'; 
+       }
+      ?>
     </div> <!-- END row-->
   </div> <!-- END container-->
 </section> 

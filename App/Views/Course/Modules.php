@@ -15,7 +15,7 @@ $Modules=$admin->courseModules($course_id);
           <div class="panel panel-default">
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a class="nav-link bg-light rounded text-center p-3 active show" data-toggle="collapse" data-parent="#accordion" href="#<?php echo $value['id']; ?>">
+                <a class="nav-link bg-light rounded text-center p-3 active show" data-toggle="collapse" data-parent="#accordion" href="#<?php echo $value['id']+100; ?>">
                   <?php
                   $credit_title="";
                   if($is_quiz_available){
@@ -28,7 +28,7 @@ $Modules=$admin->courseModules($course_id);
                 </a>
               </h4>
             </div>
-            <div id="<?php echo $value['id']; ?>" class="panel-collapse collapse in">
+            <div id="<?php echo $value['id']+100; ?>" class="panel-collapse collapse in">
               <div class="panel-body">
                 <?php 
                  echo htmlspecialchars_decode($value['summary']);

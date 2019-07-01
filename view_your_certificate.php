@@ -29,14 +29,14 @@ if(isset($_GET['course'])){
 					$correct_answer=$function->getLastCharacter(strtolower($correct_answer));
 					if($user_answer==$correct_answer){
 						$correct_answer_counter=$correct_answer_counter+1;
-						echo 'Quiz: <strong></strong> '.$quiz_id.' ,'.$question['question'].' (<strong>'.$correct_answer.' : '.$user_answer.'</strong>)<br>';
+						//echo 'Quiz: <strong></strong> '.$quiz_id.' ,'.$question['question'].' (<strong>'.$correct_answer.' : '.$user_answer.'</strong>)<br>';
 					}else{
 						?>
-						<p style="border:1px solid red;padding: 5px;">
+<!-- 						<p style="border:1px solid red;padding: 5px;">
 							<?php 
-							echo 'Quiz: <strong></strong> '.$quiz_id.' ,'.$question['question'].' (<strong>'.$correct_answer.' : '.$user_answer.'</strong>)<br>';
+							//echo 'Quiz: <strong></strong> '.$quiz_id.' ,'.$question['question'].' (<strong>'.$correct_answer.' : '.$user_answer.'</strong>)<br>';
 							?>
-						</p>
+						</p> -->
 						<?php
 					}
 				}
@@ -58,8 +58,8 @@ function backHome(){
 }
 $answer_rate=(100/$questions_counter);
 $per_centage=round($answer_rate * $correct_answer_counter).' %';
-// echo $correct_answer_counter.' Out of '.$questions_counter.'<br>Percentage of : '.$per_centage;
-// die();
+$course_name=$function->extract_array($courseInfo,"title");
+$credit_no=$function->extract_array($courseInfo,"credit_no").' CPD Credits';
 ?>
 <!DOCTYPE html>
 <html>
@@ -91,16 +91,20 @@ float:left;
 <div id="div_body" style="width:800px; height:650px; padding:5px; text-align:center; border: 10px solid #787878">
 <div style="width:750px; height:600px; padding:10px; text-align:center; border: 5px solid #787878">
 	<span style="margin: 10px;">on <?php echo date('d-m-Y'); ?></span><br><br>
+	<img src="assets/img/logo-white.png">
        <span style="font-size:50px; font-weight:bold;background: #009966;padding: 10px;color: #Fff;margin-top: 10px;">Certificate of Completion</span>
        <br><br>
        <span style="font-size:20px"><i>This is to certify that</i></span><br>
        <br>
        <span style="font-size:30px"><b><?php echo USER_NAMES; ?></b></span><br/>
        <span style="font-size:20px"><i>has completed the course</i></span> <br/>
-       <span style="font-size:30px;color: #0066ff;">Java Essential Training</span> <br/>
-       <span style="font-size:20px">with score of <b><?php echo $per_centage; ?></b></span><br/>
+       <span style="font-size:30px;color: #0066ff;"><?php echo $course_name; ?></span>
+       <sub>
+       	 <strong><?php echo $credit_no; ?></strong>
+       </sub><br>
+       <span style="font-size:20px">with score of <b><?php echo $per_centage; ?></b></span><br/><br>
        <span style="font-size:20px"><i>Completed Date</i></span><br>
-       <span style="font-size:18px"><i><?php echo date('d-m-Y'); ?></i></span><br>
+       <span style="font-size:18px"><i><?php echo date('d-M-Y'); ?></i></span><br>
 <table style="margin-top:20px;float:right;margin-right: 32%;">
 <tr>
 <td><span><b>Jean damascene Hakizima</b></td>
@@ -122,7 +126,7 @@ float:left;
 </tr>
 <tr>
 	<td>
-		<img src="assets/img/logo-white.png" style="margin-left: 40px;">
+		<img src="assets/img/logo-white.png" onclick="window.print();" style="margin-left: 40px;">
 	</td>
 </tr>
 </table>

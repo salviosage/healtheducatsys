@@ -4,6 +4,9 @@ RewriteRule ^404$ page_404.php [NC,L]
 ErrorDocument 404 https://healtheducat.com/lean/404
 RewriteRule ^index$ index.php [NC,L]
 RewriteRule ^courses$ courses_all.php [NC,L]
+
+RewriteRule ^view-certificate$ view_your_certificate.php [NC,L]
+
 RewriteRule ^course$ view_course.php [NC,L]
 RewriteRule ^login$ user_login.php [NC,L]
 RewriteRule ^register$ sign_up.php [NC,L]
