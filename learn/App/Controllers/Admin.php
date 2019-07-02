@@ -208,6 +208,10 @@ class Admin extends Execute{
 		$sql="SELECT * FROM ".Tables::requesting()." WHERE student_id=\"$student_id\" AND status!='DELETED' ORDER BY id DESC LIMIT 10";
 		return $this->querying($sql);
 	}
+	public function StudentActiveCourse($student_id){
+		$sql="SELECT * FROM ".Tables::requesting()." WHERE student_id=\"$student_id\" AND status='APPROVED'";
+		return $this->querying($sql);
+	}
 	public function saveStudentCourseRequest($token,$course_id,$student_id,$save_date){
 		$array=array("token"=>$token,"course_id"=>$course_id,"student_id"=>$student_id,"status"=>'REQUESTED',"request_date"=>$save_date);
 		return $this->multi_insert(Tables::requesting(),$array);

@@ -5,4 +5,5 @@
     include VIEWS.'Modal/message_modal.php';
     include VIEWS.'Modal/upload_csv.php';
     include VIEWS.'Modal/addPoster.php';
+    include VIEWS.'Modal/view_client.php';
 ?>

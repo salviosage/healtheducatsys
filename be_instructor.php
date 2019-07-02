@@ -225,7 +225,10 @@
      
       <div class="col-md-4 mt-5 wow zoomIn" data-wow-delay=".1s">
         <p class="ec-counter display-4 text-primary" data-to="1787">
-          1,787
+          <?php 
+          $available_courses=$admin->loadCourses('ACTIVE');
+          echo count($available_courses);
+          ?>
         </p>
         <p class="lead">
           Online Courses
@@ -234,7 +237,10 @@
           
       <div class="col-md-4 mt-5 wow zoomIn" data-wow-delay=".2s">
         <p class="ec-counter display-4 text-primary" data-to="8404547">
-          8404547
+          <?php 
+          $Clients=$admin->clientsList();
+          echo count($Clients);
+          ?>
         </p>
         <p class="lead">
           Online Students
@@ -243,7 +249,10 @@
           
       <div class="col-md-4 mt-5 wow zoomIn" data-wow-delay=".2s">
         <p class="ec-counter display-4 text-primary" data-to="5404">
-          1250
+          <?php 
+          $total_teachers=count($admin->loadUsers(2,1));
+          echo $total_teachers;
+          ?>
         </p>
         <p class="lead">
           Supportive Instructors

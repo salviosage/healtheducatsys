@@ -34,6 +34,7 @@ $Teachers=$admin->clientsList();
                 <tbody>
                     <?php 
                         foreach ($Teachers as $key => $value) {
+                            $view_client_url="?request=view_client&client=".$value['id'];
                             ?>
                             <tr role="row" class="even">
                                 <td class="sorting_1" tabindex="0">
@@ -48,10 +49,16 @@ $Teachers=$admin->clientsList();
                                     </span>
                                 </td>
                                 <td>
-                                    0
+                                   <?php 
+                                    $Profession=$admin->getFieldValue(Tables::profession(),"name","id",$value['profession']);
+                                    echo $Profession;
+                                   ?>
                                 </td>
                                 <td>
-                                    0
+                                   <?php 
+                                    $Degree=$admin->getFieldValue(Tables::degree(),"name","id",$value['degree']);
+                                    echo $Degree;
+                                   ?>
                                 </td>
                                 <td>
                                     <?php 
@@ -60,6 +67,14 @@ $Teachers=$admin->clientsList();
                                         <div class="btn-group m-b-10">
                                             <a client_id="<?php echo $value['id']; ?>" names="<?php echo $value['names']; ?>" class="btn btn-danger waves-effect btn_delete_client">
                                                 <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </div>
+                                        <?php
+                                    }elseif(USER_TYPE==4){
+                                        ?>
+                                        <div class="btn-group m-b-10">
+                                            <a href="<?php echo $view_client_url; ?>" class="btn btn-success">
+                                                <i class="fa fa-eye"></i>
                                             </a>
                                         </div>
                                         <?php

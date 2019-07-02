@@ -51,15 +51,24 @@ if(isset($_GET['course'])){
 }else{
 	backHome();
 }
+$answer_rate=(100/$questions_counter);
+$per_centage=round($answer_rate * $correct_answer_counter);
+if($per_centage>=80){
+	$course_name=$function->extract_array($courseInfo,"title");
+	$credit_no=$function->extract_array($courseInfo,"credit_no").' CPD Credits';
+	$per_centage.=' %';
+}else{
+	//backHome();
+	//die();
+}
+$course_name=$function->extract_array($courseInfo,"title");
+	$credit_no=$function->extract_array($courseInfo,"credit_no").' CPD Credits';
+	$per_centage.=' %';
 function backHome(){
 	?>
 	<script type="text/javascript">window.location="home";</script>
 	<?php
 }
-$answer_rate=(100/$questions_counter);
-$per_centage=round($answer_rate * $correct_answer_counter).' %';
-$course_name=$function->extract_array($courseInfo,"title");
-$credit_no=$function->extract_array($courseInfo,"credit_no").' CPD Credits';
 ?>
 <!DOCTYPE html>
 <html>
@@ -70,7 +79,7 @@ $credit_no=$function->extract_array($courseInfo,"credit_no").' CPD Credits';
 	</script>
 	<style type="text/css">
 		#div_body{
-			background: url(assets/img/cert.jpg);
+			background: url(assets/img/back.jpg);
 			background-repeat: no-repeat;
 			background-size: 160%;
 			background-position: center;
@@ -98,10 +107,10 @@ float:left;
        <br>
        <span style="font-size:30px"><b><?php echo USER_NAMES; ?></b></span><br/>
        <span style="font-size:20px"><i>has completed the course</i></span> <br/>
-       <span style="font-size:30px;color: #0066ff;"><?php echo $course_name; ?></span>
-       <sub>
+       <span style="font-size:30px;color: #0066ff;"><?php echo $course_name; ?> <?php echo $credit_no; ?></span>
+      <!--  <sub>
        	 <strong><?php echo $credit_no; ?></strong>
-       </sub><br>
+       </sub> --><br>
        <span style="font-size:20px">with score of <b><?php echo $per_centage; ?></b></span><br/><br>
        <span style="font-size:20px"><i>Completed Date</i></span><br>
        <span style="font-size:18px"><i><?php echo date('d-M-Y'); ?></i></span><br>
@@ -124,11 +133,11 @@ float:left;
 	<img src="assets/img/sign.png" style="width: 150px;">
 </td>
 </tr>
-<tr>
+<!-- <tr>
 	<td>
 		<img src="assets/img/logo-white.png" onclick="window.print();" style="margin-left: 40px;">
 	</td>
-</tr>
+</tr> -->
 </table>
 </div>
 </div>
