@@ -5,8 +5,8 @@
         <li class="list-inline-item mr-3">
          <div class="d-flex align-items-center">
           <i class="ti-email mr-2"></i>
-          <a href="mailto:support@educati.com">
-              topupgradeltd@gmail.com</a>
+          <a href="mailto:healthedultd@gmail.com">
+              healthedultd@gmail.com</a>
          </div>
         </li>
         <li class="list-inline-item mr-3">

@@ -23,7 +23,7 @@
           <div class="width-3rem bg-primary height-3 mt-3"></div>
           <ul class="list-unstyled marginTop-40">
             <li class="mb-3"><i class="ti-headphone mr-3"></i><a href="tel:+8801740411513">(+250) 789044439</a></li>
-            <li class="mb-3"><i class="ti-email mr-3"></i><a href="mailto:support@educati.com">topupgradeltd@gmail.com</a></li>
+            <li class="mb-3"><i class="ti-email mr-3"></i><a href="mailto:support@educati.com">healthedultd@gmail.com</a></li>
             <li class="mb-3">
              <div class="media">
               <i class="ti-location-pin mt-2 mr-3"></i>
@@ -71,7 +71,7 @@
 
   <div class="footer-bottom bg-black-0_9 py-5 text-center">
     <div class="container">
-      <p class="text-white-0_5 mb-0">&copy; <?php echo date('Y'); ?> topupgrade ltd. All rights reserved. designed by <a href="https://sagesalvio.000webhostapp.com" target="_blunk">DIA Lab</a></p>
+      <p class="text-white-0_5 mb-0">&copy; <?php echo date('Y'); ?> <?php echo APP_NAME; ?>. All rights reserved. designed by <a href="https://sagesalvio.000webhostapp.com" target="_blunk">DIA Lab</a></p>
     </div>
   </div>  <!-- END footer-bottom-->
 </footer>

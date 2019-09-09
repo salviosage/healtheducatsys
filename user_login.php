@@ -9,7 +9,7 @@ require 'const.php';
     <meta charset="UTF-8">
     
     <!-- Title-->
-    <title>Login | topupgrade LTD</title>
+    <title>Login | <?php echo APP_NAME; ?> LTD</title>
     
     <!-- SEO Meta-->
     <meta name="description" content="Digital innovation art ">
@@ -41,7 +41,7 @@ require 'const.php';
                 <div class="card shadow-v2"> 
                  <div class="card-header border-bottom">
                   <h4 class="mt-4">
-                    Log In to Your topugrade Account !
+                    Log In to Your <?php echo APP_NAME; ?> Account !
                   </h4>
                  </div>         
                   <div class="card-body">

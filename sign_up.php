@@ -9,7 +9,7 @@ require 'const.php';
     <meta charset="UTF-8">
     
     <!-- Title-->
-    <title>Signup | topupgrade ltd</title>
+    <title>Signup | <?php echo APP_NAME; ?> ltd</title>
     
    <!-- SEO Meta-->
    <meta name="description" content="Digital innovation art ">
@@ -30,7 +30,7 @@ require 'const.php';
             <div class="card shadow-v2"> 
              <div class="card-header border-bottom">
               <h4 class="mt-4">
-                Sign Up and Start Learning with topupgrade!
+                Sign Up and Start Learning with <?php echo APP_NAME; ?>!
               </h4>
              </div>         
               <div class="card-body">
@@ -120,7 +120,7 @@ require 'const.php';
 
   <div class="footer-bottom bg-black-0_9 py-5 text-center">
     <div class="container">
-      <p class="text-white-0_5 mb-0">&copy; 2019 topupgrade ltd. All rights reserved. designed by <a href="https://sagesalvio.000webhostapp.com" target="_blunk">DIA Lab</a></p>
+      <p class="text-white-0_5 mb-0">&copy; 2019 <?php echo APP_NAME; ?> ltd. All rights reserved. designed by <a href="https://sagesalvio.000webhostapp.com" target="_blunk">DIA Lab</a></p>
     </div>
   </div>  <!-- END footer-bottom-->
 </footer> <!-- END site-footer -->

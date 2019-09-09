@@ -116,7 +116,7 @@ float:left;
        <span style="font-size:18px"><i><?php echo date('d-M-Y'); ?></i></span><br>
 <table style="margin-top:20px;float:right;margin-right: 32%;">
 <tr>
-<td><span><b>Jean damascene Hakizima</b></td>
+<td><span><b>Jean Damascene Bigirimana</b></td>
 </tr>
 <tr>
 <td style="width:200px;float:right;border:0;border-bottom:1px solid #000;"></td>
