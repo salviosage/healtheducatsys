@@ -15,6 +15,8 @@ if(isset($_POST['first_name']) && !empty($_POST['last_name']) && !empty($_POST['
 	$names=$first_name.' '.$last_name;
 	$address=$user_country.' / '.$user_city;
 	$token=md5($function->generateHash());
+	$query=$admin->checkingemail($user_email);
+	
 	if($user_password==$confirm_pwd){
 	//save student record
 	$save_status=$admin->registerStudent($names,$user_email,$user_password,$user_phone,$address,$user_degree,$user_profession,$token);

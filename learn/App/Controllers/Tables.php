@@ -54,6 +54,9 @@ class Tables {
 	public function users_quiz(){
 		return "users_quiz";
 	}
+	public function checkingemail(){
+		return "email";
+	}
 }
 $tables=new Tables();
 ?>

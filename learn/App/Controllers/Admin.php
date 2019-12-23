@@ -303,6 +303,18 @@ class Admin extends Execute{
 		}
 		return $status;
 	}
+	public function checkingemail($user_email){
+		$sql="SELECT * FROM system_users WHERE email=\"$user_email\"";
+		
+		$result=$this->querying($sql);
+		$status=false;
+		if(count($result)==0){
+			echo "<script>alert('this email have  been used with other user')";
+		}else{
+			$status=false;
+		}
+		return $status;
+	}
 
 }
 $admin=new Admin();
